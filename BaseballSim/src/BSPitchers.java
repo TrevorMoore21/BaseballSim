@@ -7,7 +7,7 @@ public class BSPitchers extends AllStarPlayer
 		
 		
 		public BSPitchers(String t, String fn, String ln, String rare,
-						  int yp, int c, int g, double i, int bf, int h, int w, int s, int hbp)
+						  int yp, int c, int g, int bf, int h, int w, int s, int hbp, double i)
 		{
 			setType(t);
 			setFirstName(fn);
@@ -16,12 +16,12 @@ public class BSPitchers extends AllStarPlayer
 			setYearsPlayed(yp);
 			setCost(c);
 			gamesPlayed = g;
-			inningsPitched = i;
 			battersFaced = bf;
 			hitsAllowed = h; 
 			walks = w;
 			strikeOut = s;
 			hitByPitch = hbp;
+			inningsPitched = i;
 		}
 
 		public int getGamesPlayed()
@@ -32,16 +32,6 @@ public class BSPitchers extends AllStarPlayer
 		public void setGamesPlayed(int gamesPlayed)
 			{
 				this.gamesPlayed = gamesPlayed;
-			}
-
-		public double getInningsPitched()
-			{
-				return inningsPitched;
-			}
-
-		public void setInningsPitched(double inningsPitched)
-			{
-				this.inningsPitched = inningsPitched;
 			}
 
 		public int getBattersFaced()
@@ -94,7 +84,15 @@ public class BSPitchers extends AllStarPlayer
 				this.hitByPitch = hitByPitch;
 			}
 		
-		
+		public double getInningsPitched()
+			{
+				return inningsPitched;
+			}
+
+		public void setInningsPitched(double inningsPitched)
+			{
+				this.inningsPitched = inningsPitched;
+			}
 		
 		
 	}
