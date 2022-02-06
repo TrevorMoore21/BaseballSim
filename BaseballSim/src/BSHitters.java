@@ -4,13 +4,15 @@ public class BSHitters extends AllStarPlayer
 
 		private int plateAppearances, atBats, runsBattedIn, hits, baseOnBalls, homeRuns;
 		
-		public BSHitters(String t, String fn, String ln, String rare,
+		public BSHitters(String t, String t2, String fn, String ln, String rare, String o,
 				         int yp, int c, int p, int a, int r, int h, int bb, int hr)
 			{
 				setType(t);
+				setType2(t2);
 				setFirstName(fn);
 				setLastName(ln);
 				setRarity(rare);
+				setOwner(o);
 				setYearsPlayed(yp);
 				setCost(c);
 				plateAppearances = p;

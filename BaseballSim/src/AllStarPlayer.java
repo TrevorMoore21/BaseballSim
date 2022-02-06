@@ -2,7 +2,7 @@
 public class AllStarPlayer
 	{
 
-		private String type, firstName, lastName, rarity;
+		private String type, type2, firstName, lastName, rarity, owner;
 		private int yearsPlayed, cost;
 		
 		//need two constructors for inheritance to work with this constructor?
@@ -12,12 +12,14 @@ public class AllStarPlayer
 		}
 		
 		
-		public AllStarPlayer(String t, String fn, String ln, String rare, int yp, int c)
+		public AllStarPlayer(String t, String t2, String fn, String ln, String rare, String o, int yp, int c)
 		{
 			type = t;
+			type2 = t2;
 			firstName = fn;
 			lastName = ln;
 			rarity = rare;
+			owner = o;
 			yearsPlayed = yp;
 			cost = c;
 		}
@@ -29,7 +31,18 @@ public class AllStarPlayer
 				return type;
 			}
 
+		public String getType2()
+			{
+				return type2;
+			}
 
+
+		public void setType2(String type2)
+			{
+				this.type2 = type2;
+			}
+
+		
 		public void setType(String type)
 			{
 				this.type = type;
@@ -65,6 +78,17 @@ public class AllStarPlayer
 		public void setRarity(String rarity)
 			{
 				this.rarity = rarity;
+			}
+		
+		public String getOwner()
+			{
+				return owner;
+			}
+
+
+		public void setOwner(String owner)
+			{
+				this.owner = owner;
 			}
 		
 		public int getYearsPlayed()

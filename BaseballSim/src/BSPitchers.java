@@ -6,13 +6,15 @@ public class BSPitchers extends AllStarPlayer
 		private double inningsPitched;
 		
 		
-		public BSPitchers(String t, String fn, String ln, String rare,
+		public BSPitchers(String t, String t2, String fn, String ln, String rare, String o,
 						  int yp, int c, int g, int bf, int h, int w, int s, int hbp, double i)
 		{
 			setType(t);
+			setType2(t2);
 			setFirstName(fn);
 			setLastName(ln);
 			setRarity(rare);
+			setOwner(o);
 			setYearsPlayed(yp);
 			setCost(c);
 			gamesPlayed = g;
