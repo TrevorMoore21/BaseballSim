@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+
+
 public class PlayGame
 	{
 
@@ -10,25 +12,41 @@ public class PlayGame
 //Main menu
 		public static void simMenu()
 			{
-				
+				System.out.println();
 				System.out.println(GreetSimPlayer.playerName + ", would you like to..."
-						+ "\n\n\t1) Trivia"
-						+ "\n\t2) Play Simulated Game"
+						+ "\n\n\t1) Play a round of Trivia"
+						+ "\n\t2) Play a Simulated Game"
 						+ "\n\t3) Review Rules");
 				menuNum = simMenuInput.nextInt();
 				
 				
 				if(menuNum == 1)
 					{
+						
+						//TRIVIA MENU
+						
+						
 						System.out.println("Hi, welcome to Monopoly");
 					}
 				else if(menuNum == 2)
 					{
+						
+						//print out players and such
+						
 						System.out.println("Wassup Fart-Catcher, welcome to Monopoly");
+					}
+				else if(menuNum == 3)
+					{
+						GreetSimPlayer.displayRule();
+						System.out.println();
+						System.out.println();
+						simMenu();
 					}
 				else
 					{
-						System.out.println("Welcome to Monopoly fool");
+						System.out.println();
+						System.out.println("Sorry, Voodoo Jobu didn't catch that, try again");
+						simMenu();
 					}
 			}
 		

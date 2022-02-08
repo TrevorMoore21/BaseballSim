@@ -44,7 +44,7 @@ public class GreetSimPlayer
 			
 			if (playONaw.equals("yes") || playONaw.equals("Yes") || playONaw.equals("YES"))
 				{
-					//add game here
+					PlayGame.simMenu();
 				}
 			else if (playONaw.equals("no") || playONaw.equals("No") || playONaw.equals("NO"))
 				{
@@ -52,7 +52,7 @@ public class GreetSimPlayer
 				}
 			else
 				{
-					System.out.println("\nI didn't catch that, try again");
+					System.out.println("\nSorry, Voodoo Jobu didn't catch that, try again");
 					playOrNaw();
 				}
 			
