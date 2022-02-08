@@ -1,19 +1,26 @@
 big berky back bi 5 6 figa ...
 
-asdf
-
-asdf
-
-asdf
-
-asdf
-
-asdf
-
-asdf
 
 
 Pitcher Starter Jim Kopper Coal none 2 ?????? 37 1036 435 410 170 21 148.1 
+Pitcher Starter Jimi Neutron Coal none 3 ?????? 43 771 313 270 75 38 163.2
+Pitcher Starter Donald Duckins Coal none 1 ???? 17 304 137 97 49 9 98.2
+Pitcher Starter Bart Simpinini Coal none 4 ????? 41 801 368 127 114 51 143.0
+Pitcher Starter Winnie Poonogin Coal none 3 ?? 34 637 271 208 96 24 104.2
+Pitcher Reliever Shaggy Scooberdik Coal none 2 ??? 14 301 130 93 39 5 60.2
+Pitcher Reliever Stewie Garfield Coal none 1 ?? 18 313 129 99 43 17 69.0
+Pitcher Reliever Buzz Pelakai Coal none 1 ???? 12 288 119 103 28 7 41.1
+Pitcher Reliever Thumper Glumpy Coal none 2 ??? 29 598 259 194 104 30 96.0
+Pitcher Reliever Thaddeus Castle Coal none 3 ?? 34 652 283 211 89 13 58.0
+Pitcher Reliever Skipper Penguini Coal none 2 ?? 22 346 138 109 49 21 35.2
+Pitcher Reliever Shi Fu Coal none 5 ?????????? 69 538 225 163 79 18 138.2
 
-Coal Starters x 5
-Coal Relievers x 7
+
+Hitter C Finn Naveen Coal none 3 ??? 1110 1043 131 187 49 12 
+Hitter 1st Fred Capone Coal none 2 ??? 740 674 88 132 39 9
+Hitter MI Jafar Thatch Coal none 2 ??? 756 682 93 123 52 4
+Hitter 3rd Kermit Brockman Coal none 1 ??? 384 325 39 66 42 2 
+Hitter MI Thimmy Thurner Coal none 4 ??? 1511 1344 169 267 123 18 
+Hitter OF Krusty Zoku Coal none 1 ??? 347 291 45 50 38 3
+Hitter OF Flynn Tennyson Coal none 2 ???? 711 668 81 142 36 8
+Hitter OF Ned Flanders Coal none 3 ???? 1036 923 139 199 74 21
