@@ -44,7 +44,7 @@ public class BaseballDriver
 			        		  }		
 			          }
 			      
-			      System.out.println(player[2].getFirstName());
+			      System.out.println(player[0].getFirstName());
 			      
 				GreetSimPlayer.simIntro();
 				GreetSimPlayer.displayRule();
