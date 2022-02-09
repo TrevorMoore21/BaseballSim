@@ -7,7 +7,7 @@ public class BSPitchers extends AllStarPlayer
 		
 		
 		public BSPitchers(String t, String t2, String fn, String ln, String rare, String o,
-						  int yp, int c, int g, int bf, int h, int w, int s, int hbp, double i)
+						  int yp, int c, int g, int bf, int h, int w, int s, int hbp, double ip)
 		{
 			setType(t);
 			setType2(t2);
@@ -23,7 +23,7 @@ public class BSPitchers extends AllStarPlayer
 			walks = w;
 			strikeOut = s;
 			hitByPitch = hbp;
-			inningsPitched = i;
+			inningsPitched = ip;
 		}
 
 		public int getGamesPlayed()
