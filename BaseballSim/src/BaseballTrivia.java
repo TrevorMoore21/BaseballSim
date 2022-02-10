@@ -9,9 +9,9 @@ public class BaseballTrivia
 		public static void triviaMenu()
 		{
 			
-			System.out.println("Voodoo Jobu welcomes you to Empire Baseball's Trivia. "
-								+ "\nWould you like to play easy, medium, or hard?"
-								+ "\n\t1) Easy"
+			System.out.println("\nVoodoo Jobu welcomes you to Empire Baseball's Trivia. "
+								+ "\nWould you like to play on easy, medium, or hard?"
+								+ "\n\n\t1) Easy"
 								+ "\n\t2) Medium"
 								+ "\n\t3) Hard");
 			

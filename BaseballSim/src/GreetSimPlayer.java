@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class GreetSimPlayer
 	{
 
-		static String playerName;
+		
 		static Scanner simVersionInput = new Scanner(System.in);
 		static String playONaw;
 		static Scanner playInput = new Scanner(System.in);
@@ -17,10 +17,10 @@ public class GreetSimPlayer
 											+ "My name is Voodoo Jobu, and I am your host.");
 				
 				System.out.println("What is your name?");
-				playerName = simVersionInput.nextLine();
+				PlayerInfo.playerName = simVersionInput.nextLine();
 				
 				System.out.println();
-				System.out.println("Welcome, " + playerName + "!");
+				System.out.println("Welcome, " + PlayerInfo.playerName + "!");
 			}
 		
 		

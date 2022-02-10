@@ -23,10 +23,7 @@ public class PlayGame
 				if(menuNum == 1)
 					{
 						
-						//TRIVIA MENU
-						
-						
-						System.out.println("Hi, welcome to Monopoly");
+						BaseballTrivia.triviaMenu();
 					}
 				else if(menuNum == 2)
 					{

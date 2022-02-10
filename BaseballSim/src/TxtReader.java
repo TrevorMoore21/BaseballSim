@@ -15,8 +15,9 @@ public class TxtReader
 	      for( int i = 0; i < numberOfLines; i++ )
 	          {
 	        	  
-	        	  String type = file.next();  
-//reads Pitchers			        	  
+	        	  String type = file.next(); 
+	        	  
+//reads Pitchers and puts them into an array 			        	  
 	        	  if(type.equals("Pitcher"))
 	        		  {
 	        			 
@@ -39,6 +40,29 @@ public class TxtReader
 	        					  
 	        					 player[i] = new BSPitchers("Pitcher", t2, fn, ln, rare, o, yp, c, g, bf, h, w, s, hbp, ip);
 	        		  }		
+	        	  
+//reads Hitters and puts them into an array
+	        	  if(type.equals("Hitter"))
+	        		  {
+	        			 
+	        					 String t2 = file.next();
+	        					 String fn = file.next();
+	        					 String ln = file.next();
+	        					 String rare = file.next();
+	        					 String o = file.next();
+	        					 int yp = file.nextInt();
+	        					 int c = file.nextInt();
+	        					 int p = file.nextInt();
+	        					 int a = file.nextInt();
+	        					 int r = file.nextInt();
+	        					 int h = file.nextInt();
+	        					 int bb = file.nextInt();
+	        					 int hr = file.nextInt();
+	        					 
+	        					
+	        					  
+	        					 player[i] = new BSHitters("Hitter", t2, fn, ln, rare, o, yp, c, p, a, r, h, bb, hr);
+	        		  }
 	          }
 		
 	}
