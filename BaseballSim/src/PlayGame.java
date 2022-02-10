@@ -13,7 +13,7 @@ public class PlayGame
 		public static void simMenu()
 			{
 				System.out.println();
-				System.out.println(GreetSimPlayer.playerName + ", would you like to..."
+				System.out.println(PlayerInfo.playerName + ", would you like to..."
 						+ "\n\n\t1) Play a round of Trivia"
 						+ "\n\t2) Play a Simulated Game"
 						+ "\n\t3) Review Rules");
@@ -28,9 +28,7 @@ public class PlayGame
 				else if(menuNum == 2)
 					{
 						
-						//print out players and such
-						
-						System.out.println("Wassup Fart-Catcher, welcome to Monopoly");
+						Simulation.simIntro();
 					}
 				else if(menuNum == 3)
 					{
