@@ -15,10 +15,11 @@ public class BaseballDriver
 //			    	  {
 //			    		  System.out.println(TxtReader.player[i].getFirstName());
 //			    	  }
-			      
-			
+				
+				
 				
 				GreetSimPlayer.simIntro();
+				PlayerInfo.setCoalOwner();
 				GreetSimPlayer.displayRule();
 				GreetSimPlayer.playOrNaw();
 				
