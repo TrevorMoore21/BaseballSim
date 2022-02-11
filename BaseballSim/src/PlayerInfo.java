@@ -7,7 +7,9 @@ public class PlayerInfo
 		static String playerName;
 		static int playerMoney;
 		static boolean stillPlaying = true;
-		static ArrayList<String> team = new ArrayList<String>();
+		//static ArrayList<String> team = new ArrayList<String>();
+		static ArrayList<AllStarPlayer> team = new ArrayList<AllStarPlayer>();
+		
 		static String [][] playerPitchers = new String[12][14];
 		static String [][] playerHitters = new String[8][13];
 		
@@ -21,7 +23,35 @@ public class PlayerInfo
 							TxtReader.player[i].setOwner(playerName);
 						}
 				}
+			
+			
+			
+			
+			//for display use if statement to get pitcher/hitter
+			//use multiple getters to get differerent info for each line
+			
+			
+			
+			
+			team.add(TxtReader.player[0]);
+			System.out.println(team.get(0).getFirstName());
+			
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 //fills TWO 2D arrays with Player's team when STARTING the game
 		public static void playerTeam()
