@@ -50,12 +50,15 @@ public class BaseballTrivia
 		public static void easyTrivia()
 			{
 			
+				//
+				
 				int introNumber = (int) (Math.random() * 3) + 1;
 				
 				
-				if(introNumber == 1)
+				for(int i = 0; i <= 1; i++)
 					{
-						
+						if(HEREREERERERERERERERERER)
+							{
 						System.out.println();
 						System.out.println("What pitch is explicitily outlawed in the MLB?"
 								+ "\n\n\t1) Gyroball"
@@ -74,6 +77,7 @@ public class BaseballTrivia
 									System.out.println("Incorrect");
 									System.out.println("The Spitball was outlawed in 1920 after one hit Ray Chapman in the head and killed him");
 								}
+							}
 					}
 				
 				if(introNumber == 2)
