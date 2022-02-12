@@ -34,7 +34,7 @@ public class PlayerInfo
 			
 			
 			team.add(TxtReader.player[0]);
-			System.out.println(team.get(0).getFirstName());
+			//System.out.println(team.get(0).getFirstName());
 			
 		}
 		

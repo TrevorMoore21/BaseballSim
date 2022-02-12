@@ -28,9 +28,9 @@ public class GreetSimPlayer
 //Baseball Sim rule display		
 		public static void displayRule()
 		{
-			System.out.println("\n\n\tEmpire Baseball's only rule is simple --> make money (either by answering trivia questions or playing simulated games)");
+			System.out.println("\n\n\tEmpire Baseball's only rule is simple --> make money (either by answering Trivia questions or playing Simulated Games)");
 			System.out.println();
-			System.out.println("\t      hint (in the beginning, you will make more money answering trivia questions than playing simulated games"
+			System.out.println("\t      hint (in the beginning, you will make more money answering Trivia questions than playing Simulated Games"
 								+ "\n\t\t      ...until you either buy better players, upgrade your fanbase, or upgrade stadiums)");
 		}
 		
