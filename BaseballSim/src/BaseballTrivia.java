@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class BaseballTrivia
 	{
 
@@ -7,15 +8,36 @@ public class BaseballTrivia
 		static Scanner triviaMenuInput = new Scanner(System.in);
 		static int menuNum;
 		static Scanner menuInput = new Scanner(System.in);
-		static boolean c1 = false;
-		static boolean c2 = false;
-		static boolean c3 = false;
-		static boolean c4 = false;
-		static boolean c5 = false;
-		static boolean c6 = false;
-		static boolean c7 = false;
+		static String hardTA;
+		static Scanner hardTriviaR = new Scanner(System.in);
 		
+		static boolean e1 = false;
+		static boolean e2 = false;
+		static boolean e3 = false;
+		static boolean e4 = false;
+		static boolean e5 = false;
+		static boolean e6 = false;
+		static boolean e7 = false;
 		
+		static boolean m1 = false;
+		static boolean m2 = false;
+		static boolean m3 = false;
+		static boolean m4 = false;
+		static boolean m5 = false;
+		static boolean m6 = false;
+		static boolean m7 = false;
+		
+		static boolean h1 = false;
+		static boolean h2 = false;
+		static boolean h3 = false;
+		static boolean h4 = false;
+		static boolean h5 = false;
+		static boolean h6 = false;
+		static boolean h7 = false;
+		
+		static boolean easyTriv = true;
+		static boolean mediumTriv = true;
+		static boolean hardTriv = true;
 		
 		
 		
@@ -81,7 +103,7 @@ public class BaseballTrivia
 				
 				do
 					{
-						if(c1 == false && randomPick == 1)
+						if(e1 == false && randomPick == 1)
 							{
 								System.out.println();
 								System.out.println("What pitch is explicitily outlawed in the MLB?"
@@ -93,8 +115,8 @@ public class BaseballTrivia
 						
 								if (menuNum == 4)
 									{
-										System.out.println("\nCorrect! You earned $150");
-										PlayerInfo.playerMoney += 150;		
+										System.out.println("\nCorrect! You earned $265");
+										PlayerInfo.playerMoney += 265;		
 									}
 								else
 									{
@@ -102,11 +124,11 @@ public class BaseballTrivia
 										System.out.println("The Spitball was outlawed in 1920 after one hit Ray Chapman in the head and killed him");
 									}
 								randomPick += 3;
-								c1 = true;
+								e1 = true;
 							}
 					
 				
-						if(c2 == false && randomPick == 2)
+						if(e2 == false && randomPick == 2)
 							{
 						
 								System.out.println();
@@ -119,19 +141,20 @@ public class BaseballTrivia
 						
 								if (menuNum == 3)
 									{
-										System.out.println("\nCorrect! You earned $145");
-										PlayerInfo.playerMoney += 145;	
+										System.out.println("\nCorrect! You earned $345");
+										PlayerInfo.playerMoney += 345;	
 									}
 								else
 									{
-										System.out.println("\nIncorrect, MLB stands for Major League Baseball");
+										System.out.println("\nIncorrect");
+										System.out.println("The MLB stands for Major League Baseball");
 									}
 								randomPick += 3;
-								c2 = true;
+								e2 = true;
 							}
 				
 						
-						if(c3 == false && randomPick == 3)
+						if(e3 == false && randomPick == 3)
 							{
 						
 								System.out.println();
@@ -144,19 +167,20 @@ public class BaseballTrivia
 						
 							if (menuNum == 2)
 								{
-									System.out.println("\nCorrect! You earned $175");
-									PlayerInfo.playerMoney += 175;
+									System.out.println("\nCorrect! You earned $375");
+									PlayerInfo.playerMoney += 375;
 								}
 							else
 								{
-									System.out.println("\nIncorrect, the Baseball Hall of Fame is located in Cooperstown, New York");
+									System.out.println("\nIncorrect");
+									System.out.println("The Baseball Hall of Fame is located in Cooperstown, New York");
 								}
 							randomPick += 3;
-							c3 = true;
+							e3 = true;
 							}
 						
 						
-						if(c4 == false && randomPick == 4)
+						if(e4 == false && randomPick == 4)
 							{
 								System.out.println();
 								System.out.println("What is the distance between the bases?"
@@ -168,8 +192,8 @@ public class BaseballTrivia
 						
 								if (menuNum == 2)
 									{
-										System.out.println("\nCorrect! You earned $110");
-										PlayerInfo.playerMoney += 110;
+										System.out.println("\nCorrect! You earned $210");
+										PlayerInfo.playerMoney += 210;
 									}
 								else
 									{
@@ -177,11 +201,11 @@ public class BaseballTrivia
 										System.out.println("The distance between the base path distance is 90 feet");
 									}
 								randomPick += 3;
-								c4 = true;
+								e4 = true;
 							}
 						
 						
-						if(c5 == false && randomPick == 5)
+						if(e5 == false && randomPick == 5)
 							{
 								System.out.println();
 								System.out.println("How much does a baseball weigh?"
@@ -193,8 +217,8 @@ public class BaseballTrivia
 						
 								if (menuNum == 3)
 									{
-										System.out.println("\nCorrect! You earned $160");
-										PlayerInfo.playerMoney += 160;
+										System.out.println("\nCorrect! You earned $350");
+										PlayerInfo.playerMoney += 350;
 									}
 								else
 									{
@@ -202,11 +226,11 @@ public class BaseballTrivia
 										System.out.println("Baseballs weigh 5 ounces");
 									}
 								randomPick = 1;
-								c5 = true;
+								e5 = true;
 							}
 						
 						
-						if(c6 == false && randomPick == 6)
+						if(e6 == false && randomPick == 6)
 							{
 								System.out.println();
 								System.out.println("What is Derek Jeter's nickname?"
@@ -218,20 +242,20 @@ public class BaseballTrivia
 						
 								if (menuNum == 1)
 									{
-										System.out.println("\nCorrect! You earned $210");
-										PlayerInfo.playerMoney += 210;
+										System.out.println("\nCorrect! You earned $335");
+										PlayerInfo.playerMoney += 335;
 									}
 								else
 									{
 										System.out.println("\nIncorrect");
-										System.out.println("Derek Jeter earned the nickname Mr. November after proving to be a clutch hitter deep in the playoffs");
+										System.out.println("Derek Jeter earned the nickname ''Mr. November'' after proving to be a clutch hitter deep in the playoffs");
 									}
 								randomPick = 2;
-								c6 = true;
+								e6 = true;
 							}
 						
 						
-						if(c7 == false && randomPick == 7)
+						if(e7 == false && randomPick == 7)
 							{
 								System.out.println();
 								System.out.println("How many inngings are in an MLB game?"
@@ -243,8 +267,8 @@ public class BaseballTrivia
 						
 								if (menuNum == 2)
 									{
-										System.out.println("\nCorrect! You earned $115");
-										PlayerInfo.playerMoney += 115;
+										System.out.println("\nCorrect! You earned $285");
+										PlayerInfo.playerMoney += 285;
 									}
 								else
 									{
@@ -252,18 +276,27 @@ public class BaseballTrivia
 										System.out.println("Every MLB game is 9 innings, unless extra innings are played to prevent the occurence of a tie");
 									}
 								randomPick = 3;
-								c7 = true;
+								e7 = true;
+							}
+						if (e1 == true && e2 == true && e3 == true && e4 == true && e5 == true && e6 == true && e7 == true)
+							{
+								
+								e1 = false;
+								e2 = false;
+								e3 = false;
+								e4 = false;
+								e5 = false;
+								e6 = false;
+								e7 = false;
+								
+								easyTriv = false;
+								
 							}
 					}
-				while (c1 == false || c2 || false || c3 == false || c4 == false || c5 == false || c6 == false || c7 == false);
+				while (easyTriv == true);
 				
-				c1 = false;
-				c2 = false;
-				c3 = false;
-				c4 = false;
-				c5 = false;
-				c6 = false;
-				c7 = false;
+				easyTriv = true;
+				
 			}
 		
 		
@@ -276,74 +309,204 @@ public class BaseballTrivia
 		public static void mediumTrivia()
 			{
 				
-				int randomPick = (int) (Math.random() * 3) + 1;
+				int randomPick = (int) (Math.random() * 7) + 1;
 				
 				
-				if(randomPick == 1)
+				do
 					{
-						System.out.println();
-						System.out.println("Who holds the record for the most single season home runs?"
-								+ "\n\n\t1) Barry Bonds"
-								+ "\n\t2) Mark Mcgwire"
-								+ "\n\t3) Babe Ruth"
-								+ "\n\t4) David Ortiz");
-						menuNum = menuInput.nextInt();
+						if(m1 == false && randomPick == 1)
+							{
+								System.out.println();
+								System.out.println("Who holds the record for the most single season home runs?"
+										+ "\n\n\t1) Barry Bonds"
+										+ "\n\t2) Mark Mcgwire"
+										+ "\n\t3) Babe Ruth"
+										+ "\n\t4) David Ortiz");
+									menuNum = menuInput.nextInt();
 						
-							if (menuNum == 1)
-								{
-									System.out.println("Correct! You earned $325");
-									PlayerInfo.playerMoney += 325;
-								}
-							else
-								{
-									System.out.println("Incorrect, Barry Bonds holds this record");
-									
-								}
-					}
+								if (menuNum == 1)
+									{
+										System.out.println("\nCorrect! You earned $565");
+										PlayerInfo.playerMoney += 565;		
+									}
+								else
+									{
+										System.out.println("\nIncorrect");
+										System.out.println("Barry Bonds holds this record with 73 home runs");
+									}
+								randomPick += 3;
+								m1 = true;
+							}
+					
 				
-				if(randomPick == 2)
-					{
-						System.out.println();
-						System.out.println("Who has thrown the hardest, verified pitch ever recorded in MLB history?"
-								+ "\n\n\t1) John Cena"
-								+ "\n\t2) Randy Johnson"
-								+ "\n\t3) Aroldis Chapman"
-								+ "\n\t4) Jacob DeGrom");
-						menuNum = menuInput.nextInt();
+						if(m2 == false && randomPick == 2)
+							{
 						
-							if (menuNum == 3)
+								System.out.println();
+								System.out.println("Who has thrown the hardest, verified pitch ever recorded in MLB history?"
+										+ "\n\n\t1) John Cena"
+										+ "\n\t2) Randy Johnson"
+										+ "\n\t3) Aroldis Chapman"
+										+ "\n\t4) Jacob DeGrom");
+									menuNum = menuInput.nextInt();
+						
+								if (menuNum == 3)
+									{
+										System.out.println("Correct! You earned $615");
+										PlayerInfo.playerMoney += 615;
+									}
+								else
+									{
+										System.out.println("\nIncorrect");
+										System.out.println("Aroldis Chapman holds this record with 106 mph");
+									}
+								randomPick += 3;
+								m2 = true;
+							}
+				
+						
+						if(m3 == false && randomPick == 3)
+							{
+						
+								System.out.println();
+								System.out.println("Who was the first player to throw a pitch over 100 mph?"
+										+ "\n\n\t1) Randy Johnson"
+										+ "\n\t2) Mike Mussina"
+										+ "\n\t3) Mariano Rivera"
+										+ "\n\t4) Nolan Ryan");
+									menuNum = menuInput.nextInt();
+						
+							if (menuNum == 4)
 								{
-									System.out.println("Correct! Aroldis Chapman's fastest pitch was 106 mph");
-									System.out.println("You earned $415");
+									System.out.println("\nCorrect! You earned $415");
 									PlayerInfo.playerMoney += 415;
 								}
 							else
 								{
-									System.out.println("Incorrect, Aroldis Chapman holds this record with 106 mph");
+									System.out.println("\nIncorrect");
+									System.out.println("Nolan Ryan was the first to record a pitch at or above 100 mph");
 								}
-					}
-				
-				if(randomPick == 3)
-					{
-						System.out.println();
-						System.out.println("Who was the first player to throw a pitch over 100 mph?"
-								+ "\n\n\t1) Randy Johnson"
-								+ "\n\t2) Mike Mussina"
-								+ "\n\t3) Mariano Rivera"
-								+ "\n\t4) Nolan Ryan");
-						menuNum = menuInput.nextInt();
+							randomPick += 3;
+							m3 = true;
+							}
 						
-							if (menuNum == 4)
-								{
-									System.out.println("Correct! You earned $370");
-									PlayerInfo.playerMoney += 370;
-								}
-							else
-								{
-									System.out.println("Incorrect, Nolan Ryan was the first to record a pitch at or above 100 mph");
-								}
+						
+						if(m4 == false && randomPick == 4)
+							{
+								System.out.println();
+								System.out.println("What is the distance between home plate and the pitcher's rubber?"
+										+ "\n\n\t1) 58 feet 6 inches"
+										+ "\n\t2)  62 feet 6 inches"
+										+ "\n\t3)  56 feet 6 inches"
+										+ "\n\t4)  60 feet 6 inches");
+									menuNum = menuInput.nextInt();
+						
+								if (menuNum == 4)
+									{
+										System.out.println("\nCorrect! You earned $400");
+										PlayerInfo.playerMoney += 400;
+									}
+								else
+									{
+										System.out.println("\nIncorrect");
+										System.out.println("The distance between home plate and the pitcher's rubber is 60 feet 6 inches");
+									}
+								randomPick += 3;
+								m4 = true;
+							}
+						
+						
+						if(m5 == false && randomPick == 5)
+							{
+								System.out.println();
+								System.out.println("How many laces are on a baseball?"
+										+ "\n\n\t1) 108"
+										+ "\n\t2)  96"
+										+ "\n\t3   148"
+										+ "\n\t4)  124");
+									menuNum = menuInput.nextInt();
+						
+								if (menuNum == 1)
+									{
+										System.out.println("\nCorrect! You earned $645");
+										PlayerInfo.playerMoney += 645;
+									}
+								else
+									{
+										System.out.println("\nIncorrect");
+										System.out.println("Baseballs have 108 laces");
+									}
+								randomPick = 1;
+								m5 = true;
+							}
+	
+						
+						if(m6 == false && randomPick == 6)
+							{
+								System.out.println();
+								System.out.println("The Brooklyn ''Dodgers'' nickname originally refered to dodging ________?"
+										+ "\n\n\t1) City Buses"
+										+ "\n\t2) Fat People"
+										+ "\n\t3) City traffic"
+										+ "\n\t4) Trolleys");
+									menuNum = menuInput.nextInt();
+						
+								if (menuNum == 4)
+									{
+										System.out.println("\nCorrect! You earned $555");
+										PlayerInfo.playerMoney += 555;
+									}
+								else
+									{
+										System.out.println("\nIncorrect");
+										System.out.println("The ''Dodgers'' received their nickname after dodging trolleys");
+									}
+								randomPick = 2;
+								m6 = true;
+							}
+						
+						
+						if(m7 == false && randomPick == 7)
+							{
+								System.out.println();
+								System.out.println("Who holds the record for most hits in a single season?"
+										+ "\n\n\t1) Ichiro Suzuki"
+										+ "\n\t2) Tony Gwynn"
+										+ "\n\t3) Derek Jeter"
+										+ "\n\t4) Pete Rose");
+									menuNum = menuInput.nextInt();
+						
+								if (menuNum == 1)
+									{
+										System.out.println("\nCorrect! You earned $485");
+										PlayerInfo.playerMoney += 485;
+									}
+								else
+									{
+										System.out.println("\nIncorrect");
+										System.out.println("Ichiro Suzuki holds this record with 262 hits");
+									}
+								randomPick = 3;
+								m7 = true;
+							}
+						if (m1 == true && m2 == true && m3 == true && m4 == true && m5 == true && m6 == true && m7 == true)
+							{
+								
+								m1 = false;
+								m2 = false;
+								m3 = false;
+								m4 = false;
+								m5 = false;
+								m6 = false;
+								m7 = false;
+								
+								mediumTriv = false;
+								
+							}
 					}
+				while (mediumTriv == true);
 				
+				mediumTriv = true;
 			}
 		
 		
@@ -355,24 +518,227 @@ public class BaseballTrivia
 //hard Trivia	
 		public static void hardTrivia()
 			{
+				int randomPick = (int) (Math.random() * 7) + 1;
 				
-				int randomPick = (int) (Math.random() * 3) + 1;
 				
-				
-				if(randomPick == 1)
+				do
 					{
 						
-					}
+						if(h1 == false && randomPick == 1)
+							{
+								System.out.println();
+								System.out.println("Name one of the first five members inducted into the baseball Hall of Fame"
+										+ "\n(first and last name)");
+								System.out.println();
+								hardTA = hardTriviaR.nextLine();
+								
+								if (hardTA.equals("Babe Ruth") || hardTA.equals("babe ruth") || hardTA.equals("BABE RUTH"))
+									{
+										
+										System.out.println("\nCorrect! You earned $1050");
+										PlayerInfo.playerMoney += 1050;
+									}
+								else if (hardTA.equals("Ty Cobbs") || hardTA.equals("ty cobbs") || hardTA.equals("TY COBBS") 
+										|| hardTA.equals("Ty Cobb") || hardTA.equals("ty cobb") )
+									{
+										
+										System.out.println("\nCorrect! You earned $1050");
+										PlayerInfo.playerMoney += 1050;
+									}
+								else if (hardTA.equals("Honus Wagner") || hardTA.equals("honus wagner") || hardTA.equals("HONUS WAGNER"))
+									{
+										
+										System.out.println("\nCorrect! You earned $1050");
+										PlayerInfo.playerMoney += 1050;
+									}
+								else if (hardTA.equals("Walter Johnson") || hardTA.equals("walter johnson") || hardTA.equals("WALTER JOHNSON"))
+									{
+										
+										System.out.println("\nCorrect! You earned $1050");
+										PlayerInfo.playerMoney += 1050;
+									}
+								else if (hardTA.equals("Christy Mathewson") || hardTA.equals("christy mathewson") || hardTA.equals("CHRISTY MATHEWSON"))
+									{
+										
+										System.out.println("\nCorrect! You earned $1050");
+										PlayerInfo.playerMoney += 1050;
+									}
+								else
+									{
+										
+										System.out.println("\nIncorrect, you lost $200");
+										System.out.println("The five inducties are: Babe Ruth, Ty Cobbs, Honus Wagner, Walter Johnson, and Christy Mathewson");
+										PlayerInfo.playerMoney -= 200;
+									}
+								randomPick += 3;
+								h1 = true;
+							}
+					
+	
 				
-				if(randomPick == 2)
-					{
+						if(h2 == false && randomPick == 2)
+							{
 						
-					}
+								System.out.println();
+								System.out.println("What team did Babe Ruth hit his first career MLB home run against?");
+								System.out.println();
+								hardTA = hardTriviaR.nextLine();
+								
+								if (hardTA.equals("New York Yankees") || hardTA.equals("new york yankees") || hardTA.equals("NEW YORK YANKEES") 
+										|| hardTA.equals("Yankees") || hardTA.equals("yankees") || hardTA.equals("YANKEES"))
+									{
+										
+										System.out.println("\nCorrect! You earned $925");
+										PlayerInfo.playerMoney += 925;
+									}
+								else
+									{
+										System.out.println("\nIncorrect, you lost $250");
+										System.out.println("Babe Ruth's first career MLB homerun was against the New York Yankees on May 6, 1915");
+										PlayerInfo.playerMoney -= 250;
+									}
+								randomPick += 3;
+								h2 = true;
+							}
 				
-				if(randomPick == 3)
-					{
 						
+						if(h3 == false && randomPick == 3)
+							{
+						
+								System.out.println();
+								System.out.println("What famous Atlanta Braves manager was ejected from a record 162 MLB games?");
+								System.out.println();
+								hardTA = hardTriviaR.nextLine();
+								
+								if (hardTA.equals("Bobby Cox") || hardTA.equals("bobby cox") || hardTA.equals("Bobby Cox"))
+									{
+										
+										System.out.println("\nCorrect! You earned $1090");
+										PlayerInfo.playerMoney += 1090;
+									}
+								else
+									{
+										System.out.println("\nIncorrect, you lost $100");
+										System.out.println("Legendary manager Bobby Cox holds the record for most MLB ejections");
+										PlayerInfo.playerMoney -= 100;
+									}
+								randomPick += 3;
+								h3 = true;
+							}
+						
+						
+						if(h4 == false && randomPick == 4)
+							{
+								System.out.println();
+								System.out.println("Who was the first Major League player to have his number retired?");
+								System.out.println();
+								hardTA = hardTriviaR.nextLine();
+								
+								if (hardTA.equals("Lou Gehrig") || hardTA.equals("lou gehrig") || hardTA.equals("LOU GEHRIG"))
+									{
+										
+										System.out.println("\nCorrect! You earned $915");
+										PlayerInfo.playerMoney += 915;
+									}
+								else
+									{
+										System.out.println("\nIncorrect, you lost $125");
+										System.out.println("Legendary player Lou Gehrig had his number retired on July 4, 1939");
+										PlayerInfo.playerMoney -= 125;
+									}
+								randomPick += 3;
+								h4 = true;
+							}
+
+						
+						if(h5 == false && randomPick == 5)
+							{
+								System.out.println();
+								System.out.println("Which MLB pitcher threw a no-hitter without a right hand?");
+								System.out.println();
+								hardTA = hardTriviaR.nextLine();
+										
+								if (hardTA.equals("Jim Abbot") || hardTA.equals("jim abbot") || hardTA.equals("JIM ABBOT"))
+									{
+												
+										System.out.println("\nCorrect! You earned $845");
+										PlayerInfo.playerMoney += 845;
+									}
+								else
+									{
+										System.out.println("\nIncorrect");
+										System.out.println("Jim Abbot threw a no-hitter and completed a successful 10 year career without a right hand");
+									}
+								randomPick = 1;
+								h5 = true;
+							}
+	
+						
+						if(h6 == false && randomPick == 6)
+							{
+								System.out.println();
+								System.out.println("What is the lowest recorded attendance for an MLB game?");
+								System.out.println("(answer in number of people)");
+								System.out.println();
+								menuNum = menuInput.nextInt();
+										
+								if (menuNum == 0)
+									{
+												
+										System.out.println("\nCorrect! You earned $805");
+										PlayerInfo.playerMoney += 805;
+									}
+								else
+									{
+										System.out.println("\nIncorrect");
+										System.out.println("The lowest turnout for an MLB game was 0 people in 2015 at Oriole Park");
+									}
+								randomPick = 2;
+								h6 = true;
+							}
+						
+					
+						if(h7 == false && randomPick == 7)
+							{
+								System.out.println();
+								System.out.println("What female pitcher struct out both Lou Gehrig and Babe Ruth?");
+								System.out.println();
+								hardTA = hardTriviaR.nextLine();
+								
+								if (hardTA.equals("Jackie Mitchell") || hardTA.equals("jackie mitchell") || hardTA.equals("JACKIE MITCHELL"))
+									{
+												
+										System.out.println("\nCorrect! You earned $1500");
+										PlayerInfo.playerMoney += 1500;
+									}
+								else
+									{
+										System.out.println("\nIncorrect");
+										System.out.println("Jackie Mitchell is the talented woman who struck out these two legends");
+									}
+								randomPick = 3;
+								h7 = true;
+							}
+						
+						
+						if (h1 == true && h2 == true && h3 == true && h4 == true && h5 == true && h6 == true && h7 == true)
+							{
+								
+								h1 = false;
+								h2 = false;
+								h3 = false;
+								h4 = false;
+								h5 = false;
+								h6 = false;
+								h7 = false;
+								
+								hardTriv = false;
+								
+							}
 					}
+				while (hardTriv == true);
+				
+				hardTriv = true;
 				
 			}
 		
