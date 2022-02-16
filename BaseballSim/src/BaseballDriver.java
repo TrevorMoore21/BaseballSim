@@ -10,11 +10,7 @@ public class BaseballDriver
 			{
 			
 				TxtReader.readSimTxt();
-				
-//			      for (int i = 0; i < 100; i ++)
-//			    	  {
-//			    		  System.out.println(TxtReader.player[i].getFirstName());
-//			    	  }
+
 				
 				
 				
