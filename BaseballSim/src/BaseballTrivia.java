@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 
+
+
 public class BaseballTrivia
 	{
 
@@ -104,15 +106,16 @@ public class BaseballTrivia
 		public static void easyTrivia()
 			{
 				
-				int randomPick = (int) (Math.random() * 7) + 1;
+				
 				
 				
 				do
 					{
+						int randomPick = (int) (Math.random() * 7) + 1;
+						
 						if(e1 == false && randomPick == 1)
 							{
-								randomPick += 3;
-								e1 = true;
+								
 								
 								System.out.println();
 								System.out.println("What pitch is explicitily outlawed in the MLB?"
@@ -126,6 +129,10 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick += 3;
+								e1 = true;
+								
 								if (menuNum.equals("4"))
 									{
 										System.out.println("\nCorrect! You earned $265");
@@ -141,8 +148,7 @@ public class BaseballTrivia
 				
 						if(e2 == false && randomPick == 2)
 							{
-								randomPick += 3;
-								e2 = true;
+								
 								System.out.println();
 								System.out.println("What does the MLB stand for?"
 										+ "\n\n\t1) Master Leggy Baseballers"
@@ -155,6 +161,10 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick += 3;
+								e2 = true;
+								
 								if (menuNum.equals("3"))
 									{
 										System.out.println("\nCorrect! You earned $345");
@@ -171,8 +181,7 @@ public class BaseballTrivia
 						if(e3 == false && randomPick == 3)
 							{
 						
-								randomPick += 3;
-								e3 = true;
+								
 								System.out.println();
 								System.out.println("Where is the Baseball Hall of Fame located?"
 										+ "\n\n\t1) New York, New York"
@@ -185,6 +194,10 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick += 3;
+								e3 = true;
+								
 							if (menuNum.equals("2"))
 								{
 									System.out.println("\nCorrect! You earned $375");
@@ -201,8 +214,7 @@ public class BaseballTrivia
 						if(e4 == false && randomPick == 4)
 							{
 								
-								randomPick += 3;
-								e4 = true;
+								
 								System.out.println();
 								System.out.println("What is the distance between the bases?"
 										+ "\n\n\t1) 100 feet"
@@ -215,6 +227,10 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick += 3;
+								e4 = true;
+								
 								if (menuNum.equals("2"))
 									{
 										System.out.println("\nCorrect! You earned $210");
@@ -231,8 +247,7 @@ public class BaseballTrivia
 						if(e5 == false && randomPick == 5)
 							{
 								
-								randomPick = 1;
-								e5 = true;
+								
 								System.out.println();
 								System.out.println("How much does a baseball weigh?"
 										+ "\n\n\t1) 12 ounces"
@@ -245,6 +260,11 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick = 1;
+								e5 = true;
+								
+								
 								if (menuNum.equals("3"))
 									{
 										System.out.println("\nCorrect! You earned $350");
@@ -261,8 +281,7 @@ public class BaseballTrivia
 						if(e6 == false && randomPick == 6)
 							{
 								
-								randomPick = 2;
-								e6 = true;
+								
 								System.out.println();
 								System.out.println("What is Derek Jeter's nickname?"
 										+ "\n\n\t1) Mr. November"
@@ -275,6 +294,11 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick = 2;
+								e6 = true;
+								
+								
 								if (menuNum.equals("1"))
 									{
 										System.out.println("\nCorrect! You earned $335");
@@ -291,8 +315,7 @@ public class BaseballTrivia
 						if(e7 == false && randomPick == 7)
 							{
 								
-								randomPick = 3;
-								e7 = true;
+								
 								System.out.println();
 								System.out.println("How many inngings are in an MLB game?"
 										+ "\n\n\t1) 12"
@@ -305,6 +328,11 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick = 3;
+								e7 = true;
+								
+								
 								if (menuNum.equals("2"))
 									{
 										System.out.println("\nCorrect! You earned $285");
@@ -320,7 +348,8 @@ public class BaseballTrivia
 						
 						if (e1 == true && e2 == true && e3 == true && e4 == true && e5 == true && e6 == true && e7 == true)
 							{
-								
+								System.out.println("You have now completed all of the ''easy'' level trivia");
+								System.out.println("Now...");
 								e1 = false;
 								e2 = false;
 								e3 = false;
@@ -349,16 +378,17 @@ public class BaseballTrivia
 		public static void mediumTrivia()
 			{
 				
-				int randomPick = (int) (Math.random() * 7) + 1;
+				
 				
 				
 				do
 					{
+						int randomPick = (int) (Math.random() * 7) + 1;
+						
 						if(m1 == false && randomPick == 1)
 							{
 								
-								randomPick += 3;
-								m1 = true;
+								
 								System.out.println();
 								System.out.println("Who holds the record for the most single season home runs?"
 										+ "\n\n\t1) Barry Bonds"
@@ -371,6 +401,10 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick += 3;
+								m1 = true;
+								
 								if (menuNum.equals("1"))
 									{
 										System.out.println("\nCorrect! You earned $565");
@@ -387,8 +421,7 @@ public class BaseballTrivia
 						if(m2 == false && randomPick == 2)
 							{
 						
-								randomPick += 3;
-								m2 = true;
+								
 								System.out.println();
 								System.out.println("Who has thrown the hardest, verified pitch ever recorded in MLB history?"
 										+ "\n\n\t1) John Cena"
@@ -401,6 +434,10 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick += 3;
+								m2 = true;
+								
 								if (menuNum.equals("3"))
 									{
 										System.out.println("Correct! You earned $615");
@@ -417,8 +454,7 @@ public class BaseballTrivia
 						if(m3 == false && randomPick == 3)
 							{
 						
-								randomPick += 3;
-								m3 = true;
+								
 								System.out.println();
 								System.out.println("Who was the first player to throw a pitch over 100 mph?"
 										+ "\n\n\t1) Randy Johnson"
@@ -431,6 +467,11 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick += 3;
+								m3 = true;
+								
+								
 							if (menuNum.equals("4"))
 								{
 									System.out.println("\nCorrect! You earned $415");
@@ -447,8 +488,7 @@ public class BaseballTrivia
 						if(m4 == false && randomPick == 4)
 							{
 								
-								randomPick += 3;
-								m4 = true;
+								
 								System.out.println();
 								System.out.println("What is the distance between home plate and the pitcher's rubber?"
 										+ "\n\n\t1) 58 feet 6 inches"
@@ -461,6 +501,10 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick += 3;
+								m4 = true;
+								
 								if (menuNum.equals("4"))
 									{
 										System.out.println("\nCorrect! You earned $400");
@@ -477,8 +521,7 @@ public class BaseballTrivia
 						if(m5 == false && randomPick == 5)
 							{
 								
-								randomPick = 1;
-								m5 = true;
+								
 								System.out.println();
 								System.out.println("How many laces are on a baseball?"
 										+ "\n\n\t1) 108"
@@ -491,6 +534,10 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+							//	randomPick = 1;
+								m5 = true;
+								
 								if (menuNum.equals("1"))
 									{
 										System.out.println("\nCorrect! You earned $645");
@@ -507,8 +554,7 @@ public class BaseballTrivia
 						if(m6 == false && randomPick == 6)
 							{
 								
-								randomPick = 2;
-								m6 = true;
+								
 								System.out.println();
 								System.out.println("The Brooklyn ''Dodgers'' nickname originally refered to dodging ________?"
 										+ "\n\n\t1) City Buses"
@@ -521,6 +567,10 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+								//randomPick = 2;
+								m6 = true;
+								
 								if (menuNum.equals("4"))
 									{
 										System.out.println("\nCorrect! You earned $555");
@@ -537,8 +587,7 @@ public class BaseballTrivia
 						if(m7 == false && randomPick == 7)
 							{
 								
-								randomPick = 3;
-								m7 = true;
+								
 								System.out.println();
 								System.out.println("Who holds the record for most hits in a single season?"
 										+ "\n\n\t1) Ichiro Suzuki"
@@ -551,6 +600,11 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+							//	randomPick = 3;
+								m7 = true;
+								
+								
 								if (menuNum.equals("1"))
 									{
 										System.out.println("\nCorrect! You earned $485");
@@ -566,6 +620,9 @@ public class BaseballTrivia
 						
 						if (m1 == true && m2 == true && m3 == true && m4 == true && m5 == true && m6 == true && m7 == true)
 							{
+								
+								System.out.println("You have now completed all of the ''medium'' level trivia");
+								System.out.println("Now...");
 								
 								m1 = false;
 								m2 = false;
@@ -593,22 +650,32 @@ public class BaseballTrivia
 //hard Trivia	
 		public static void hardTrivia()
 			{
-				int randomPick = (int) (Math.random() * 7) + 1;
+				
 				
 				
 				do
 					{
+						int randomPick = (int) (Math.random() * 7) + 1;
 						
 						if(h1 == false && randomPick == 1)
 							{
 								
-								randomPick += 3;
-								h1 = true;
+								
 								System.out.println();
 								System.out.println("Name one of the first five members inducted into the baseball Hall of Fame"
 										+ "\n(first and last name)");
 								System.out.println();
 								hardTA = hardTriviaR.nextLine();
+								
+								
+								if(hardTA.equals("99"))
+									{
+										PlayGame.simMenu();
+									}
+								
+								//randomPick += 3;
+								h1 = true;
+								
 								
 								if (hardTA.equals("Babe Ruth") || hardTA.equals("babe ruth") || hardTA.equals("BABE RUTH") || hardTA.equals("Babe ruth"))
 									{
@@ -641,10 +708,7 @@ public class BaseballTrivia
 										System.out.println("\nCorrect! You earned $1050");
 										PlayerInfo.playerMoney += 1050;
 									}
-								if(hardTA.equals("99"))
-									{
-										PlayGame.simMenu();
-									}
+								
 								else
 									{
 										
@@ -659,12 +723,21 @@ public class BaseballTrivia
 						if(h2 == false && randomPick == 2)
 							{
 						
-								randomPick += 3;
-								h2 = true;
+								
 								System.out.println();
 								System.out.println("What team did Babe Ruth hit his first career MLB home run against?");
 								System.out.println();
 								hardTA = hardTriviaR.nextLine();
+								
+								
+								
+								if(hardTA.equals("99"))
+									{
+										PlayGame.simMenu();
+									}
+								
+								//randomPick += 3;
+								h2 = true;
 								
 								if (hardTA.equals("New York Yankees") || hardTA.equals("new york yankees") || hardTA.equals("NEW YORK YANKEES") || hardTA.equals("New York yankees")
 										|| hardTA.equals("Yankees") || hardTA.equals("yankees") || hardTA.equals("YANKEES"))
@@ -673,10 +746,7 @@ public class BaseballTrivia
 										System.out.println("\nCorrect! You earned $925");
 										PlayerInfo.playerMoney += 925;
 									}
-								if(hardTA.equals("99"))
-									{
-										PlayGame.simMenu();
-									}
+								
 								else
 									{
 										System.out.println("\nIncorrect, you lost $250");
@@ -689,12 +759,21 @@ public class BaseballTrivia
 						if(h3 == false && randomPick == 3)
 							{
 						
-								randomPick += 3;
-								h3 = true;
+								
 								System.out.println();
 								System.out.println("What famous Atlanta Braves manager was ejected from a record 162 MLB games?");
 								System.out.println();
 								hardTA = hardTriviaR.nextLine();
+								
+								
+								
+								if(hardTA.equals("99"))
+									{
+										PlayGame.simMenu();
+									}
+								
+							//	randomPick += 3;
+								h3 = true;
 								
 								if (hardTA.equals("Bobby Cox") || hardTA.equals("bobby cox") || hardTA.equals("Bobby Cox") || hardTA.equals("Bobby cox"))
 									{
@@ -702,10 +781,7 @@ public class BaseballTrivia
 										System.out.println("\nCorrect! You earned $1090");
 										PlayerInfo.playerMoney += 1090;
 									}
-								if(hardTA.equals("99"))
-									{
-										PlayGame.simMenu();
-									}
+								
 								else
 									{
 										System.out.println("\nIncorrect, you lost $100");
@@ -718,12 +794,21 @@ public class BaseballTrivia
 						if(h4 == false && randomPick == 4)
 							{
 								
-								randomPick += 3;
-								h4 = true;
+								
 								System.out.println();
 								System.out.println("Who was the first Major League player to have his number retired?");
 								System.out.println();
 								hardTA = hardTriviaR.nextLine();
+								
+								
+								
+								if(hardTA.equals("99"))
+									{
+										PlayGame.simMenu();
+									}
+								
+							//	randomPick += 3;
+								h4 = true;
 								
 								if (hardTA.equals("Lou Gehrig") || hardTA.equals("lou gehrig") || hardTA.equals("LOU GEHRIG") || hardTA.equals("Lou gehrig"))
 									{
@@ -731,10 +816,7 @@ public class BaseballTrivia
 										System.out.println("\nCorrect! You earned $915");
 										PlayerInfo.playerMoney += 915;
 									}
-								if(hardTA.equals("99"))
-									{
-										PlayGame.simMenu();
-									}
+								
 								else
 									{
 										System.out.println("\nIncorrect, you lost $125");
@@ -747,23 +829,30 @@ public class BaseballTrivia
 						if(h5 == false && randomPick == 5)
 							{
 								
-								randomPick = 1;
-								h5 = true;
+								
 								System.out.println();
 								System.out.println("Which MLB pitcher threw a no-hitter without a right hand?");
 								System.out.println();
 								hardTA = hardTriviaR.nextLine();
 										
+								
+								
+								if(hardTA.equals("99"))
+									{
+										PlayGame.simMenu();
+									}
+								
+							//	randomPick = 1;
+								h5 = true;
+								
+								
 								if (hardTA.equals("Jim Abbot") || hardTA.equals("jim abbot") || hardTA.equals("JIM ABBOT") || hardTA.equals("Jim abbot"))
 									{
 												
 										System.out.println("\nCorrect! You earned $845");
 										PlayerInfo.playerMoney += 845;
 									}
-								if(hardTA.equals("99"))
-									{
-										PlayGame.simMenu();
-									}
+								
 								else
 									{
 										System.out.println("\nIncorrect");
@@ -775,8 +864,7 @@ public class BaseballTrivia
 						if(h6 == false && randomPick == 6)
 							{
 								
-								randomPick = 2;
-								h6 = true;
+								
 								System.out.println();
 								System.out.println("What is the lowest recorded attendance for an MLB game?");
 								System.out.println("(answer in number of people)");
@@ -787,6 +875,11 @@ public class BaseballTrivia
 									{
 										PlayGame.simMenu();
 									}
+								
+							//	randomPick = 2;
+								h6 = true;
+								
+								
 								if (hardTA.equals("0"))
 									{
 												
@@ -804,12 +897,21 @@ public class BaseballTrivia
 						if(h7 == false && randomPick == 7)
 							{
 								
-								randomPick = 3;
-								h7 = true;
+								
 								System.out.println();
 								System.out.println("What female pitcher struct out both Lou Gehrig and Babe Ruth?");
 								System.out.println();
 								hardTA = hardTriviaR.nextLine();
+								
+								
+								if(hardTA.equals("99"))
+									{
+										PlayGame.simMenu();
+									}
+								
+							//	randomPick = 3;
+								h7 = true;
+								
 								
 								if (hardTA.equals("Jackie Mitchell") || hardTA.equals("jackie mitchell") || hardTA.equals("JACKIE MITCHELL") || hardTA.equals("Jackie mitchell"))
 									{
@@ -817,10 +919,7 @@ public class BaseballTrivia
 										System.out.println("\nCorrect! You earned $1500");
 										PlayerInfo.playerMoney += 1500;
 									}
-								if(hardTA.equals("99"))
-									{
-										PlayGame.simMenu();
-									}
+								
 								else
 									{
 										System.out.println("\nIncorrect");
@@ -831,6 +930,8 @@ public class BaseballTrivia
 						
 						if (h1 == true && h2 == true && h3 == true && h4 == true && h5 == true && h6 == true && h7 == true)
 							{
+								System.out.println("You have now completed all of the ''hard'' level trivia");
+								System.out.println("Now...");
 								
 								h1 = false;
 								h2 = false;
