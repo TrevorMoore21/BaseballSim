@@ -10,8 +10,8 @@ public class PlayerInfo
 		//static ArrayList<String> team = new ArrayList<String>();
 		static ArrayList<AllStarPlayer> team = new ArrayList<AllStarPlayer>();
 		
-		static String [][] playerPitchers = new String[12][14];
-		static String [][] playerHitters = new String[8][13];
+//		static String [][] playerPitchers = new String[12][14];
+//		static String [][] playerHitters = new String[8][13];
 		
 		
 		
@@ -45,11 +45,11 @@ public class PlayerInfo
 		
 		
 		
+		/*
 		
 		
 		
-		
-		
+		//DOES NOT WORK BRUH
 		
 //fills TWO 2D arrays with Player's team when STARTING the game
 		public static void playerTeam()
@@ -75,11 +75,6 @@ public class PlayerInfo
 									playerPitchers[i+9][i] = TxtReader.player[i].getStrikeOut();
 									playerPitchers[i+10][i] = TxtReader.player[i].getHitByPitch();
 									playerPitchers[i+11][i] = TxtReader.player[i].getInningsPitched();
-									
-									
-									
-									
-									
 									
 						}
 				}
@@ -111,64 +106,112 @@ public class PlayerInfo
 								
 						}
 				}
+			}
+			*/
 			
 			
 			
-			
-			
-		}
+		
 		
 		
 		
 //Player Stats				
 		public static void displayPlayerStats()
 			{
-				System.out.println();
-				System.out.println(playerName + "'s current balance: $" + playerMoney);
-				System.out.println();
-		
+				
+				displayPlayerStats();
+				displayPlayerTeam();
 			}
 		
 		
-		
+		public static void displayPlayerMoney()
+			{
+			
+				System.out.println();
+				System.out.println(playerName + "'s current balance: $" + playerMoney);
+				System.out.println();
+			
+			}
 		
 		
 		
 		public static void displayPlayerTeam()
 			{
+				displayPitchers();
+				displayHitters();
+		
+			}
+		
+		
+		public static void displayPitchers()
+		{
+			for (int i = 0; i <= 20; i++) 
+				{
+					if (team.get(i).getType().equals("Pitcher"))
+						{
+
+							String t2 = team.get(i).getType2();
+							String fn = team.get(i).getFirstName();
+							String ln = team.get(i).getLastName();
+							String rare = team.get(i).getRarity();
+							int yp = team.get(i).getYearsPlayed();
+							int g = ((BSPitchers) team.get(i)).getGamesPlayed();
+							int bf = ((BSPitchers) team.get(i)).getBattersFaced();
+							int h = ((BSPitchers) team.get(i)).getHitsAllowed();
+							int w = ((BSPitchers) team.get(i)).getWalks();
+							int s = ((BSPitchers) team.get(i)).getStrikeOut();
+							int hbp = ((BSPitchers) team.get(i)).getHitByPitch();
+							double ip =  ((BSPitchers) team.get(i)).getInningsPitched();
+							
+							
+							System.out.println("Position" + "\tFirst Name" +"\tLast Name" + "\tRarity" + "\tYears Played"
+									+ "\tGames Played" + "\tBattersFaced" + "\tHits Allowed" + "\tWalks" + "\tStrike Outs"
+											+ "\tHit by Pitch" + "\tInnings Pitched");
+							System.out.println();
+							System.out.println(t2 + "\t" + fn + " " + ln + "\t" + rare + "\t" + yp + "\t" + g + "\t" + bf + "\t"
+									+ h + "\t" + w + "\t" + s + "\t" + hbp + "\t" + ip);
+							
+						}
+				}
+		}
+		
+		public static void displayHitters()
+			{
 				for (int i = 0; i <= 20; i++) 
 					{
-						if (TxtReader.player[i].getType().equals("Pitcher"))
+					
+						if (team.get(i).getType().equals("Hitter"))
 							{
 
-								team[i] = TxtReader.player[i].getType2();
-								team[i] = TxtReader.player[i].getFirstName();
-								team[i] = TxtReader.player[i].getLastName();
-								playerPitchers[i+3][i] = TxtReader.player[i].getRarity();
-								playerPitchers[i+4][i] = TxtReader.player[i].getYearsPlayed();
-								playerPitchers[i+5][i] = TxtReader.player[i].getGamesPlayed();
-								playerPitchers[i+6][i] = TxtReader.player[i].getBattersFaced();
-								playerPitchers[i+7][i] = TxtReader.player[i].getHitsAllowed();
-								playerPitchers[i+8][i] = TxtReader.player[i].getWalks();
-								playerPitchers[i+9][i] = TxtReader.player[i].getStrikeOut();
-								playerPitchers[i+10][i] = TxtReader.player[i].getHitByPitch();
-								playerPitchers[i+11][i] = TxtReader.player[i].getInningsPitched();
+								String t2 = team.get(i).getType2();
+								String fn = team.get(i).getFirstName();
+								String ln = team.get(i).getLastName();
+								String rare = team.get(i).getRarity();
+								int yp = team.get(i).getYearsPlayed();
+								
+								
+								fix these fool
+								
+								int pa = team.get(i).getYearsPlayed();
+								int ab = team.get(i).getYearsPlayed();
+								int rbi = team.get(i).getYearsPlayed();
+								int bb = team.get(i).getYearsPlayed();
+								int hr = team.get(i).getYearsPlayed();
+								
+								THESE SYSOs dont work fool
+								System.out.println("Position" + "\tFirst Name" +"\tLast Name" + "\tRarity" + "\tYears Played"
+										+ "\tGames Played" + "\tBattersFaced" + "\tHits Allowed" + "\tWalks" + "\tStrike Outs"
+												+ "\tHit by Pitch" + "\tInnings Pitched");
+								System.out.println();
+								System.out.println(t2 + "\t" + fn + " " + ln + "\t" + rare + "\t" + yp + "\t" + g + "\t" + bf + "\t"
+										+ h + "\t" + w + "\t" + s + "\t" + hbp + "\t" + ip);
 								
 								
 								
 								
-							}
-						if (TxtReader.player[i].getType().equals("Hitter"))
-							{
-
-
-								
-								
-								
-								
+							
 							}
 					}
-		
 			}
 		
 		
