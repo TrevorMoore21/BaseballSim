@@ -5,8 +5,9 @@ public class BSHitters extends AllStarPlayer
 		private int plateAppearances, atBats, runsBattedIn, hits, baseOnBalls, homeRuns;
 		
 		public BSHitters(String t, String t2, String fn, String ln, String rare, String o,
-				         int yp, int c, int p, int a, int r, int h, int bb, int hr)
+				         int yp, int c, int p, int a, int r, int h, int bb, int hr,int pn)
 			{
+				
 				setType(t);
 				setType2(t2);
 				setFirstName(fn);
@@ -21,6 +22,7 @@ public class BSHitters extends AllStarPlayer
 				hits = h;
 				baseOnBalls = bb;
 				homeRuns = hr;
+				setPlayerN(pn);
 				
 			}
 

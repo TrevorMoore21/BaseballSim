@@ -17,11 +17,11 @@ public class Simulation
 			if (playerTeam.equals("yes") || playerTeam.equals("Yes") || playerTeam.equals("YES"))
 				{
 					PlayerInfo.displayPlayerStats();
-					simMenu();
+					simTeams();
 				}
 			else if (playerTeam.equals("no") || playerTeam.equals("No") || playerTeam.equals("NO"))
 				{
-					simMenu();
+					simTeams();
 				}
 			else
 				{
@@ -31,7 +31,7 @@ public class Simulation
 		}
 		
 //Pick team to play
-		public static void simMenu()
+		public static void simTeams()
 			{
 				
 				System.out.println();
@@ -47,6 +47,10 @@ public class Simulation
 		
 				if(menuNum2 == 1)
 					{
+						
+						
+						Manually add players to teams by .getPlayerN?
+						
 						
 					}
 				if(menuNum2 == 2)

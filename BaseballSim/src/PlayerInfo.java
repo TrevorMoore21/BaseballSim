@@ -18,7 +18,7 @@ public class PlayerInfo
 		
 		
 //starts game with giving player all of the coal players to make a team
-		public static void setCoalOwner()
+		public static void introFillTeam()
 		{
 			for (int i = 0; i <= 20; i++) 
 				{
@@ -119,11 +119,15 @@ public class PlayerInfo
 		public static void displayPlayerStats()
 			{
 				
-				displayPlayerStats();
+				displayPlayerMoney();
 				displayPlayerTeam();
 			}
 		
 		
+		
+		
+		
+//Player Money
 		public static void displayPlayerMoney()
 			{
 			
@@ -134,7 +138,10 @@ public class PlayerInfo
 			}
 		
 		
+
 		
+		
+//Display FULL Team
 		public static void displayPlayerTeam()
 			{
 				displayPitchers();
@@ -142,10 +149,18 @@ public class PlayerInfo
 		
 			}
 		
-		
+//Print Pitchers	
 		public static void displayPitchers()
 		{
-			for (int i = 0; i <= 20; i++) 
+			
+			System.out.println();
+			System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
+								+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
+								+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
+			System.out.println();
+			
+			
+			for (int i = 0; i <= 19; i++) 
 				{
 					if (team.get(i).getType().equals("Pitcher"))
 						{
@@ -164,20 +179,26 @@ public class PlayerInfo
 							double ip =  ((BSPitchers) team.get(i)).getInningsPitched();
 							
 							
-							System.out.println("Position" + "\tFirst Name" +"\tLast Name" + "\tRarity" + "\tYears Played"
-									+ "\tGames Played" + "\tBattersFaced" + "\tHits Allowed" + "\tWalks" + "\tStrike Outs"
-											+ "\tHit by Pitch" + "\tInnings Pitched");
-							System.out.println();
-							System.out.println(t2 + "\t" + fn + " " + ln + "\t" + rare + "\t" + yp + "\t" + g + "\t" + bf + "\t"
-									+ h + "\t" + w + "\t" + s + "\t" + hbp + "\t" + ip);
-							
+							System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
+												+ yp + "     " + g + "     " + bf + "     " + h + "     " 
+												+ w + "     " + s + "     " + hbp + "     " + ip);
 						}
 				}
 		}
 		
+		
+//Print Hitters		
 		public static void displayHitters()
 			{
-				for (int i = 0; i <= 20; i++) 
+				
+				System.out.println();
+				System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
+						+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
+						+ "     HomeRuns" + "     RBIs");
+				System.out.println();
+				
+				
+				for (int i = 0; i <= 19; i++) 
 					{
 					
 						if (team.get(i).getType().equals("Hitter"))
@@ -188,28 +209,18 @@ public class PlayerInfo
 								String ln = team.get(i).getLastName();
 								String rare = team.get(i).getRarity();
 								int yp = team.get(i).getYearsPlayed();
-								
-								
-								fix these fool
-								
-								int pa = team.get(i).getYearsPlayed();
-								int ab = team.get(i).getYearsPlayed();
-								int rbi = team.get(i).getYearsPlayed();
-								int bb = team.get(i).getYearsPlayed();
-								int hr = team.get(i).getYearsPlayed();
-								
-								THESE SYSOs dont work fool
-								System.out.println("Position" + "\tFirst Name" +"\tLast Name" + "\tRarity" + "\tYears Played"
-										+ "\tGames Played" + "\tBattersFaced" + "\tHits Allowed" + "\tWalks" + "\tStrike Outs"
-												+ "\tHit by Pitch" + "\tInnings Pitched");
-								System.out.println();
-								System.out.println(t2 + "\t" + fn + " " + ln + "\t" + rare + "\t" + yp + "\t" + g + "\t" + bf + "\t"
-										+ h + "\t" + w + "\t" + s + "\t" + hbp + "\t" + ip);
+								int pa = ((BSHitters) team.get(i)).getPlateAppearances();
+								int ab = ((BSHitters) team.get(i)).getAtBats();
+								int rbi = ((BSHitters) team.get(i)).getRunsBattedIn();
+								int h = ((BSHitters) TxtReader.player[i]).getHits();
+								int bb = ((BSHitters) team.get(i)).getBaseOnBalls();
+								int hr = ((BSHitters) team.get(i)).getHomeRuns();
 								
 								
 								
-								
-							
+								System.out.println("   " + t2 + "     " + fn + " " + ln + "     " + rare + "     " 
+													+ yp + "     " + pa + "     " + ab + "     "
+													+ h + "     " + bb + "     " + hr + "     " + rbi);
 							}
 					}
 			}
@@ -217,3 +228,18 @@ public class PlayerInfo
 		
 	}
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

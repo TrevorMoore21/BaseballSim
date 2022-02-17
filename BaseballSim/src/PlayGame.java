@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PlayGame
 	{
 
-		static int menuNum;
+		static String menuNum;
 		static Scanner simMenuInput = new Scanner(System.in);
 		
 		
@@ -17,23 +17,28 @@ public class PlayGame
 						+ "\n\n\t1) Play a round of Trivia"
 						+ "\n\t2) Play a Simulated Game"
 						+ "\n\t3) Review Rules");
-				menuNum = simMenuInput.nextInt();
+				menuNum = simMenuInput.nextLine();
 				
 				
-				if(menuNum == 1)
+				if(menuNum.equals("1"))
 					{
 						
 						BaseballTrivia.triviaMenu();
 					}
-				else if(menuNum == 2)
+				else if(menuNum.equals("2"))
 					{
 						
 						Simulation.simIntro();
 					}
-				else if(menuNum == 3)
+				else if(menuNum.equals("3"))
 					{
 						GreetSimPlayer.displayRule();
 						System.out.println();
+						System.out.println();
+						simMenu();
+					}
+				else if(menuNum.equals("99"))
+					{
 						System.out.println();
 						simMenu();
 					}

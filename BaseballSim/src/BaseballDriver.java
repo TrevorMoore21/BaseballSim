@@ -15,7 +15,11 @@ public class BaseballDriver
 				
 				
 				GreetSimPlayer.simIntro();
-				PlayerInfo.setCoalOwner();
+				PlayerInfo.introFillTeam();
+				
+				
+				PlayerInfo.displayPlayerStats();
+				
 				GreetSimPlayer.displayRule();
 				GreetSimPlayer.playOrNaw();
 				

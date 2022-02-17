@@ -21,6 +21,7 @@ public class TxtReader
 	        	  if(type.equals("Pitcher"))
 	        		  {
 	        			 
+
 	        					 String t2 = file.next();
 	        					 String fn = file.next();
 	        					 String ln = file.next();
@@ -35,16 +36,17 @@ public class TxtReader
 	        					 int s = file.nextInt();
 	        					 int hbp = file.nextInt();
 	        					 double ip = file.nextDouble();
-	        					 
+	        			  		 int pn = file.nextInt();
 	        					
 	        					  
-	        					 player[i] = new BSPitchers("Pitcher", t2, fn, ln, rare, o, yp, c, g, bf, h, w, s, hbp, ip);
+	        					 player[i] = new BSPitchers("Pitcher", t2, fn, ln, rare, o, yp, c, g, bf, h, w, s, hbp, ip, pn);
 	        		  }		
 	        	  
 //reads Hitters and puts them into an array
 	        	  if(type.equals("Hitter"))
 	        		  {
 	        			 
+	        			  		 
 	        					 String t2 = file.next();
 	        					 String fn = file.next();
 	        					 String ln = file.next();
@@ -58,10 +60,10 @@ public class TxtReader
 	        					 int h = file.nextInt();
 	        					 int bb = file.nextInt();
 	        					 int hr = file.nextInt();
-	        					 
+	        			  		 int pn = file.nextInt();
 	        					
 	        					  
-	        					 player[i] = new BSHitters("Hitter", t2, fn, ln, rare, o, yp, c, p, a, r, h, bb, hr);
+	        					 player[i] = new BSHitters("Hitter", t2, fn, ln, rare, o, yp, c, p, a, r, h, bb, hr, pn);
 	        		  }
 	          }
 		

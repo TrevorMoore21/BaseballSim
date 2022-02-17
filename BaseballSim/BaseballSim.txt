@@ -1,101 +1,101 @@
 100
-Pitcher Starter Bart Simpinini Coal none 4 535 41 801 368 127 114 51 143.0
-Pitcher Starter Donald Duckins Coal none 1 630 17 304 137 97 49 9 98.2
-Pitcher Starter Foo Kopper Coal none 2 720 37 1036 435 410 170 21 148.1 
-Pitcher Starter Jimi Neutron Coal none 3 565 43 771 313 270 75 38 163.2
-Pitcher Starter Winnie Poonogin Coal none 3 685 34 637 271 208 96 24 104.2
-Pitcher Reliever Buzz Pelakai Coal none 1 540 12 288 119 103 28 7 41.1
-Pitcher Reliever Shaggy Scooberdik Coal none 2 680 14 301 130 93 39 5 60.2
-Pitcher Reliever Shi Fu Coal none 5 635 69 538 225 163 79 18 138.2
-Pitcher Reliever Skipper Penguini Coal none 2 570 22 346 138 109 49 21 35.2
-Pitcher Reliever Stewie Garfield Coal none 1 650 18 313 129 99 43 17 69.0
-Pitcher Reliever Thaddeus Castle Coal none 3 720 34 652 283 211 89 13 58.0
-Pitcher Reliever Thumper Glumpy Coal none 2 545 29 598 259 194 104 30 96.0
-Hitter C Finn Naveen Coal none 3 625 1110 1043 131 187 49 12
-Hitter 1st Fred Capone Coal none 2 725 740 674 88 132 39 9
-Hitter MI Jafar Thatch Coal none 2 660 756 682 93 123 52 4
-Hitter 3rd Kermit Brockman Coal none 1 500 384 325 39 66 42 2
-Hitter MI Thimmy Thurner Coal none 4 740 1511 1344 169 267 123 18
-Hitter OF Krusty Zoku Coal none 1 520 347 291 45 50 38 3
-Hitter OF Flynn Tennyson Coal none 2 585 711 668 81 142 36 8
-Hitter OF Ned Flanders Coal none 3 610 1036 923 139 199 74 21
-Pitcher Starter Bob Feller Silver none 18 3545 570 16180 3271 1764 2581 60 3827.0
-Pitcher Starter Bob Gibson Silver none 17 3670 528 16068 3279 1336 3117 102 3884.1
-Pitcher Starter Cy Young Gold none 22 4970 906 29565 7092 1217 2803 161 7356.0
-Pitcher Starter Don Drysdale Bronze none 14 1950 518 14097 3084 855 2486 154 3432.0
-Pitcher Starter Gerrit Cole Bronze none 9 2130 234 5857 1238 373 1673 46 1449.1
-Pitcher Starter Greg Maddux Platinum none 23 8290 744 20421 4726 999 3371 137 5008.1
-Pitcher Starter Max Scherzer Silver none 14 3470 407 10266 2072 677 3020 96 2536.2
-Pitcher Starter Mike Mussina Silver none 18 3890 537 14593 3460 785 2813 60 3562.2
-Pitcher Starter Nolan Ryan Platinum none 27 8345 807 22575 3923 2795 5714 158 5386.0
-Pitcher Starter Pedro Martinez Gold none 18 4895 476 11394 2221 760 3154 141 2827.1
-Pitcher Starter Randy Johnson Platinum none 22 8655 618 17067 3346 1497 4875 190 4135.1
-Pitcher Starter Roger Clemens Gold none 24 5000 709 20240 4185 1580 4672 159 4916.2
-Pitcher Starter Roy Halladay Silver none 16 3665 416 11287 2646 592 2117 81 2749.1
-Pitcher Starter Sandy Koufax Silver none 12 3525 397 9497 1754 817 2396 18 2324.1
-Pitcher Starter Satchel Paige Gold none 21 5000 391 4515 1411 440 1438 24 1695.0
-Pitcher Starter Tom Seaver Gold none 20 4675 656 19369 3971 1390 3640 76 4783.0
-Pitcher Starter Walter Johnson Silver none 21 3310 802 23415 4913 1363 3509 205 5914.1
-Pitcher Reliever Aroldis Chapman Bronze none 12 2110 624 2439 342 290 1002 29 603.2
-Pitcher Reliever Billy Wagner Silver none 16 3440 853 3600 601 300 1196 33 903.0
-Pitcher Reliever Bruce Sutter Bronze none 12 1890 661 4251 879 309 861 13 1042.0
-Pitcher Reliever Craig Kimbrel Bronze none 12 1720 646 2487 347 252 1026 26 628.1
-Pitcher Reliever Dan Quisenberry Bronze none 12 1785 674 4247 1064 162 379 7 1043.1
-Pitcher Reliever Dave Righetti Silver none 16 3815 718 5988 1287 591 1112 21 1403.2
-Pitcher Reliever Dennis Eckersley Gold none 24 4760 1071 13534 3076 738 2401 16 3285.2
-Pitcher Reliever Eric Gagne Bronze none 10 1995 402 2664 518 226 718 33 643.2
-Pitcher Reliever Goose Gossage Gold none 22 4655 1002 7507 1497 732 1502 47 1809.1
-Pitcher Reliever Jeff Reardon Silver none 16 3590 880 4720 1000 358 877 27 1132.1
-Pitcher Reliever John Franco Gold none 21 4570 1119 5312 1166 495 975 22 1245.2
-Pitcher Reliever Jonathan Papelbon Bronze none 12 2135 689 2938 572 185 808 34 725.2
-Pitcher Reliever Kent Tekulve Silver none 16 3785 1050 6001 1305 491 779 17 1436.2
-Pitcher Reliever Lee Smith Platinum none 18 7640 1022 5388 1133 486 1251 10 1289.1
-Pitcher Reliever Mariano Rivera Platinum none 19 8130 1115 5103 998 286 1173 46 1283.2
-Pitcher Reliever Robb Nen Bronze none 10 2020 643 1983 607 260 793 7 715.0
-Pitcher Reliever Rod Beck Bronze none 13 2045 704 3170 703 191 644 20 768.0
-Pitcher Reliever Rollie Fingers Silver none 17 3390 944 6942 1474 492 1299 39 1701.1
-Pitcher Reliever Ted Worrell Bronze none 10 1915 617 2893 608 247 628 7 693.2
-Pitcher Reliever Trevor Hoffman Silver none 18 3645 1035 4388 846 307 1133 9 1089.1
-Pitcher Reliever Tug McGraw Silver none 19 3860 824 6313 1318 582 1109 22 1514.2
-Hitter C Buster Posey Silver none 12 3750 5607 4970 729 1560 540 158
-Hitter C Ivan Rodriguez Gold none 21 4685 10270 9592 1332 2844 513 311
-Hitter C Johnny Bench Platinum none 17 7865 8674 7658 1376 2048 891 389
-Hitter C Mike Piazza Gold none 16 4915 7745 6911 1335 2127 759 427
-Hitter C Roy Campanella Silver none 18 3460 5648 4951 1017 1401 605 260
-Hitter C Yadier Molina Gold none 18 4845 8284 7555 998 2112 537 171
-Hitter C Yogi Berra Platinum none 19 8125 8364 7555 1430 2150 704 358
-Hitter 1st Albert Pujols Gold none 21 4670 12690 11114 2150 3301 1345 679
-Hitter 1st David Ortiz Silver none 18 3870 10740 9180 1014 3010 1412 118
-Hitter 1st Frank Thomas Silver none 19 3510 10075 8199 1704 2468 1667 521
-Hitter 1st Jimmie Foxx Gold none 20 4580 9677 8134 1922 2646 1452 534
-Hitter 1st Joey Votto Silver none 15 3675 8128 6722 1065 2027 1294 331
-Hitter 1st Lou Gehrig Gold none 17 4735 9665 8001 1995 2721 1508 493
-Hitter 1st Miguel Cabrera Silver none 19 3490 10993 9625 1804 2987 1199 502
-Hitter MI Cal Ripken_Jr. Gold none 21 4905 12883 11551 1695 3184 1129 431
-Hitter MI Derek Jeter Gold none 20 4825 12602 11195 1311 3465 1082 260
-Hitter MI Jackie Robinson Silver none 11 3485 5941 4997 761 1563 756 141
-Hitter MI Joe Morgan Gold none 22 4790 11329 9277 1133 2517 1865 268
-Hitter MI Luke Appling Gold none 20 4590 10254 8856 1116 2749 1302 45
-Hitter MI Ozzie Smith Silver none 19 3570 10778 9396 793 2460 1072 28
-Hitter MI Pee_Wee Reese Silver none 16 3705 9472 8058 885 2170 1210 126
-Hitter MI Robinson Cano Silver none 16 3815 9446 8673 1302 2624 616 334
-Hitter MI Ryne Sandberg Silver none 16 3730 9282 8385 1061 2386 761 282
-Hitter 3rd Adrian Beltre Gold none 21 4690 12130 11068 1707 3166 848 477
-Hitter 3rd Brooks Robinson Gold none 23 4535 11782 10654 1357 2848 860 268
-Hitter 3rd Chipper Jones Silver none 19 3405 10614 8984 1623 2726 1512 468
-Hitter 3rd Eddie Matthews Silver none 17 3785 10101 8537 1453 2315 1444 512
-Hitter 3rd Mike Schmidt Silver none 18 3805 10062 8352 1595 2234 1507 548
-Hitter 3rd Nolan Arenado Bronze none 9 1745 5211 4711 865 1357 412 269
-Hitter 3rd Wade Boggs Silver none 18 3305 10740 9180 1014 3010 1412 118
-Hitter OF Babe Ruth Platinum none 22 7780 10626 8399 2214 2873 2062 714
-Hitter OF Barry Bonds Gold none 22 4960 12606 9847 1996 2935 2558 762
-Hitter OF Frank Robinson Gold none 21 4815 11744 10006 1812 2943 1420 586
-Hitter OF Hank Aaron Gold none 23 4780 13941 12364 2297 3771 1402 755
-Hitter OF Joe Dimaggio Silver none 13 3870 7672 6821 1537 2214 790 361
-Hitter OF Ken Griffey_Jr. Gold none 22 4920 11304 9801 1836 2781 1312 630
-Hitter OF Mickey Mantle Gold none 18 4945 9910 8102 1509 2415 1733 536
-Hitter OF Mike Trout Bronze none 11 2175 5660 4656 816 1419 865 310
-Hitter OF Pete Rose Platinum none 24 7915 15890 14053 1314 4256 1566 160
-Hitter OF Ted Williams Gold none 19 4835 9792 7706 1836 2654 2021 521
-Hitter OF Tony Gwynn Gold none 20 4755 10232 9288 1138 3141 790 135
-Hitter OF Willie Mays Gold none 23 4885 12545 10924 1909 3293 1468 660
+Pitcher Starter Bart Simpinini Coal none 4 535 41 801 368 127 114 51 143.0 1
+Pitcher Starter Donald Duckins Coal none 1 630 17 304 137 97 49 9 98.2 2
+Pitcher Starter Foo Kopper Coal none 2 720 37 1036 435 410 170 21 148.1 3
+Pitcher Starter Jimi Neutron Coal none 3 565 43 771 313 270 75 38 163.2 4
+Pitcher Starter Winnie Poonogin Coal none 3 685 34 637 271 208 96 24 104.2 5
+Pitcher Reliever Buzz Pelakai Coal none 1 540 12 288 119 103 28 7 41.1 6
+Pitcher Reliever Shaggy Scooberdik Coal none 2 680 14 301 130 93 39 5 60.2 7
+Pitcher Reliever Shi Fu Coal none 5 635 69 538 225 163 79 18 138.2 8
+Pitcher Reliever Skipper Penguini Coal none 2 570 22 346 138 109 49 21 35.2 9
+Pitcher Reliever Stewie Garfield Coal none 1 650 18 313 129 99 43 17 69.0 10
+Pitcher Reliever Thaddeus Castle Coal none 3 720 34 652 283 211 89 13 58.0 11
+Pitcher Reliever Thumper Glumpy Coal none 2 545 29 598 259 194 104 30 96.0 12
+Hitter C Finn Naveen Coal none 3 625 1110 1043 131 187 49 12 13
+Hitter 1st Fred Capone Coal none 2 725 740 674 88 132 39 9 14
+Hitter MI Jafar Thatch Coal none 2 660 756 682 93 123 52 4 15
+Hitter 3rd Kermit Brockman Coal none 1 500 384 325 39 66 42 2 16
+Hitter MI Thimmy Thurner Coal none 4 740 1511 1344 169 267 123 18 17
+Hitter OF Krusty Zoku Coal none 1 520 347 291 45 50 38 3 18
+Hitter OF Flynn Tennyson Coal none 2 585 711 668 81 142 36 8 19
+Hitter OF Ned Flanders Coal none 3 610 1036 923 139 199 74 21 20
+Pitcher Starter Bob Feller Silver none 18 3545 570 16180 3271 1764 2581 60 3827.0 21
+Pitcher Starter Bob Gibson Silver none 17 3670 528 16068 3279 1336 3117 102 3884.1 22
+Pitcher Starter Cy Young Gold none 22 4970 906 29565 7092 1217 2803 161 7356.0 23
+Pitcher Starter Don Drysdale Bronze none 14 1950 518 14097 3084 855 2486 154 3432.0 24
+Pitcher Starter Gerrit Cole Bronze none 9 2130 234 5857 1238 373 1673 46 1449.1 25
+Pitcher Starter Greg Maddux Platinum none 23 8290 744 20421 4726 999 3371 137 5008.1 26
+Pitcher Starter Max Scherzer Silver none 14 3470 407 10266 2072 677 3020 96 2536.2 27
+Pitcher Starter Mike Mussina Silver none 18 3890 537 14593 3460 785 2813 60 3562.2 28 
+Pitcher Starter Nolan Ryan Platinum none 27 8345 807 22575 3923 2795 5714 158 5386.0 29 
+Pitcher Starter Pedro Martinez Gold none 18 4895 476 11394 2221 760 3154 141 2827.1 30
+Pitcher Starter Randy Johnson Platinum none 22 8655 618 17067 3346 1497 4875 190 4135.1 31
+Pitcher Starter Roger Clemens Gold none 24 5000 709 20240 4185 1580 4672 159 4916.2 32 
+Pitcher Starter Roy Halladay Silver none 16 3665 416 11287 2646 592 2117 81 2749.1 33
+Pitcher Starter Sandy Koufax Silver none 12 3525 397 9497 1754 817 2396 18 2324.1 34 
+Pitcher Starter Satchel Paige Gold none 21 5000 391 4515 1411 440 1438 24 1695.0 35
+Pitcher Starter Tom Seaver Gold none 20 4675 656 19369 3971 1390 3640 76 4783.0 36
+Pitcher Starter Walter Johnson Silver none 21 3310 802 23415 4913 1363 3509 205 5914.1 37
+Pitcher Reliever Aroldis Chapman Bronze none 12 2110 624 2439 342 290 1002 29 603.2 38
+Pitcher Reliever Billy Wagner Silver none 16 3440 853 3600 601 300 1196 33 903.0 39
+Pitcher Reliever Bruce Sutter Bronze none 12 1890 661 4251 879 309 861 13 1042.0 40
+Pitcher Reliever Craig Kimbrel Bronze none 12 1720 646 2487 347 252 1026 26 628.1 41
+Pitcher Reliever Dan Quisenberry Bronze none 12 1785 674 4247 1064 162 379 7 1043.1 42
+Pitcher Reliever Dave Righetti Silver none 16 3815 718 5988 1287 591 1112 21 1403.2 43 
+Pitcher Reliever Dennis Eckersley Gold none 24 4760 1071 13534 3076 738 2401 16 3285.2 44
+Pitcher Reliever Eric Gagne Bronze none 10 1995 402 2664 518 226 718 33 643.2 45
+Pitcher Reliever Goose Gossage Gold none 22 4655 1002 7507 1497 732 1502 47 1809.1 46
+Pitcher Reliever Jeff Reardon Silver none 16 3590 880 4720 1000 358 877 27 1132.1 47
+Pitcher Reliever John Franco Gold none 21 4570 1119 5312 1166 495 975 22 1245.2 48
+Pitcher Reliever Jonathan Papelbon Bronze none 12 2135 689 2938 572 185 808 34 725.2 49 
+Pitcher Reliever Kent Tekulve Silver none 16 3785 1050 6001 1305 491 779 17 1436.2 50
+Pitcher Reliever Lee Smith Platinum none 18 7640 1022 5388 1133 486 1251 10 1289.1 51 
+Pitcher Reliever Mariano Rivera Platinum none 19 8130 1115 5103 998 286 1173 46 1283.2 52
+Pitcher Reliever Robb Nen Bronze none 10 2020 643 1983 607 260 793 7 715.0 53
+Pitcher Reliever Rod Beck Bronze none 13 2045 704 3170 703 191 644 20 768.0 54
+Pitcher Reliever Rollie Fingers Silver none 17 3390 944 6942 1474 492 1299 39 1701.1 55
+Pitcher Reliever Ted Worrell Bronze none 10 1915 617 2893 608 247 628 7 693.2 56
+Pitcher Reliever Trevor Hoffman Silver none 18 3645 1035 4388 846 307 1133 9 1089.1 57
+Pitcher Reliever Tug McGraw Silver none 19 3860 824 6313 1318 582 1109 22 1514.2 58
+Hitter C Buster Posey Silver none 12 3750 5607 4970 729 1560 540 158 59 
+Hitter C Ivan Rodriguez Gold none 21 4685 10270 9592 1332 2844 513 311 60
+Hitter C Johnny Bench Platinum none 17 7865 8674 7658 1376 2048 891 389 61
+Hitter C Mike Piazza Gold none 16 4915 7745 6911 1335 2127 759 427 62
+Hitter C Roy Campanella Silver none 18 3460 5648 4951 1017 1401 605 260 63 
+Hitter C Yadier Molina Gold none 18 4845 8284 7555 998 2112 537 171 64 
+Hitter C Yogi Berra Platinum none 19 8125 8364 7555 1430 2150 704 358 65
+Hitter 1st Albert Pujols Gold none 21 4670 12690 11114 2150 3301 1345 679 66 
+Hitter 1st David Ortiz Silver none 18 3870 10740 9180 1014 3010 1412 118 67
+Hitter 1st Frank Thomas Silver none 19 3510 10075 8199 1704 2468 1667 521 68
+Hitter 1st Jimmie Foxx Gold none 20 4580 9677 8134 1922 2646 1452 534 69
+Hitter 1st Joey Votto Silver none 15 3675 8128 6722 1065 2027 1294 331 70
+Hitter 1st Lou Gehrig Gold none 17 4735 9665 8001 1995 2721 1508 493 71
+Hitter 1st Miguel Cabrera Silver none 19 3490 10993 9625 1804 2987 1199 502 72
+Hitter MI Cal Ripken_Jr. Gold none 21 4905 12883 11551 1695 3184 1129 431 73
+Hitter MI Derek Jeter Gold none 20 4825 12602 11195 1311 3465 1082 260 74
+Hitter MI Jackie Robinson Silver none 11 3485 5941 4997 761 1563 756 141 75
+Hitter MI Joe Morgan Gold none 22 4790 11329 9277 1133 2517 1865 268 76
+Hitter MI Luke Appling Gold none 20 4590 10254 8856 1116 2749 1302 45 77
+Hitter MI Ozzie Smith Silver none 19 3570 10778 9396 793 2460 1072 28 78
+Hitter MI Pee_Wee Reese Silver none 16 3705 9472 8058 885 2170 1210 126 79 
+Hitter MI Robinson Cano Silver none 16 3815 9446 8673 1302 2624 616 334 80 
+Hitter MI Ryne Sandberg Silver none 16 3730 9282 8385 1061 2386 761 282 81 
+Hitter 3rd Adrian Beltre Gold none 21 4690 12130 11068 1707 3166 848 477 82 
+Hitter 3rd Brooks Robinson Gold none 23 4535 11782 10654 1357 2848 860 268 83
+Hitter 3rd Chipper Jones Silver none 19 3405 10614 8984 1623 2726 1512 468 84
+Hitter 3rd Eddie Matthews Silver none 17 3785 10101 8537 1453 2315 1444 512 85
+Hitter 3rd Mike Schmidt Silver none 18 3805 10062 8352 1595 2234 1507 548 86
+Hitter 3rd Nolan Arenado Bronze none 9 1745 5211 4711 865 1357 412 269 87 
+Hitter 3rd Wade Boggs Silver none 18 3305 10740 9180 1014 3010 1412 118 88 
+Hitter OF Babe Ruth Platinum none 22 7780 10626 8399 2214 2873 2062 714 89
+Hitter OF Barry Bonds Gold none 22 4960 12606 9847 1996 2935 2558 762 90
+Hitter OF Frank Robinson Gold none 21 4815 11744 10006 1812 2943 1420 586 91
+Hitter OF Hank Aaron Gold none 23 4780 13941 12364 2297 3771 1402 755 92
+Hitter OF Joe Dimaggio Silver none 13 3870 7672 6821 1537 2214 790 361 93 
+Hitter OF Ken Griffey_Jr. Gold none 22 4920 11304 9801 1836 2781 1312 630 94
+Hitter OF Mickey Mantle Gold none 18 4945 9910 8102 1509 2415 1733 536 95
+Hitter OF Mike Trout Bronze none 11 2175 5660 4656 816 1419 865 310 96 
+Hitter OF Pete Rose Platinum none 24 7915 15890 14053 1314 4256 1566 160 97
+Hitter OF Ted Williams Gold none 19 4835 9792 7706 1836 2654 2021 521 98
+Hitter OF Tony Gwynn Gold none 20 4755 10232 9288 1138 3141 790 135 99
+Hitter OF Willie Mays Gold none 23 4885 12545 10924 1909 3293 1468 660 100
