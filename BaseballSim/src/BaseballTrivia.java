@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 
 
+
 public class BaseballTrivia
 	{
 
@@ -105,10 +106,7 @@ public class BaseballTrivia
 //easy Trivia
 		public static void easyTrivia()
 			{
-				
-				
-				
-				
+
 				do
 					{
 						int randomPick = (int) (Math.random() * 7) + 1;
@@ -136,7 +134,9 @@ public class BaseballTrivia
 								if (menuNum.equals("4"))
 									{
 										System.out.println("\nCorrect! You earned $265");
-										PlayerInfo.playerMoney += 265;		
+										PlayerInfo.playerMoney += 265;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
+												
 									}
 								else
 									{
@@ -169,6 +169,7 @@ public class BaseballTrivia
 									{
 										System.out.println("\nCorrect! You earned $345");
 										PlayerInfo.playerMoney += 345;	
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -202,6 +203,7 @@ public class BaseballTrivia
 								{
 									System.out.println("\nCorrect! You earned $375");
 									PlayerInfo.playerMoney += 375;
+									System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 								}
 							else
 								{
@@ -235,6 +237,7 @@ public class BaseballTrivia
 									{
 										System.out.println("\nCorrect! You earned $210");
 										PlayerInfo.playerMoney += 210;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -269,6 +272,7 @@ public class BaseballTrivia
 									{
 										System.out.println("\nCorrect! You earned $350");
 										PlayerInfo.playerMoney += 350;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -303,6 +307,7 @@ public class BaseballTrivia
 									{
 										System.out.println("\nCorrect! You earned $335");
 										PlayerInfo.playerMoney += 335;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -337,6 +342,7 @@ public class BaseballTrivia
 									{
 										System.out.println("\nCorrect! You earned $285");
 										PlayerInfo.playerMoney += 285;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -377,10 +383,7 @@ public class BaseballTrivia
 //medium Trivia
 		public static void mediumTrivia()
 			{
-				
-				
-				
-				
+
 				do
 					{
 						int randomPick = (int) (Math.random() * 7) + 1;
@@ -408,7 +411,8 @@ public class BaseballTrivia
 								if (menuNum.equals("1"))
 									{
 										System.out.println("\nCorrect! You earned $565");
-										PlayerInfo.playerMoney += 565;		
+										PlayerInfo.playerMoney += 565;	
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -442,6 +446,7 @@ public class BaseballTrivia
 									{
 										System.out.println("Correct! You earned $615");
 										PlayerInfo.playerMoney += 615;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -476,6 +481,7 @@ public class BaseballTrivia
 								{
 									System.out.println("\nCorrect! You earned $415");
 									PlayerInfo.playerMoney += 415;
+									System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 								}
 							else
 								{
@@ -509,6 +515,7 @@ public class BaseballTrivia
 									{
 										System.out.println("\nCorrect! You earned $400");
 										PlayerInfo.playerMoney += 400;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -542,6 +549,7 @@ public class BaseballTrivia
 									{
 										System.out.println("\nCorrect! You earned $645");
 										PlayerInfo.playerMoney += 645;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -575,6 +583,7 @@ public class BaseballTrivia
 									{
 										System.out.println("\nCorrect! You earned $555");
 										PlayerInfo.playerMoney += 555;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -609,6 +618,7 @@ public class BaseballTrivia
 									{
 										System.out.println("\nCorrect! You earned $485");
 										PlayerInfo.playerMoney += 485;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
@@ -650,9 +660,7 @@ public class BaseballTrivia
 //hard Trivia	
 		public static void hardTrivia()
 			{
-				
-				
-				
+
 				do
 					{
 						int randomPick = (int) (Math.random() * 7) + 1;
@@ -682,6 +690,7 @@ public class BaseballTrivia
 										
 										System.out.println("\nCorrect! You earned $1050");
 										PlayerInfo.playerMoney += 1050;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else if (hardTA.equals("Ty Cobbs") || hardTA.equals("ty cobbs") || hardTA.equals("TY COBBS") 
 										|| hardTA.equals("Ty Cobb") || hardTA.equals("ty cobb") || hardTA.equals("Ty cobbs") || hardTA.equals("Ty cobb"))
@@ -689,24 +698,28 @@ public class BaseballTrivia
 										
 										System.out.println("\nCorrect! You earned $1050");
 										PlayerInfo.playerMoney += 1050;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else if (hardTA.equals("Honus Wagner") || hardTA.equals("honus wagner") || hardTA.equals("HONUS WAGNER") || hardTA.equals("Honus wagner"))
 									{
 										
 										System.out.println("\nCorrect! You earned $1050");
 										PlayerInfo.playerMoney += 1050;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else if (hardTA.equals("Walter Johnson") || hardTA.equals("walter johnson") || hardTA.equals("WALTER JOHNSON") || hardTA.equals("Walter johnson"))
 									{
 										
 										System.out.println("\nCorrect! You earned $1050");
 										PlayerInfo.playerMoney += 1050;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else if (hardTA.equals("Christy Mathewson") || hardTA.equals("christy mathewson") || hardTA.equals("CHRISTY MATHEWSON") || hardTA.equals("Christy mathewson"))
 									{
 										
 										System.out.println("\nCorrect! You earned $1050");
 										PlayerInfo.playerMoney += 1050;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								
 								else
@@ -715,6 +728,7 @@ public class BaseballTrivia
 										System.out.println("\nIncorrect, you lost $200");
 										System.out.println("The five inducties are: Babe Ruth, Ty Cobbs, Honus Wagner, Walter Johnson, and Christy Mathewson");
 										PlayerInfo.playerMoney -= 200;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 							}
 					
@@ -745,6 +759,7 @@ public class BaseballTrivia
 										
 										System.out.println("\nCorrect! You earned $925");
 										PlayerInfo.playerMoney += 925;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								
 								else
@@ -752,6 +767,7 @@ public class BaseballTrivia
 										System.out.println("\nIncorrect, you lost $250");
 										System.out.println("Babe Ruth's first career MLB homerun was against the New York Yankees on May 6, 1915");
 										PlayerInfo.playerMoney -= 250;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 							}
 				
@@ -780,6 +796,7 @@ public class BaseballTrivia
 										
 										System.out.println("\nCorrect! You earned $1090");
 										PlayerInfo.playerMoney += 1090;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								
 								else
@@ -787,6 +804,7 @@ public class BaseballTrivia
 										System.out.println("\nIncorrect, you lost $100");
 										System.out.println("Legendary manager Bobby Cox holds the record for most MLB ejections");
 										PlayerInfo.playerMoney -= 100;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 							}
 						
@@ -815,6 +833,7 @@ public class BaseballTrivia
 										
 										System.out.println("\nCorrect! You earned $915");
 										PlayerInfo.playerMoney += 915;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								
 								else
@@ -822,6 +841,7 @@ public class BaseballTrivia
 										System.out.println("\nIncorrect, you lost $125");
 										System.out.println("Legendary player Lou Gehrig had his number retired on July 4, 1939");
 										PlayerInfo.playerMoney -= 125;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 							}
 
@@ -851,12 +871,15 @@ public class BaseballTrivia
 												
 										System.out.println("\nCorrect! You earned $845");
 										PlayerInfo.playerMoney += 845;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								
 								else
 									{
-										System.out.println("\nIncorrect");
+										System.out.println("\nIncorrect, you lost $75");
 										System.out.println("Jim Abbot threw a no-hitter and completed a successful 10 year career without a right hand");
+										PlayerInfo.playerMoney -= 75;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 							}
 	
@@ -885,11 +908,14 @@ public class BaseballTrivia
 												
 										System.out.println("\nCorrect! You earned $805");
 										PlayerInfo.playerMoney += 805;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								else
 									{
-										System.out.println("\nIncorrect");
+										System.out.println("\nIncorrect, you lost $55");
 										System.out.println("The lowest turnout for an MLB game was 0 people in 2015 at Oriole Park");
+										PlayerInfo.playerMoney -= 55;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 							}
 						
@@ -918,12 +944,15 @@ public class BaseballTrivia
 												
 										System.out.println("\nCorrect! You earned $1500");
 										PlayerInfo.playerMoney += 1500;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 								
 								else
 									{
-										System.out.println("\nIncorrect");
+										System.out.println("\nIncorrect, you lost $15");
 										System.out.println("Jackie Mitchell is the talented woman who struck out these two legends");
+										PlayerInfo.playerMoney -= 15;
+										System.out.println(PlayerInfo.playerName + ", your new balance is $" + PlayerInfo.playerMoney);
 									}
 							}
 						

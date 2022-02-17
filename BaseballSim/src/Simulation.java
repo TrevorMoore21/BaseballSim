@@ -49,7 +49,7 @@ public class Simulation
 					{
 						
 						
-						Manually add players to teams by .getPlayerN?
+						//Manually add players to teams by .getPlayerN?
 						
 						
 					}
