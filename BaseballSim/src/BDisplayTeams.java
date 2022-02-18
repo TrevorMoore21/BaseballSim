@@ -26,9 +26,14 @@ public class BDisplayTeams
 				{
 					
 					System.out.println();
-					System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-										+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
-										+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
+					System.out.printf("%-17s %-18s %-9s %-14s %-14s %-15s %-14s %-8s %-13s %-13s %-13s",  
+							"Position", "Name", "Rarity", "YearsPlayed", "GamesPlayed",
+							 "BattersFaced", "HitsAllowed", "Walks", "StrikeOuts",
+							  "HitByPitch" , "InningsPitched");
+					
+				//	System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
+				//						+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
+				//						+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
 					System.out.println();
 					
 					
@@ -50,10 +55,16 @@ public class BDisplayTeams
 									int hbp = ((BBSPitchers) BPlayerInfo.team.get(i)).getHitByPitch();
 									double ip =  ((BBSPitchers) BPlayerInfo.team.get(i)).getInningsPitched();
 									
+									System.out.printf("\n%-12s %-23s %-13s %-14s %-14s %-15s %-11s %-10s %-13s %-14s %-13s",
+											 t2, fn + " " + ln, rare, 
+											 yp, g, bf, h, 
+											 w, s, hbp, ip);
 									
-									System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-														+ yp + "     " + g + "     " + bf + "     " + h + "     " 
-														+ w + "     " + s + "     " + hbp + "     " + ip);
+									
+									
+									//System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
+										//				+ yp + "     " + g + "     " + bf + "     " + h + "     " 
+											//			+ w + "     " + s + "     " + hbp + "     " + ip);
 								}
 						}
 				}
@@ -63,6 +74,7 @@ public class BDisplayTeams
 				public static void displayPlayerHitters()
 					{
 						
+						System.out.println();
 						System.out.println();
 						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
 								+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
