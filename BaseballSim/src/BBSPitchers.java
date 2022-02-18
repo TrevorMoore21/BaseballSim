@@ -1,12 +1,12 @@
 
-public class BSPitchers extends AllStarPlayer
+public class BBSPitchers extends BAllStarPlayer
 	{
 
 		private int gamesPlayed, battersFaced, hitsAllowed, walks, strikeOut, hitByPitch;
 		private double inningsPitched;
 		
 		
-		public BSPitchers(String t, String t2, String fn, String ln, String rare, String o,
+		public BBSPitchers(String t, String t2, String fn, String ln, String rare, String o,
 						  int yp, int c, int g, int bf, int h, int w, int s, int hbp, double ip, int pn)
 		{
 			

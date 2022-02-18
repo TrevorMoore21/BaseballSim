@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 
-public class BaseballTrivia
+public class EBaseballTrivia
 	{
 
 		static int triviaMenuNum;
@@ -64,7 +64,7 @@ public class BaseballTrivia
 				{
 					
 					easyTrivia();
-					PlayGame.simMenu();
+					DPlayGame.simMenu();
 				}
 
 //Run Medium Trivia	
@@ -72,7 +72,7 @@ public class BaseballTrivia
 				{
 					
 					mediumTrivia();
-					PlayGame.simMenu();
+					DPlayGame.simMenu();
 				}
 			
 //Run Hard Trivia
@@ -80,11 +80,11 @@ public class BaseballTrivia
 				{
 					
 					hardTrivia();
-					PlayGame.simMenu();
+					DPlayGame.simMenu();
 				}
 			else if(triviaMenuNum == 99)
 				{
-					PlayGame.simMenu();
+					DPlayGame.simMenu();
 				}
 			
 			else
@@ -127,7 +127,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick += 3;
@@ -136,7 +136,7 @@ public class BaseballTrivia
 								if (menuNum.equals("4"))
 									{
 										System.out.println("\nCorrect! You earned $265");
-										PlayerInfo.playerMoney += 265;		
+										BPlayerInfo.playerMoney += 265;		
 									}
 								else
 									{
@@ -159,7 +159,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick += 3;
@@ -168,7 +168,7 @@ public class BaseballTrivia
 								if (menuNum.equals("3"))
 									{
 										System.out.println("\nCorrect! You earned $345");
-										PlayerInfo.playerMoney += 345;	
+										BPlayerInfo.playerMoney += 345;	
 									}
 								else
 									{
@@ -192,7 +192,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick += 3;
@@ -201,7 +201,7 @@ public class BaseballTrivia
 							if (menuNum.equals("2"))
 								{
 									System.out.println("\nCorrect! You earned $375");
-									PlayerInfo.playerMoney += 375;
+									BPlayerInfo.playerMoney += 375;
 								}
 							else
 								{
@@ -225,7 +225,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick += 3;
@@ -234,7 +234,7 @@ public class BaseballTrivia
 								if (menuNum.equals("2"))
 									{
 										System.out.println("\nCorrect! You earned $210");
-										PlayerInfo.playerMoney += 210;
+										BPlayerInfo.playerMoney += 210;
 									}
 								else
 									{
@@ -258,7 +258,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick = 1;
@@ -268,7 +268,7 @@ public class BaseballTrivia
 								if (menuNum.equals("3"))
 									{
 										System.out.println("\nCorrect! You earned $350");
-										PlayerInfo.playerMoney += 350;
+										BPlayerInfo.playerMoney += 350;
 									}
 								else
 									{
@@ -292,7 +292,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick = 2;
@@ -302,7 +302,7 @@ public class BaseballTrivia
 								if (menuNum.equals("1"))
 									{
 										System.out.println("\nCorrect! You earned $335");
-										PlayerInfo.playerMoney += 335;
+										BPlayerInfo.playerMoney += 335;
 									}
 								else
 									{
@@ -326,7 +326,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick = 3;
@@ -336,7 +336,7 @@ public class BaseballTrivia
 								if (menuNum.equals("2"))
 									{
 										System.out.println("\nCorrect! You earned $285");
-										PlayerInfo.playerMoney += 285;
+										BPlayerInfo.playerMoney += 285;
 									}
 								else
 									{
@@ -399,7 +399,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick += 3;
@@ -408,7 +408,7 @@ public class BaseballTrivia
 								if (menuNum.equals("1"))
 									{
 										System.out.println("\nCorrect! You earned $565");
-										PlayerInfo.playerMoney += 565;		
+										BPlayerInfo.playerMoney += 565;		
 									}
 								else
 									{
@@ -432,7 +432,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick += 3;
@@ -441,7 +441,7 @@ public class BaseballTrivia
 								if (menuNum.equals("3"))
 									{
 										System.out.println("Correct! You earned $615");
-										PlayerInfo.playerMoney += 615;
+										BPlayerInfo.playerMoney += 615;
 									}
 								else
 									{
@@ -465,7 +465,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick += 3;
@@ -475,7 +475,7 @@ public class BaseballTrivia
 							if (menuNum.equals("4"))
 								{
 									System.out.println("\nCorrect! You earned $415");
-									PlayerInfo.playerMoney += 415;
+									BPlayerInfo.playerMoney += 415;
 								}
 							else
 								{
@@ -499,7 +499,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick += 3;
@@ -508,7 +508,7 @@ public class BaseballTrivia
 								if (menuNum.equals("4"))
 									{
 										System.out.println("\nCorrect! You earned $400");
-										PlayerInfo.playerMoney += 400;
+										BPlayerInfo.playerMoney += 400;
 									}
 								else
 									{
@@ -532,7 +532,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 							//	randomPick = 1;
@@ -541,7 +541,7 @@ public class BaseballTrivia
 								if (menuNum.equals("1"))
 									{
 										System.out.println("\nCorrect! You earned $645");
-										PlayerInfo.playerMoney += 645;
+										BPlayerInfo.playerMoney += 645;
 									}
 								else
 									{
@@ -565,7 +565,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick = 2;
@@ -574,7 +574,7 @@ public class BaseballTrivia
 								if (menuNum.equals("4"))
 									{
 										System.out.println("\nCorrect! You earned $555");
-										PlayerInfo.playerMoney += 555;
+										BPlayerInfo.playerMoney += 555;
 									}
 								else
 									{
@@ -598,7 +598,7 @@ public class BaseballTrivia
 						
 								if(menuNum.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 							//	randomPick = 3;
@@ -608,7 +608,7 @@ public class BaseballTrivia
 								if (menuNum.equals("1"))
 									{
 										System.out.println("\nCorrect! You earned $485");
-										PlayerInfo.playerMoney += 485;
+										BPlayerInfo.playerMoney += 485;
 									}
 								else
 									{
@@ -670,7 +670,7 @@ public class BaseballTrivia
 								
 								if(hardTA.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick += 3;
@@ -681,32 +681,32 @@ public class BaseballTrivia
 									{
 										
 										System.out.println("\nCorrect! You earned $1050");
-										PlayerInfo.playerMoney += 1050;
+										BPlayerInfo.playerMoney += 1050;
 									}
 								else if (hardTA.equals("Ty Cobbs") || hardTA.equals("ty cobbs") || hardTA.equals("TY COBBS") 
 										|| hardTA.equals("Ty Cobb") || hardTA.equals("ty cobb") || hardTA.equals("Ty cobbs") || hardTA.equals("Ty cobb"))
 									{
 										
 										System.out.println("\nCorrect! You earned $1050");
-										PlayerInfo.playerMoney += 1050;
+										BPlayerInfo.playerMoney += 1050;
 									}
 								else if (hardTA.equals("Honus Wagner") || hardTA.equals("honus wagner") || hardTA.equals("HONUS WAGNER") || hardTA.equals("Honus wagner"))
 									{
 										
 										System.out.println("\nCorrect! You earned $1050");
-										PlayerInfo.playerMoney += 1050;
+										BPlayerInfo.playerMoney += 1050;
 									}
 								else if (hardTA.equals("Walter Johnson") || hardTA.equals("walter johnson") || hardTA.equals("WALTER JOHNSON") || hardTA.equals("Walter johnson"))
 									{
 										
 										System.out.println("\nCorrect! You earned $1050");
-										PlayerInfo.playerMoney += 1050;
+										BPlayerInfo.playerMoney += 1050;
 									}
 								else if (hardTA.equals("Christy Mathewson") || hardTA.equals("christy mathewson") || hardTA.equals("CHRISTY MATHEWSON") || hardTA.equals("Christy mathewson"))
 									{
 										
 										System.out.println("\nCorrect! You earned $1050");
-										PlayerInfo.playerMoney += 1050;
+										BPlayerInfo.playerMoney += 1050;
 									}
 								
 								else
@@ -714,7 +714,7 @@ public class BaseballTrivia
 										
 										System.out.println("\nIncorrect, you lost $200");
 										System.out.println("The five inducties are: Babe Ruth, Ty Cobbs, Honus Wagner, Walter Johnson, and Christy Mathewson");
-										PlayerInfo.playerMoney -= 200;
+										BPlayerInfo.playerMoney -= 200;
 									}
 							}
 					
@@ -733,7 +733,7 @@ public class BaseballTrivia
 								
 								if(hardTA.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 								//randomPick += 3;
@@ -744,14 +744,14 @@ public class BaseballTrivia
 									{
 										
 										System.out.println("\nCorrect! You earned $925");
-										PlayerInfo.playerMoney += 925;
+										BPlayerInfo.playerMoney += 925;
 									}
 								
 								else
 									{
 										System.out.println("\nIncorrect, you lost $250");
 										System.out.println("Babe Ruth's first career MLB homerun was against the New York Yankees on May 6, 1915");
-										PlayerInfo.playerMoney -= 250;
+										BPlayerInfo.playerMoney -= 250;
 									}
 							}
 				
@@ -769,7 +769,7 @@ public class BaseballTrivia
 								
 								if(hardTA.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 							//	randomPick += 3;
@@ -779,14 +779,14 @@ public class BaseballTrivia
 									{
 										
 										System.out.println("\nCorrect! You earned $1090");
-										PlayerInfo.playerMoney += 1090;
+										BPlayerInfo.playerMoney += 1090;
 									}
 								
 								else
 									{
 										System.out.println("\nIncorrect, you lost $100");
 										System.out.println("Legendary manager Bobby Cox holds the record for most MLB ejections");
-										PlayerInfo.playerMoney -= 100;
+										BPlayerInfo.playerMoney -= 100;
 									}
 							}
 						
@@ -804,7 +804,7 @@ public class BaseballTrivia
 								
 								if(hardTA.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 							//	randomPick += 3;
@@ -814,14 +814,14 @@ public class BaseballTrivia
 									{
 										
 										System.out.println("\nCorrect! You earned $915");
-										PlayerInfo.playerMoney += 915;
+										BPlayerInfo.playerMoney += 915;
 									}
 								
 								else
 									{
 										System.out.println("\nIncorrect, you lost $125");
 										System.out.println("Legendary player Lou Gehrig had his number retired on July 4, 1939");
-										PlayerInfo.playerMoney -= 125;
+										BPlayerInfo.playerMoney -= 125;
 									}
 							}
 
@@ -839,7 +839,7 @@ public class BaseballTrivia
 								
 								if(hardTA.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 							//	randomPick = 1;
@@ -850,7 +850,7 @@ public class BaseballTrivia
 									{
 												
 										System.out.println("\nCorrect! You earned $845");
-										PlayerInfo.playerMoney += 845;
+										BPlayerInfo.playerMoney += 845;
 									}
 								
 								else
@@ -873,7 +873,7 @@ public class BaseballTrivia
 								
 								if(hardTA.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 							//	randomPick = 2;
@@ -884,7 +884,7 @@ public class BaseballTrivia
 									{
 												
 										System.out.println("\nCorrect! You earned $805");
-										PlayerInfo.playerMoney += 805;
+										BPlayerInfo.playerMoney += 805;
 									}
 								else
 									{
@@ -906,7 +906,7 @@ public class BaseballTrivia
 								
 								if(hardTA.equals("99"))
 									{
-										PlayGame.simMenu();
+										DPlayGame.simMenu();
 									}
 								
 							//	randomPick = 3;
@@ -917,7 +917,7 @@ public class BaseballTrivia
 									{
 												
 										System.out.println("\nCorrect! You earned $1500");
-										PlayerInfo.playerMoney += 1500;
+										BPlayerInfo.playerMoney += 1500;
 									}
 								
 								else

@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class PlayerInfo
+public class BPlayerInfo
 	{
 
 		static String playerName;
 		static int playerMoney;
 		static boolean stillPlaying = true;
 		//static ArrayList<String> team = new ArrayList<String>();
-		static ArrayList<AllStarPlayer> team = new ArrayList<AllStarPlayer>();
+		static ArrayList<BAllStarPlayer> team = new ArrayList<BAllStarPlayer>();
 		
 //		static String [][] playerPitchers = new String[12][14];
 //		static String [][] playerHitters = new String[8][13];
@@ -22,9 +22,9 @@ public class PlayerInfo
 		{
 			for (int i = 0; i <= 20; i++) 
 				{
-					if (TxtReader.player[i].getRarity().equals("Coal"))
+					if (ATxtReader.player[i].getRarity().equals("Coal"))
 						{
-							team.add(TxtReader.player[i]);
+							team.add(ATxtReader.player[i]);
 						}
 				}
 			
@@ -170,13 +170,13 @@ public class PlayerInfo
 							String ln = team.get(i).getLastName();
 							String rare = team.get(i).getRarity();
 							int yp = team.get(i).getYearsPlayed();
-							int g = ((BSPitchers) team.get(i)).getGamesPlayed();
-							int bf = ((BSPitchers) team.get(i)).getBattersFaced();
-							int h = ((BSPitchers) team.get(i)).getHitsAllowed();
-							int w = ((BSPitchers) team.get(i)).getWalks();
-							int s = ((BSPitchers) team.get(i)).getStrikeOut();
-							int hbp = ((BSPitchers) team.get(i)).getHitByPitch();
-							double ip =  ((BSPitchers) team.get(i)).getInningsPitched();
+							int g = ((BBSPitchers) team.get(i)).getGamesPlayed();
+							int bf = ((BBSPitchers) team.get(i)).getBattersFaced();
+							int h = ((BBSPitchers) team.get(i)).getHitsAllowed();
+							int w = ((BBSPitchers) team.get(i)).getWalks();
+							int s = ((BBSPitchers) team.get(i)).getStrikeOut();
+							int hbp = ((BBSPitchers) team.get(i)).getHitByPitch();
+							double ip =  ((BBSPitchers) team.get(i)).getInningsPitched();
 							
 							
 							System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
@@ -209,12 +209,12 @@ public class PlayerInfo
 								String ln = team.get(i).getLastName();
 								String rare = team.get(i).getRarity();
 								int yp = team.get(i).getYearsPlayed();
-								int pa = ((BSHitters) team.get(i)).getPlateAppearances();
-								int ab = ((BSHitters) team.get(i)).getAtBats();
-								int rbi = ((BSHitters) team.get(i)).getRunsBattedIn();
-								int h = ((BSHitters) TxtReader.player[i]).getHits();
-								int bb = ((BSHitters) team.get(i)).getBaseOnBalls();
-								int hr = ((BSHitters) team.get(i)).getHomeRuns();
+								int pa = ((BBSHitters) team.get(i)).getPlateAppearances();
+								int ab = ((BBSHitters) team.get(i)).getAtBats();
+								int rbi = ((BBSHitters) team.get(i)).getRunsBattedIn();
+								int h = ((BBSHitters) ATxtReader.player[i]).getHits();
+								int bb = ((BBSHitters) team.get(i)).getBaseOnBalls();
+								int hr = ((BBSHitters) team.get(i)).getHomeRuns();
 								
 								
 								

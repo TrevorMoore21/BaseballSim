@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Simulation
+public class ESimulation
 	{
 
 		static String playerTeam;
@@ -16,7 +16,7 @@ public class Simulation
 			
 			if (playerTeam.equals("yes") || playerTeam.equals("Yes") || playerTeam.equals("YES"))
 				{
-					PlayerInfo.displayPlayerStats();
+					BPlayerInfo.displayPlayerStats();
 					simTeams();
 				}
 			else if (playerTeam.equals("no") || playerTeam.equals("No") || playerTeam.equals("NO"))
@@ -35,7 +35,7 @@ public class Simulation
 			{
 				
 				System.out.println();
-				System.out.println(PlayerInfo.playerName + ", would you like play aginst the..."
+				System.out.println(BPlayerInfo.playerName + ", would you like play aginst the..."
 						+ "\n\n\t1) Rubberducks   (easy)"
 						+ "\n\t2) YardGoats     (easy)"
 						+ "\n\t3) Biscuits      (medium)"

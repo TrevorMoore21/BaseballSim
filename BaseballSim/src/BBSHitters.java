@@ -1,10 +1,10 @@
 
-public class BSHitters extends AllStarPlayer
+public class BBSHitters extends BAllStarPlayer
 	{
 
 		private int plateAppearances, atBats, runsBattedIn, hits, baseOnBalls, homeRuns;
 		
-		public BSHitters(String t, String t2, String fn, String ln, String rare, String o,
+		public BBSHitters(String t, String t2, String fn, String ln, String rare, String o,
 				         int yp, int c, int p, int a, int r, int h, int bb, int hr,int pn)
 			{
 				

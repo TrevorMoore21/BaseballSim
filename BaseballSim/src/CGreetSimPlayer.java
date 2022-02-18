@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class GreetSimPlayer
+public class CGreetSimPlayer
 	{
 
 		
@@ -17,10 +17,10 @@ public class GreetSimPlayer
 											+ "My name is Voodoo Jobu, and I am your host.");
 				
 				System.out.println("What is your name?");
-				PlayerInfo.playerName = simVersionInput.nextLine();
+				BPlayerInfo.playerName = simVersionInput.nextLine();
 				
 				System.out.println();
-				System.out.println("Welcome, " + PlayerInfo.playerName + "!");
+				System.out.println("Welcome, " + BPlayerInfo.playerName + "!");
 			}
 		
 		
@@ -44,7 +44,7 @@ public class GreetSimPlayer
 			
 			if (playONaw.equals("yes") || playONaw.equals("Yes") || playONaw.equals("YES"))
 				{
-					PlayGame.simMenu();
+					DPlayGame.simMenu();
 				}
 			else if (playONaw.equals("no") || playONaw.equals("No") || playONaw.equals("NO"))
 				{

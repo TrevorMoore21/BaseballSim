@@ -2,10 +2,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class TxtReader
+public class ATxtReader
 	{
 
-		static AllStarPlayer[] player = new AllStarPlayer[100];
+		static BAllStarPlayer[] player = new BAllStarPlayer[100];
 		
 		public static void readSimTxt() throws FileNotFoundException
 		{
@@ -39,7 +39,7 @@ public class TxtReader
 	        			  		 int pn = file.nextInt();
 	        					
 	        					  
-	        					 player[i] = new BSPitchers("Pitcher", t2, fn, ln, rare, o, yp, c, g, bf, h, w, s, hbp, ip, pn);
+	        					 player[i] = new BBSPitchers("Pitcher", t2, fn, ln, rare, o, yp, c, g, bf, h, w, s, hbp, ip, pn);
 	        		  }		
 	        	  
 //reads Hitters and puts them into an array
@@ -63,7 +63,7 @@ public class TxtReader
 	        			  		 int pn = file.nextInt();
 	        					
 	        					  
-	        					 player[i] = new BSHitters("Hitter", t2, fn, ln, rare, o, yp, c, p, a, r, h, bb, hr, pn);
+	        					 player[i] = new BBSHitters("Hitter", t2, fn, ln, rare, o, yp, c, p, a, r, h, bb, hr, pn);
 	        		  }
 	          }
 		

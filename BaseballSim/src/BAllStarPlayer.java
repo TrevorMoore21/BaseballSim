@@ -1,5 +1,5 @@
 
-public class AllStarPlayer
+public class BAllStarPlayer
 	{
 
 		
@@ -7,13 +7,13 @@ public class AllStarPlayer
 		private int yearsPlayed, cost, playerN;
 		
 		//need two constructors for inheritance to work with this constructor?
-		public AllStarPlayer()
+		public BAllStarPlayer()
 		{
 			
 		}
 		
 		
-		public AllStarPlayer(String t, String t2, String fn, String ln, String rare, String o, int yp, int c, int pn)
+		public BAllStarPlayer(String t, String t2, String fn, String ln, String rare, String o, int yp, int c, int pn)
 		{
 			
 			type = t;

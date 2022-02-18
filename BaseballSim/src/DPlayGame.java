@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 
-public class PlayGame
+public class DPlayGame
 	{
 
 		static String menuNum;
@@ -13,7 +13,7 @@ public class PlayGame
 		public static void simMenu()
 			{
 				System.out.println();
-				System.out.println(PlayerInfo.playerName + ", would you like to..."
+				System.out.println(BPlayerInfo.playerName + ", would you like to..."
 						+ "\n\n\t1) Play a round of Trivia"
 						+ "\n\t2) Play a Simulated Game"
 						+ "\n\t3) Review Rules");
@@ -23,16 +23,16 @@ public class PlayGame
 				if(menuNum.equals("1"))
 					{
 						
-						BaseballTrivia.triviaMenu();
+						EBaseballTrivia.triviaMenu();
 					}
 				else if(menuNum.equals("2"))
 					{
 						
-						Simulation.simIntro();
+						ESimulation.simIntro();
 					}
 				else if(menuNum.equals("3"))
 					{
-						GreetSimPlayer.displayRule();
+						CGreetSimPlayer.displayRule();
 						System.out.println();
 						System.out.println();
 						simMenu();

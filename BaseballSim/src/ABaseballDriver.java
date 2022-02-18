@@ -3,25 +3,25 @@ import java.io.File;
 import java.io.FileNotFoundException;
 
 
-public class BaseballDriver
+public class ABaseballDriver
 	{
 		
 		public static void main(String[] args) throws FileNotFoundException
 			{
 			
-				TxtReader.readSimTxt();
+				ATxtReader.readSimTxt();
 
 				
 				
 				
-				GreetSimPlayer.simIntro();
-				PlayerInfo.introFillTeam();
+				CGreetSimPlayer.simIntro();
+				BPlayerInfo.introFillTeam();
 				
 				
-				PlayerInfo.displayPlayerStats();
+				BPlayerInfo.displayPlayerStats();
 				
-				GreetSimPlayer.displayRule();
-				GreetSimPlayer.playOrNaw();
+				CGreetSimPlayer.displayRule();
+				CGreetSimPlayer.playOrNaw();
 				
 				
 				
