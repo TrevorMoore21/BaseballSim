@@ -10,12 +10,14 @@ public class ABaseballDriver
 			{
 			
 				ATxtReader.readSimTxt();
+				BPlayerInfo.introFillTeam();
+				BTeams.fillAllTeams();
 
 				
 				
 				
 				CGreetSimPlayer.simIntro();
-				BPlayerInfo.introFillTeam();
+				
 				
 				
 				BPlayerInfo.displayPlayerStats();

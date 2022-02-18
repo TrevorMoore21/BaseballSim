@@ -7,7 +7,6 @@ public class BPlayerInfo
 		static String playerName;
 		static int playerMoney;
 		static boolean stillPlaying = true;
-		//static ArrayList<String> team = new ArrayList<String>();
 		static ArrayList<BAllStarPlayer> team = new ArrayList<BAllStarPlayer>();
 		
 //		static String [][] playerPitchers = new String[12][14];
@@ -20,20 +19,13 @@ public class BPlayerInfo
 //starts game with giving player all of the coal players to make a team
 		public static void introFillTeam()
 		{
-			for (int i = 0; i <= 20; i++) 
+			for (int i = 0; i <= 19; i++) 
 				{
 					if (ATxtReader.player[i].getRarity().equals("Coal"))
 						{
 							team.add(ATxtReader.player[i]);
 						}
 				}
-			
-			
-			
-			
-			//for display use if statement to get pitcher/hitter
-			//use multiple getters to get differerent info for each line
-			//team.add(TxtReader.player[0]);
 		}
 		
 		
@@ -120,7 +112,7 @@ public class BPlayerInfo
 			{
 				
 				displayPlayerMoney();
-				displayPlayerTeam();
+				BDisplayTeams.displayPlayerTeam();
 			}
 		
 		
@@ -136,96 +128,6 @@ public class BPlayerInfo
 				System.out.println();
 			
 			}
-		
-		
-
-		
-		
-//Display FULL Team
-		public static void displayPlayerTeam()
-			{
-				displayPitchers();
-				displayHitters();
-		
-			}
-		
-//Print Pitchers	
-		public static void displayPitchers()
-		{
-			
-			System.out.println();
-			System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
-								+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
-			System.out.println();
-			
-			
-			for (int i = 0; i <= 19; i++) 
-				{
-					if (team.get(i).getType().equals("Pitcher"))
-						{
-
-							String t2 = team.get(i).getType2();
-							String fn = team.get(i).getFirstName();
-							String ln = team.get(i).getLastName();
-							String rare = team.get(i).getRarity();
-							int yp = team.get(i).getYearsPlayed();
-							int g = ((BBSPitchers) team.get(i)).getGamesPlayed();
-							int bf = ((BBSPitchers) team.get(i)).getBattersFaced();
-							int h = ((BBSPitchers) team.get(i)).getHitsAllowed();
-							int w = ((BBSPitchers) team.get(i)).getWalks();
-							int s = ((BBSPitchers) team.get(i)).getStrikeOut();
-							int hbp = ((BBSPitchers) team.get(i)).getHitByPitch();
-							double ip =  ((BBSPitchers) team.get(i)).getInningsPitched();
-							
-							
-							System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + g + "     " + bf + "     " + h + "     " 
-												+ w + "     " + s + "     " + hbp + "     " + ip);
-						}
-				}
-		}
-		
-		
-//Print Hitters		
-		public static void displayHitters()
-			{
-				
-				System.out.println();
-				System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-						+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
-						+ "     HomeRuns" + "     RBIs");
-				System.out.println();
-				
-				
-				for (int i = 0; i <= 19; i++) 
-					{
-					
-						if (team.get(i).getType().equals("Hitter"))
-							{
-
-								String t2 = team.get(i).getType2();
-								String fn = team.get(i).getFirstName();
-								String ln = team.get(i).getLastName();
-								String rare = team.get(i).getRarity();
-								int yp = team.get(i).getYearsPlayed();
-								int pa = ((BBSHitters) team.get(i)).getPlateAppearances();
-								int ab = ((BBSHitters) team.get(i)).getAtBats();
-								int rbi = ((BBSHitters) team.get(i)).getRunsBattedIn();
-								int h = ((BBSHitters) ATxtReader.player[i]).getHits();
-								int bb = ((BBSHitters) team.get(i)).getBaseOnBalls();
-								int hr = ((BBSHitters) team.get(i)).getHomeRuns();
-								
-								
-								
-								System.out.println("   " + t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-													+ yp + "     " + pa + "     " + ab + "     "
-													+ h + "     " + bb + "     " + hr + "     " + rbi);
-							}
-					}
-			}
-		
-		
 	}
 	
 

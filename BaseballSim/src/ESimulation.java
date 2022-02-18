@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+
+
 public class ESimulation
 	{
 
@@ -47,36 +49,32 @@ public class ESimulation
 		
 				if(menuNum2 == 1)
 					{
-						
-						
-						Manually add players to teams by .getPlayerN?
-						
-						
+						BDisplayTeams.displayRubberTeam();
 					}
 				if(menuNum2 == 2)
 					{
-						
+						BDisplayTeams.displayYardTeam();
 					}
 				if(menuNum2 == 3)
 					{
-						
+						BDisplayTeams.displayBiscuitsTeam();
 					}
 				if(menuNum2 == 4)
 					{
-						
+						BDisplayTeams.displayPinkertonsTeam();
 					}
 				if(menuNum2 == 5)
 					{
-						
+						BDisplayTeams.displayElFartsTeam();
 					}
 				if(menuNum2 == 6)
 					{
-						
+						BDisplayTeams.displayChicharronesTeam();
 					}
 				if(menuNum2 == 7)
 					{
-						
+						BDisplayTeams.displayLegendsTeam();
 					}
 				
-			}
+			}	
 	}
