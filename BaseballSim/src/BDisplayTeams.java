@@ -26,14 +26,11 @@ public class BDisplayTeams
 				{
 					
 					System.out.println();
+					System.out.println();
 					System.out.printf("%-17s %-18s %-9s %-14s %-14s %-15s %-14s %-8s %-13s %-13s %-13s",  
 							"Position", "Name", "Rarity", "YearsPlayed", "GamesPlayed",
 							 "BattersFaced", "HitsAllowed", "Walks", "StrikeOuts",
 							  "HitByPitch" , "InningsPitched");
-					
-				//	System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-				//						+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
-				//						+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
 					System.out.println();
 					
 					
@@ -59,12 +56,6 @@ public class BDisplayTeams
 											 t2, fn + " " + ln, rare, 
 											 yp, g, bf, h, 
 											 w, s, hbp, ip);
-									
-									
-									
-									//System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-										//				+ yp + "     " + g + "     " + bf + "     " + h + "     " 
-											//			+ w + "     " + s + "     " + hbp + "     " + ip);
 								}
 						}
 				}
@@ -76,9 +67,12 @@ public class BDisplayTeams
 						
 						System.out.println();
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
-								+ "     HomeRuns" + "     RBIs");
+						System.out.println();
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-19s %-9s %-7s %-8s %-11s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "PlateAppearances",
+								 "AtBats", "Hits", "Walks", "HomeRuns",
+								  "RBIs");
 						System.out.println();
 						
 						
@@ -102,9 +96,10 @@ public class BDisplayTeams
 										
 										
 										
-										System.out.println("   " + t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-															+ yp + "     " + pa + "     " + ab + "     "
-															+ h + "     " + bb + "     " + hr + "     " + rbi);
+										System.out.printf("\n%-12s %-23s %-13s %-15s %-15s %-8s %-8s %-9s %-9s %-14s",
+												 "   " + t2, fn + " " + ln, rare, 
+												 yp, pa, ab, h, 
+												 bb, hr, rbi);
 									}
 							}
 					}
@@ -133,9 +128,11 @@ public class BDisplayTeams
 				public static void displayRubberPitchers()
 						{
 							System.out.println();
-							System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-												+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
-												+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
+							System.out.println();
+							System.out.printf("%-17s %-18s %-9s %-14s %-14s %-15s %-14s %-8s %-13s %-13s %-13s",  
+									"Position", "Name", "Rarity", "YearsPlayed", "GamesPlayed",
+									 "BattersFaced", "HitsAllowed", "Walks", "StrikeOuts",
+									  "HitByPitch" , "InningsPitched");
 							System.out.println();
 							
 							
@@ -158,9 +155,10 @@ public class BDisplayTeams
 											double ip =  ((BBSPitchers) BTeams.RubberDucks.get(i)).getInningsPitched();
 											
 											
-											System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-																+ yp + "     " + g + "     " + bf + "     " + h + "     " 
-																+ w + "     " + s + "     " + hbp + "     " + ip);
+											System.out.printf("\n%-12s %-23s %-13s %-14s %-14s %-15s %-11s %-10s %-13s %-14s %-13s",
+													 t2, fn + " " + ln, rare, 
+													 yp, g, bf, h, 
+													 w, s, hbp, ip);
 										}
 								}
 						}
@@ -170,9 +168,13 @@ public class BDisplayTeams
 							{
 								
 								System.out.println();
-								System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-										+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
-										+ "     HomeRuns" + "     RBIs");
+								System.out.println();
+								System.out.println();
+								System.out.println();
+								System.out.printf("%-17s %-18s %-9s %-14s %-19s %-9s %-7s %-8s %-11s %-13s",  
+										"Position", "Name", "Rarity", "YearsPlayed", "PlateAppearances",
+										 "AtBats", "Hits", "Walks", "HomeRuns",
+										  "RBIs");
 								System.out.println();
 								
 								
@@ -196,9 +198,10 @@ public class BDisplayTeams
 												
 												
 												
-												System.out.println("   " + t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-																	+ yp + "     " + pa + "     " + ab + "     "
-																	+ h + "     " + bb + "     " + hr + "     " + rbi);
+												System.out.printf("\n%-12s %-23s %-13s %-15s %-15s %-8s %-8s %-9s %-9s %-14s",
+														 "   " + t2, fn + " " + ln, rare, 
+														 yp, pa, ab, h, 
+														 bb, hr, rbi);
 											}
 									}
 							}	
@@ -227,9 +230,11 @@ public class BDisplayTeams
 				public static void displayYardPitchers()
 					{
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-							+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
-							+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-14s %-15s %-14s %-8s %-13s %-13s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "GamesPlayed",
+								 "BattersFaced", "HitsAllowed", "Walks", "StrikeOuts",
+								  "HitByPitch" , "InningsPitched");
 						System.out.println();
 		
 		
@@ -252,9 +257,10 @@ public class BDisplayTeams
 										double ip =  ((BBSPitchers) BTeams.YardGoats.get(i)).getInningsPitched();
 						
 						
-										System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-											+ yp + "     " + g + "     " + bf + "     " + h + "     " 
-											+ w + "     " + s + "     " + hbp + "     " + ip);
+										System.out.printf("\n%-12s %-23s %-13s %-14s %-14s %-15s %-11s %-10s %-13s %-14s %-13s",
+												 t2, fn + " " + ln, rare, 
+												 yp, g, bf, h, 
+												 w, s, hbp, ip);
 									}
 							}
 					}
@@ -264,9 +270,13 @@ public class BDisplayTeams
 					{	
 			
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
-								+ "     HomeRuns" + "     RBIs");
+						System.out.println();
+						System.out.println();
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-19s %-9s %-7s %-8s %-11s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "PlateAppearances",
+								 "AtBats", "Hits", "Walks", "HomeRuns",
+								  "RBIs");
 						System.out.println();
 			
 			
@@ -290,9 +300,10 @@ public class BDisplayTeams
 							
 							
 							
-										System.out.println("   " + t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + pa + "     " + ab + "     "
-												+ h + "     " + bb + "     " + hr + "     " + rbi);
+										System.out.printf("\n%-12s %-23s %-13s %-15s %-15s %-8s %-8s %-9s %-9s %-14s",
+												 "   " + t2, fn + " " + ln, rare, 
+												 yp, pa, ab, h, 
+												 bb, hr, rbi);
 									}
 							}
 		}
@@ -321,9 +332,11 @@ public class BDisplayTeams
 				public static void displayBiscuitsPitchers()
 					{
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
-								+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-14s %-15s %-14s %-8s %-13s %-13s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "GamesPlayed",
+								 "BattersFaced", "HitsAllowed", "Walks", "StrikeOuts",
+								  "HitByPitch" , "InningsPitched");
 						System.out.println();
 
 
@@ -346,9 +359,10 @@ public class BDisplayTeams
 										double ip =  ((BBSPitchers) BTeams.Biscuits.get(i)).getInningsPitched();
 	
 										
-										System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + g + "     " + bf + "     " + h + "     " 
-												+ w + "     " + s + "     " + hbp + "     " + ip);
+										System.out.printf("\n%-12s %-23s %-13s %-14s %-14s %-15s %-11s %-10s %-13s %-14s %-13s",
+												 t2, fn + " " + ln, rare, 
+												 yp, g, bf, h, 
+												 w, s, hbp, ip);
 									}
 							}
 					}
@@ -358,9 +372,13 @@ public class BDisplayTeams
 					{	
 
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
-								+ "     HomeRuns" + "     RBIs");
+						System.out.println();
+						System.out.println();
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-19s %-9s %-7s %-8s %-11s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "PlateAppearances",
+								 "AtBats", "Hits", "Walks", "HomeRuns",
+								  "RBIs");
 						System.out.println();
 
 
@@ -384,9 +402,10 @@ public class BDisplayTeams
 		
 		
 		
-										System.out.println("   " + t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + pa + "     " + ab + "     "
-												+ h + "     " + bb + "     " + hr + "     " + rbi);
+										System.out.printf("\n%-12s %-23s %-13s %-15s %-15s %-8s %-8s %-9s %-9s %-14s",
+												 "   " + t2, fn + " " + ln, rare, 
+												 yp, pa, ab, h, 
+												 bb, hr, rbi);
 									}
 							}	
 					}
@@ -415,9 +434,11 @@ public class BDisplayTeams
 				public static void displayPinkertonsPitchers()
 					{
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
-								+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-14s %-15s %-14s %-8s %-13s %-13s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "GamesPlayed",
+								 "BattersFaced", "HitsAllowed", "Walks", "StrikeOuts",
+								  "HitByPitch" , "InningsPitched");
 						System.out.println();
 
 
@@ -440,9 +461,10 @@ public class BDisplayTeams
 										double ip =  ((BBSPitchers) BTeams.Pinkertons.get(i)).getInningsPitched();
 	
 										
-										System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + g + "     " + bf + "     " + h + "     " 
-												+ w + "     " + s + "     " + hbp + "     " + ip);
+										System.out.printf("\n%-12s %-23s %-13s %-14s %-14s %-15s %-11s %-10s %-13s %-14s %-13s",
+												 t2, fn + " " + ln, rare, 
+												 yp, g, bf, h, 
+												 w, s, hbp, ip);
 									}
 							}
 					}
@@ -452,9 +474,13 @@ public class BDisplayTeams
 					{	
 
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
-								+ "     HomeRuns" + "     RBIs");
+						System.out.println();
+						System.out.println();
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-19s %-9s %-7s %-8s %-11s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "PlateAppearances",
+								 "AtBats", "Hits", "Walks", "HomeRuns",
+								  "RBIs");
 						System.out.println();
 
 
@@ -478,9 +504,10 @@ public class BDisplayTeams
 		
 		
 		
-										System.out.println("   " + t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + pa + "     " + ab + "     "
-												+ h + "     " + bb + "     " + hr + "     " + rbi);
+										System.out.printf("\n%-12s %-23s %-13s %-15s %-15s %-8s %-8s %-9s %-9s %-14s",
+												 "   " + t2, fn + " " + ln, rare, 
+												 yp, pa, ab, h, 
+												 bb, hr, rbi);
 									}
 							}	
 					}
@@ -509,11 +536,12 @@ public class BDisplayTeams
 				public static void displayElFartsPitchers()
 					{
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
-								+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
 						System.out.println();
-
+						System.out.printf("%-17s %-18s %-9s %-14s %-14s %-15s %-14s %-8s %-13s %-13s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "GamesPlayed",
+								 "BattersFaced", "HitsAllowed", "Walks", "StrikeOuts",
+								  "HitByPitch" , "InningsPitched");
+						System.out.println();
 
 						for (int i = 0; i <= 19; i++) 
 							{
@@ -534,9 +562,10 @@ public class BDisplayTeams
 										double ip =  ((BBSPitchers) BTeams.ElFarts.get(i)).getInningsPitched();
 	
 										
-										System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + g + "     " + bf + "     " + h + "     " 
-												+ w + "     " + s + "     " + hbp + "     " + ip);
+										System.out.printf("\n%-12s %-23s %-13s %-14s %-14s %-15s %-11s %-10s %-13s %-14s %-13s",
+												 t2, fn + " " + ln, rare, 
+												 yp, g, bf, h, 
+												 w, s, hbp, ip);
 									}
 							}
 					}
@@ -546,9 +575,13 @@ public class BDisplayTeams
 					{	
 
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
-								+ "     HomeRuns" + "     RBIs");
+						System.out.println();
+						System.out.println();
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-19s %-9s %-7s %-8s %-11s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "PlateAppearances",
+								 "AtBats", "Hits", "Walks", "HomeRuns",
+								  "RBIs");
 						System.out.println();
 
 
@@ -572,9 +605,10 @@ public class BDisplayTeams
 		
 		
 		
-										System.out.println("   " + t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + pa + "     " + ab + "     "
-												+ h + "     " + bb + "     " + hr + "     " + rbi);
+										System.out.printf("\n%-12s %-23s %-13s %-15s %-15s %-8s %-8s %-9s %-9s %-14s",
+												 "   " + t2, fn + " " + ln, rare, 
+												 yp, pa, ab, h, 
+												 bb, hr, rbi);
 									}
 							}	
 					}
@@ -603,9 +637,11 @@ public class BDisplayTeams
 				public static void displayChicharronesPitchers()
 					{
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
-								+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-14s %-15s %-14s %-8s %-13s %-13s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "GamesPlayed",
+								 "BattersFaced", "HitsAllowed", "Walks", "StrikeOuts",
+								  "HitByPitch" , "InningsPitched");
 						System.out.println();
 
 
@@ -628,9 +664,10 @@ public class BDisplayTeams
 										double ip =  ((BBSPitchers) BTeams.Chicharrones.get(i)).getInningsPitched();
 	
 										
-										System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + g + "     " + bf + "     " + h + "     " 
-												+ w + "     " + s + "     " + hbp + "     " + ip);
+										System.out.printf("\n%-12s %-23s %-13s %-14s %-14s %-15s %-11s %-10s %-13s %-14s %-13s",
+												 t2, fn + " " + ln, rare, 
+												 yp, g, bf, h, 
+												 w, s, hbp, ip);
 									}
 							}
 					}
@@ -640,9 +677,13 @@ public class BDisplayTeams
 					{	
 
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
-								+ "     HomeRuns" + "     RBIs");
+						System.out.println();
+						System.out.println();
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-19s %-9s %-7s %-8s %-11s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "PlateAppearances",
+								 "AtBats", "Hits", "Walks", "HomeRuns",
+								  "RBIs");
 						System.out.println();
 
 
@@ -666,9 +707,10 @@ public class BDisplayTeams
 		
 		
 		
-										System.out.println("   " + t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + pa + "     " + ab + "     "
-												+ h + "     " + bb + "     " + hr + "     " + rbi);
+										System.out.printf("\n%-12s %-23s %-13s %-15s %-15s %-8s %-8s %-9s %-9s %-14s",
+												 "   " + t2, fn + " " + ln, rare, 
+												 yp, pa, ab, h, 
+												 bb, hr, rbi);
 									}
 							}	
 					}
@@ -696,9 +738,11 @@ public class BDisplayTeams
 				public static void displayLegendsPitchers()
 					{
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     GamesPlayed" + "     BattersFaced" + "     HitsAllowed" + "     Walks" 
-								+ "     StrikeOuts" + "     HitByPitch" + "     InningsPitched");
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-14s %-15s %-14s %-8s %-13s %-13s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "GamesPlayed",
+								 "BattersFaced", "HitsAllowed", "Walks", "StrikeOuts",
+								  "HitByPitch" , "InningsPitched");
 						System.out.println();
 
 
@@ -720,10 +764,11 @@ public class BDisplayTeams
 										int hbp = ((BBSPitchers) BTeams.Legends.get(i)).getHitByPitch();
 										double ip =  ((BBSPitchers) BTeams.Legends.get(i)).getInningsPitched();
 	
-	
-										System.out.println(t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + g + "     " + bf + "     " + h + "     " 
-												+ w + "     " + s + "     " + hbp + "     " + ip);
+										
+										System.out.printf("\n%-12s %-23s %-13s %-14s %-14s %-15s %-11s %-10s %-13s %-14s %-13s",
+												 t2, fn + " " + ln, rare, 
+												 yp, g, bf, h, 
+												 w, s, hbp, ip);
 									}
 							}
 					}
@@ -733,9 +778,13 @@ public class BDisplayTeams
 					{	
 
 						System.out.println();
-						System.out.println("Position" + "          Name" + "          Rarity" + "     YearsPlayed"
-								+ "     PlateAppearances" + "     AtBats" + "     Hits" + "     Walks" 
-								+ "     HomeRuns" + "     RBIs");
+						System.out.println();
+						System.out.println();
+						System.out.println();
+						System.out.printf("%-17s %-18s %-9s %-14s %-19s %-9s %-7s %-8s %-11s %-13s",  
+								"Position", "Name", "Rarity", "YearsPlayed", "PlateAppearances",
+								 "AtBats", "Hits", "Walks", "HomeRuns",
+								  "RBIs");
 						System.out.println();
 
 
@@ -759,9 +808,10 @@ public class BDisplayTeams
 		
 		
 		
-										System.out.println("   " + t2 + "     " + fn + " " + ln + "     " + rare + "     " 
-												+ yp + "     " + pa + "     " + ab + "     "
-												+ h + "     " + bb + "     " + hr + "     " + rbi);
+										System.out.printf("\n%-12s %-23s %-13s %-15s %-15s %-8s %-8s %-9s %-9s %-14s",
+												 "   " + t2, fn + " " + ln, rare, 
+												 yp, pa, ab, h, 
+												 bb, hr, rbi);
 									}
 							}
 					}
