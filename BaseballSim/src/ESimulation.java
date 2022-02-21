@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 
 
+
+
 public class ESimulation
 	{
 
@@ -9,8 +11,14 @@ public class ESimulation
 		static int menuNum2;
 		static Scanner simIntroInput = new Scanner(System.in);
 		static Scanner simMenuInput2 = new Scanner(System.in);
+		static String input3;
+		static Scanner simMenuInput3 = new Scanner(System.in);
+		
 
 		
+		
+		
+//View your team before Sim		
 		public static void simIntro()
 		{
 			System.out.println("\n\nWould you like to view your team before you play?");
@@ -32,13 +40,20 @@ public class ESimulation
 				}
 		}
 		
+		
+		
+		
+		
+		
 //Pick team to play
 		public static void simTeams()
 			{
 				
 				System.out.println();
+				System.out.println();
+				System.out.println();
 				System.out.println(BPlayerInfo.playerName + ", would you like play aginst the..."
-						+ "\n\n\t1) Rubberducks   (easy)"
+						+ "\n\n\t1) RubberDucks   (easy)"
 						+ "\n\t2) YardGoats     (easy)"
 						+ "\n\t3) Biscuits      (medium)"
 						+ "\n\t4) Pinkertons    (medium)"
@@ -49,32 +64,154 @@ public class ESimulation
 		
 				if(menuNum2 == 1)
 					{
+						System.out.println();
+						System.out.println("Here are the RubberDucks");
 						BDisplayTeams.displayRubberTeam();
+						
+						quickPlayOption();
 					}
 				if(menuNum2 == 2)
 					{
+						System.out.println();
+						System.out.println("Here are the YardGoats");
 						BDisplayTeams.displayYardTeam();
+						
+						quickPlayOption();
 					}
 				if(menuNum2 == 3)
 					{
+						System.out.println();
+						System.out.println("Here are the Biscuits");
 						BDisplayTeams.displayBiscuitsTeam();
+						
+						quickPlayOption();
 					}
 				if(menuNum2 == 4)
 					{
+						System.out.println();
+						System.out.println("Here are the Pinkertons");
 						BDisplayTeams.displayPinkertonsTeam();
+						
+						quickPlayOption();
 					}
 				if(menuNum2 == 5)
 					{
+						System.out.println();
+						System.out.println("Here are El Farts");
 						BDisplayTeams.displayElFartsTeam();
+						
+						quickPlayOption();
 					}
 				if(menuNum2 == 6)
 					{
+						System.out.println();
+						System.out.println("Here are the Chicharrones");
 						BDisplayTeams.displayChicharronesTeam();
+						
+						quickPlayOption();
 					}
 				if(menuNum2 == 7)
 					{
+						System.out.println();
+						System.out.println("Here are the Legends");
 						BDisplayTeams.displayLegendsTeam();
+						
+						quickPlayOption();
 					}
 				
 			}	
+		
+		
+//by inning or full game
+		public static void quickPlayOption()
+			{
+				System.out.println(BPlayerInfo.playerName + ", how would you like to view this simulation?"
+						+ "\n\t1) Regular   (innging by inning) "
+						+ "\n\t2) Quickplay (see simulation summary)");
+						input3 = simMenuInput3.nextLine();
+						System.out.println();
+						
+						if (input3.equals("1"))
+							{
+								if (menuNum2 == 1)
+									{
+										regRubberGame();
+									}
+								if (menuNum2 == 2)
+									{
+										regYardGame();
+									}
+								if (menuNum2 == 3)
+									{
+										regBiscuitGame();
+									}
+								if (menuNum2 == 4)
+									{
+										regPinkGame();
+									}
+								if (menuNum2 == 5)
+									{
+										regFartGame();
+									}
+								if (menuNum2 == 6)
+									{
+										regChichGame();
+									}
+								if (menuNum2 == 7)
+									{
+										regLegendGame();
+									}
+							}	
+						
+						
+						
+						if (input3.equals("2"))
+							{
+								
+								if (menuNum2 == 1)
+									{
+										quickRubberGame();
+									}
+								if (menuNum2 == 2)
+									{
+										quickYardGame();
+									}
+								if (menuNum2 == 3)
+									{
+										quickBiscuitGame();
+									}
+								if (menuNum2 == 4)
+									{
+										quickPinkGame();
+									}
+								if (menuNum2 == 5)
+									{
+										quickFartGame();
+									}
+								if (menuNum2 == 6)
+									{
+										quickChichGame();
+									}
+								if (menuNum2 == 7)
+									{
+										quickLegendGame();
+									}
+							}	
+						
+						
+						
+						else
+							{
+								System.out.println("\nSorry, Voodoo Jobu didn't catch that, try again");
+								quickPlayOption();
+							}
+			}
+		
+		
+		
+		
+		
+		
+		
+		
 	}

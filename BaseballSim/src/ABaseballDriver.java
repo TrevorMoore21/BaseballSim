@@ -20,7 +20,7 @@ public class ABaseballDriver
 				
 				
 				
-				BPlayerInfo.displayPlayerStats();
+				//BPlayerInfo.displayPlayerStats();
 				
 				CGreetSimPlayer.displayRule();
 				CGreetSimPlayer.playOrNaw();
