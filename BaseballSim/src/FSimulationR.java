@@ -16,9 +16,14 @@ public class FSimulationR
 		
 		
 
-		
+//pick Player's random Pitcher
 		public static void pickPlayerRandoStarter()
 			{
+				
+				int startRandoN = (int) (Math.random() * 5);
+				boolean gas = false;
+				int xxx = 0;
+				
 				
 				for (BAllStarPlayer s: BPlayerInfo.team)
 					{
@@ -27,11 +32,7 @@ public class FSimulationR
 								playerStarterZ.add(s);
 							}
 					}
-				
-				
-				int startRandoN = (int) (Math.random() * 5);
-				boolean gas = false;
-				int xxx = 0;
+		
 				
 				do
 					{
@@ -55,9 +56,20 @@ public class FSimulationR
 				gas = false;
 				
 				
-				System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
-				
+				//System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
 			}
+		
+		
+		
+		
+		
+//randomize Player's lineup
+		public static void createPlayerLineup()
+		{
+			
+			
+			
+		}
 		
 		
 		
@@ -67,6 +79,11 @@ public class FSimulationR
 		public static void regRubberGame()
 			{
 			
+				pickPlayerRandoStarter();
+				createPlayerLineup();
+				
+				
+				
 				battingAv = (double) mlb.get(hitterIndex).getHits() / (double) mlb.get(hitterIndex).getAtBats(); 
 				battingAvA = ((double) cheese.get(pitcherIndex).getHitsAllowed()) / ((double) cheese.get(pitcherIndex).getBattersFaced() - (double) cheese.get(pitcherIndex).getWalks() - (double) cheese.get(pitcherIndex).getHitByPitch());
 			
