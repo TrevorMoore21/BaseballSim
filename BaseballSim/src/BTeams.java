@@ -443,14 +443,14 @@ public class BTeams
 						
 						
 						
-						//RANDOMIZE RUBBER SRLs
-						//RANDOMIZE RUBBER SRLs
-						//RANDOMIZE RUBBER SRLs
+									//RANDOMIZE RUBBER SRLs
+									//RANDOMIZE RUBBER SRLs
+									//RANDOMIZE RUBBER SRLs
 	
 	
 	
 
-//randomize Player's Starter, Relievers, and Lineup
+//randomize Rubber Starter, Relievers, and Lineup
 			public static void randomizeRubberSRL()
 			{
 				
@@ -461,7 +461,7 @@ public class BTeams
 			}
 			
 
-//pick Player's random Starter
+//pick Rubber random Starter
 			public static void pickRubberRandoStarter()
 				{
 					
@@ -505,7 +505,7 @@ public class BTeams
 				}
 			
 			
-//pick Player's random Reliever
+//pick Rubber random Reliever
 					public static void pickRubberRandoReliever()
 						{
 				
@@ -520,7 +520,7 @@ public class BTeams
 						}
 
 			
-//randomize Player's lineup
+//randomize Rubber lineup
 			public static void createRubberLineup()
 			{
 				
@@ -640,16 +640,1231 @@ public class BTeams
 				
 			}
 				
+
+			
+			
+			
+			
+			
+			
+									//RANDOMIZE YARD SRLs
+									//RANDOMIZE YARD SRLs
+									//RANDOMIZE YARD SRLs
+
+
+
+
+//randomize Yard Starter, Relievers, and Lineup
+			public static void randomizeYardSRL()
+				{
+	
+					pickYardRandoStarter();
+					pickYardRandoReliever();
+					createYardLineup();
+	
+				}
+
+
+//pick Yard random Starter
+			public static void pickYardRandoStarter()
+				{
+		
+					int startRandoN = (int) (Math.random() * 5);
+					boolean gas = false;
+					int xxx = 0;
+		
+		
+					for (BAllStarPlayer s: BPlayerInfo.team)
+						{
+							if( s.getType2().equals("Starter"))
+								{
+									yardStarterZ.add(s);
+								}
+						}
+
+		
+					do
+						{
+							if (xxx == startRandoN && gas == false)
+								{
+						
+									yardStarter.add(yardStarterZ.get(startRandoN));
+						
+									gas = true;
+								}
+							if (xxx >= 5)
+								{
+									xxx = -1;
+								}
 				
+							xxx++;
 				
+						} while (gas == false);
+		
+					xxx = 0;
+					gas = false;
+		
+		
+					//System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
+				}
+
+
+//pick Yard random Reliever
+			public static void pickYardRandoReliever()
+				{
+	
+					for (BAllStarPlayer r: BPlayerInfo.team)
+						{
+							if( r.getType2().equals("Reliever"))
+								{
+									yardRelieverZ.add(r);
+								}
+						}
+
+				}
+
+
+//randomize Yard lineup
+			public static void createYardLineup()
+				{
+	
+					boolean bombs = false;
+					boolean h1 = false;
+					boolean h2 = false;
+					boolean h3 = false;
+					boolean h4 = false;
+					boolean h5 = false;
+					boolean h6 = false;
+					boolean h7 = false;
+					boolean h8 = false;
+	
+
+	
+					for (BAllStarPlayer h: BPlayerInfo.team)
+						{
+							if( h.getType().equals("Hitter"))
+								{
+									yardHitterZ.add(h);
+								}
+						}			
+	
+
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+			
+			
+							if (h1 == false && startRandoN == 0)
+								{
+					
+									yardLinup.add(yardHitterZ.get(0));
+					
+									h1 = true;
+								}
+							if (h2 == false && startRandoN == 1)
+								{
+					
+									yardLinup.add(yardHitterZ.get(1));
+					
+									h2 = true;
+								}
+							if (h3 == false && startRandoN == 2)
+								{
+					
+									yardLinup.add(yardHitterZ.get(2));
+					
+									h3 = true;
+								}
+							if (h4 == false && startRandoN == 3)
+								{
+					
+									yardLinup.add(yardHitterZ.get(3));
+									
+									h4 = true;
+								}
+							if (h5 == false && startRandoN == 4)
+								{
+					
+									yardLinup.add(yardHitterZ.get(4));
+					
+									h5 = true;
+								}
+							if (h6 == false && startRandoN == 5)
+								{
+									
+									yardLinup.add(yardHitterZ.get(5));
+					
+									h6 = true;
+								}
+							if (h7 == false && startRandoN == 6)
+								{
+					
+									yardLinup.add(yardHitterZ.get(6));
+					
+									h7 = true;
+								}
+							if (h8 == false && startRandoN == 7)
+								{
+					
+									yardLinup.add(yardHitterZ.get(7));
+					
+									h8 = true;
+								}
+			
+							if (h1 == true && h2 == true && h3 == true && h4 == true && h5 == true 
+									&& h6 == true && h7 == true && h8 == true)
+								{
+					
+									h1 = false;
+									h2 = false;
+									h3 = false;
+									h4 = false;
+									h5 = false;
+									h6 = false;
+									h7 = false;
+									h8 = false;
+					
+					
+									bombs = true;
+								}
+						} while (bombs == false);
+	
+					bombs = false;
+	
+
+		
+		
+//					for (int i = 0; i < 8; i++)
+//						{
+//					
+//							System.out.println(playerLinup.get(i).getFirstName() + " " + playerLinup.get(i).getLastName());
+//					
+//						}
+	
+				}
+
+
+			
+			
+			
+			
+			
+			
+									//RANDOMIZE BISCUIT SRLs
+									//RANDOMIZE BISCUIT SRLs
+									//RANDOMIZE BISCUIT SRLs
+
+
+
+
+//randomize Biscuit Starter, Relievers, and Lineup
+			public static void randomizeBiscuitSRL()
+				{
+	
+					pickBiscuitRandoStarter();
+					pickBiscuitRandoReliever();
+					createBiscuitLineup();
+	
+				}
+
+
+//pick Biscuit random Starter
+			public static void pickBiscuitRandoStarter()
+				{
+		
+					int startRandoN = (int) (Math.random() * 5);
+					boolean gas = false;
+					int xxx = 0;
+		
+		
+					for (BAllStarPlayer s: BPlayerInfo.team)
+						{
+							if( s.getType2().equals("Starter"))
+								{
+									biscuitStarterZ.add(s);
+								}
+						}
+
+		
+					do
+						{
+							if (xxx == startRandoN && gas == false)
+								{
+						
+									biscuitStarter.add(biscuitStarterZ.get(startRandoN));
+						
+									gas = true;
+								}
+							if (xxx >= 5)
+								{
+									xxx = -1;
+								}
 				
+							xxx++;
+				
+						} while (gas == false);
+		
+					xxx = 0;
+					gas = false;
+		
+		
+					//System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
+				}
+
+
+//pick Biscuit random Reliever
+			public static void pickBiscuitRandoReliever()
+				{
+	
+					for (BAllStarPlayer r: BPlayerInfo.team)
+						{
+							if( r.getType2().equals("Reliever"))
+								{
+									biscuitRelieverZ.add(r);
+								}
+						}
+
+				}
+
+
+//randomize Biscuit lineup
+			public static void createBiscuitLineup()
+				{
+	
+					boolean bombs = false;
+					boolean h1 = false;
+					boolean h2 = false;
+					boolean h3 = false;
+					boolean h4 = false;
+					boolean h5 = false;
+					boolean h6 = false;
+					boolean h7 = false;
+					boolean h8 = false;
+	
+
+	
+					for (BAllStarPlayer h: BPlayerInfo.team)
+						{
+							if( h.getType().equals("Hitter"))
+								{
+									biscuitHitterZ.add(h);
+								}
+						}			
+	
+
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+			
+			
+							if (h1 == false && startRandoN == 0)
+								{
+					
+									biscuitLinup.add(biscuitHitterZ.get(0));
+					
+									h1 = true;
+								}
+							if (h2 == false && startRandoN == 1)
+								{
+					
+									biscuitLinup.add(biscuitHitterZ.get(1));
+					
+									h2 = true;
+								}
+							if (h3 == false && startRandoN == 2)
+								{
+					
+									biscuitLinup.add(biscuitHitterZ.get(2));
+					
+									h3 = true;
+								}
+							if (h4 == false && startRandoN == 3)
+								{
+					
+									biscuitLinup.add(biscuitHitterZ.get(3));
+									
+									h4 = true;
+								}
+							if (h5 == false && startRandoN == 4)
+								{
+					
+									biscuitLinup.add(biscuitHitterZ.get(4));
+					
+									h5 = true;
+								}
+							if (h6 == false && startRandoN == 5)
+								{
+									
+									biscuitLinup.add(biscuitHitterZ.get(5));
+					
+									h6 = true;
+								}
+							if (h7 == false && startRandoN == 6)
+								{
+					
+									biscuitLinup.add(biscuitHitterZ.get(6));
+					
+									h7 = true;
+								}
+							if (h8 == false && startRandoN == 7)
+								{
+					
+									biscuitLinup.add(biscuitHitterZ.get(7));
+					
+									h8 = true;
+								}
+			
+							if (h1 == true && h2 == true && h3 == true && h4 == true && h5 == true 
+									&& h6 == true && h7 == true && h8 == true)
+								{
+					
+									h1 = false;
+									h2 = false;
+									h3 = false;
+									h4 = false;
+									h5 = false;
+									h6 = false;
+									h7 = false;
+									h8 = false;
+					
+					
+									bombs = true;
+								}
+						} while (bombs == false);
+	
+					bombs = false;
+	
+
+		
+		
+//					for (int i = 0; i < 8; i++)
+//						{
+//					
+//							System.out.println(playerLinup.get(i).getFirstName() + " " + playerLinup.get(i).getLastName());
+//					
+//						}
+	
+				}
+
+
+			
+			
+			
+			
+			
+			
+									//RANDOMIZE PINKERTON SRLs
+									//RANDOMIZE PINKERTON SRLs
+									//RANDOMIZE PINKERTON SRLs
+
+
+
+
+//randomize Pinkerton Starter, Relievers, and Lineup
+			public static void randomizePinkertonSRL()
+				{
+	
+					pickPinkertonRandoStarter();
+					pickPinkertonRandoReliever();
+					createPinkertonLineup();
+	
+				}
+
+
+//pick Pinkerton random Starter
+			public static void pickPinkertonRandoStarter()
+				{
+		
+					int startRandoN = (int) (Math.random() * 5);
+					boolean gas = false;
+					int xxx = 0;
+		
+		
+					for (BAllStarPlayer s: BPlayerInfo.team)
+						{
+							if( s.getType2().equals("Starter"))
+								{
+									pinkertonStarterZ.add(s);
+								}
+						}
+
+		
+					do
+						{
+							if (xxx == startRandoN && gas == false)
+								{
 						
+									pinkertonStarter.add(pinkertonStarterZ.get(startRandoN));
 						
+									gas = true;
+								}
+							if (xxx >= 5)
+								{
+									xxx = -1;
+								}
+				
+							xxx++;
+				
+						} while (gas == false);
+		
+					xxx = 0;
+					gas = false;
+		
+		
+					//System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
+				}
+
+
+//pick Pinkerton random Reliever
+			public static void pickPinkertonRandoReliever()
+				{
+	
+					for (BAllStarPlayer r: BPlayerInfo.team)
+						{
+							if( r.getType2().equals("Reliever"))
+								{
+									pinkertonRelieverZ.add(r);
+								}
+						}
+
+				}
+
+
+//randomize Pinkerton lineup
+			public static void createPinkertonLineup()
+				{
+	
+					boolean bombs = false;
+					boolean h1 = false;
+					boolean h2 = false;
+					boolean h3 = false;
+					boolean h4 = false;
+					boolean h5 = false;
+					boolean h6 = false;
+					boolean h7 = false;
+					boolean h8 = false;
+	
+
+	
+					for (BAllStarPlayer h: BPlayerInfo.team)
+						{
+							if( h.getType().equals("Hitter"))
+								{
+									pinkertonHitterZ.add(h);
+								}
+						}			
+	
+
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+			
+			
+							if (h1 == false && startRandoN == 0)
+								{
+					
+									pinkertonLinup.add(pinkertonHitterZ.get(0));
+					
+									h1 = true;
+								}
+							if (h2 == false && startRandoN == 1)
+								{
+					
+									pinkertonLinup.add(pinkertonHitterZ.get(1));
+					
+									h2 = true;
+								}
+							if (h3 == false && startRandoN == 2)
+								{
+					
+									pinkertonLinup.add(pinkertonHitterZ.get(2));
+					
+									h3 = true;
+								}
+							if (h4 == false && startRandoN == 3)
+								{
+					
+									pinkertonLinup.add(pinkertonHitterZ.get(3));
+									
+									h4 = true;
+								}
+							if (h5 == false && startRandoN == 4)
+								{
+					
+									pinkertonLinup.add(pinkertonHitterZ.get(4));
+					
+									h5 = true;
+								}
+							if (h6 == false && startRandoN == 5)
+								{
+									
+									pinkertonLinup.add(pinkertonHitterZ.get(5));
+					
+									h6 = true;
+								}
+							if (h7 == false && startRandoN == 6)
+								{
+					
+									pinkertonLinup.add(pinkertonHitterZ.get(6));
+					
+									h7 = true;
+								}
+							if (h8 == false && startRandoN == 7)
+								{
+					
+									pinkertonLinup.add(pinkertonHitterZ.get(7));
+					
+									h8 = true;
+								}
+			
+							if (h1 == true && h2 == true && h3 == true && h4 == true && h5 == true 
+									&& h6 == true && h7 == true && h8 == true)
+								{
+					
+									h1 = false;
+									h2 = false;
+									h3 = false;
+									h4 = false;
+									h5 = false;
+									h6 = false;
+									h7 = false;
+									h8 = false;
+					
+					
+									bombs = true;
+								}
+						} while (bombs == false);
+	
+					bombs = false;
+	
+
+		
+		
+//					for (int i = 0; i < 8; i++)
+//						{
+//					
+//							System.out.println(playerLinup.get(i).getFirstName() + " " + playerLinup.get(i).getLastName());
+//					
+//						}
+	
+				}
+
+
+			
+			
+			
+			
+			
+			
+									//RANDOMIZE EL FART SRLs
+									//RANDOMIZE EL FART SRLs
+									//RANDOMIZE EL FART SRLs
+
+
+
+//randomize El Fart Starter, Relievers, and Lineup
+			public static void randomizeElFartSRL()
+				{
+	
+					pickElFartRandoStarter();
+					pickElFartRandoReliever();
+					createElFartLineup();
+	
+				}
+
+
+//pick El Fart random Starter
+			public static void pickElFartRandoStarter()
+				{
+		
+					int startRandoN = (int) (Math.random() * 5);
+					boolean gas = false;
+					int xxx = 0;
+		
+		
+					for (BAllStarPlayer s: BPlayerInfo.team)
+						{
+							if( s.getType2().equals("Starter"))
+								{
+									elfartStarterZ.add(s);
+								}
+						}
+
+		
+					do
+						{
+							if (xxx == startRandoN && gas == false)
+								{
 						
+									elfartStarter.add(elfartStarterZ.get(startRandoN));
 						
+									gas = true;
+								}
+							if (xxx >= 5)
+								{
+									xxx = -1;
+								}
+				
+							xxx++;
+				
+						} while (gas == false);
+		
+					xxx = 0;
+					gas = false;
+		
+		
+					//System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
+				}
+
+
+//pick El Fart random Reliever
+			public static void pickElFartRandoReliever()
+				{
+	
+					for (BAllStarPlayer r: BPlayerInfo.team)
+						{
+							if( r.getType2().equals("Reliever"))
+								{
+									elfartRelieverZ.add(r);
+								}
+						}
+
+				}
+
+
+//randomize El Fart lineup
+			public static void createElFartLineup()
+				{
+	
+					boolean bombs = false;
+					boolean h1 = false;
+					boolean h2 = false;
+					boolean h3 = false;
+					boolean h4 = false;
+					boolean h5 = false;
+					boolean h6 = false;
+					boolean h7 = false;
+					boolean h8 = false;
+	
+
+	
+					for (BAllStarPlayer h: BPlayerInfo.team)
+						{
+							if( h.getType().equals("Hitter"))
+								{
+									elfartHitterZ.add(h);
+								}
+						}			
+	
+
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+			
+			
+							if (h1 == false && startRandoN == 0)
+								{
+					
+									elfartLinup.add(elfartHitterZ.get(0));
+					
+									h1 = true;
+								}
+							if (h2 == false && startRandoN == 1)
+								{
+					
+									elfartLinup.add(elfartHitterZ.get(1));
+					
+									h2 = true;
+								}
+							if (h3 == false && startRandoN == 2)
+								{
+					
+									elfartLinup.add(elfartHitterZ.get(2));
+					
+									h3 = true;
+								}
+							if (h4 == false && startRandoN == 3)
+								{
+					
+									elfartLinup.add(elfartHitterZ.get(3));
+									
+									h4 = true;
+								}
+							if (h5 == false && startRandoN == 4)
+								{
+					
+									elfartLinup.add(elfartHitterZ.get(4));
+					
+									h5 = true;
+								}
+							if (h6 == false && startRandoN == 5)
+								{
+									
+									elfartLinup.add(elfartHitterZ.get(5));
+					
+									h6 = true;
+								}
+							if (h7 == false && startRandoN == 6)
+								{
+					
+									elfartLinup.add(elfartHitterZ.get(6));
+					
+									h7 = true;
+								}
+							if (h8 == false && startRandoN == 7)
+								{
+					
+									elfartLinup.add(elfartHitterZ.get(7));
+					
+									h8 = true;
+								}
+			
+							if (h1 == true && h2 == true && h3 == true && h4 == true && h5 == true 
+									&& h6 == true && h7 == true && h8 == true)
+								{
+					
+									h1 = false;
+									h2 = false;
+									h3 = false;
+									h4 = false;
+									h5 = false;
+									h6 = false;
+									h7 = false;
+									h8 = false;
+					
+					
+									bombs = true;
+								}
+						} while (bombs == false);
+	
+					bombs = false;
+	
+
+		
+		
+//					for (int i = 0; i < 8; i++)
+//						{
+//					
+//							System.out.println(playerLinup.get(i).getFirstName() + " " + playerLinup.get(i).getLastName());
+//					
+//						}
+	
+				}
+
+
+			
+			
+			
+			
+			
+			
+									//RANDOMIZE CHICHARRON SRLs
+									//RANDOMIZE CHICHARRON SRLs
+									//RANDOMIZE CHICHARRON SRLs
+
+
+
+
+//randomize Chicharron Starter, Relievers, and Lineup
+			public static void randomizeChicharronSRL()
+				{
+	
+					pickChicharronRandoStarter();
+					pickChicharronRandoReliever();
+					createChicharronLineup();
+	
+				}
+
+
+//pick Chicharron random Starter
+			public static void pickChicharronRandoStarter()
+				{
+		
+					int startRandoN = (int) (Math.random() * 5);
+					boolean gas = false;
+					int xxx = 0;
+		
+		
+					for (BAllStarPlayer s: BPlayerInfo.team)
+						{
+							if( s.getType2().equals("Starter"))
+								{
+									chicharronStarterZ.add(s);
+								}
+						}
+
+		
+					do
+						{
+							if (xxx == startRandoN && gas == false)
+								{
 						
+									chicharronStarter.add(chicharronStarterZ.get(startRandoN));
 						
-						
+									gas = true;
+								}
+							if (xxx >= 5)
+								{
+									xxx = -1;
+								}
+				
+							xxx++;
+				
+						} while (gas == false);
+		
+					xxx = 0;
+					gas = false;
+		
+		
+					//System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
+				}
+
+
+//pick Chicharron random Reliever
+			public static void pickChicharronRandoReliever()
+				{
+	
+					for (BAllStarPlayer r: BPlayerInfo.team)
+						{
+							if( r.getType2().equals("Reliever"))
+								{
+									chicharronRelieverZ.add(r);
+								}
+						}
+
+				}
+
+
+//randomize Chicharron lineup
+			public static void createChicharronLineup()
+				{
+	
+					boolean bombs = false;
+					boolean h1 = false;
+					boolean h2 = false;
+					boolean h3 = false;
+					boolean h4 = false;
+					boolean h5 = false;
+					boolean h6 = false;
+					boolean h7 = false;
+					boolean h8 = false;
+	
+
+	
+					for (BAllStarPlayer h: BPlayerInfo.team)
+						{
+							if( h.getType().equals("Hitter"))
+								{
+									chicharronHitterZ.add(h);
+								}
+						}			
+	
+
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+			
+			
+							if (h1 == false && startRandoN == 0)
+								{
+					
+									chicharronLinup.add(chicharronHitterZ.get(0));
+					
+									h1 = true;
+								}
+							if (h2 == false && startRandoN == 1)
+								{
+					
+									chicharronLinup.add(chicharronHitterZ.get(1));
+					
+									h2 = true;
+								}
+							if (h3 == false && startRandoN == 2)
+								{
+					
+									chicharronLinup.add(chicharronHitterZ.get(2));
+					
+									h3 = true;
+								}
+							if (h4 == false && startRandoN == 3)
+								{
+					
+									chicharronLinup.add(chicharronHitterZ.get(3));
+									
+									h4 = true;
+								}
+							if (h5 == false && startRandoN == 4)
+								{
+					
+									chicharronLinup.add(chicharronHitterZ.get(4));
+					
+									h5 = true;
+								}
+							if (h6 == false && startRandoN == 5)
+								{
+									
+									chicharronLinup.add(chicharronHitterZ.get(5));
+					
+									h6 = true;
+								}
+							if (h7 == false && startRandoN == 6)
+								{
+					
+									chicharronLinup.add(chicharronHitterZ.get(6));
+					
+									h7 = true;
+								}
+							if (h8 == false && startRandoN == 7)
+								{
+					
+									chicharronLinup.add(chicharronHitterZ.get(7));
+					
+									h8 = true;
+								}
+			
+							if (h1 == true && h2 == true && h3 == true && h4 == true && h5 == true 
+									&& h6 == true && h7 == true && h8 == true)
+								{
+					
+									h1 = false;
+									h2 = false;
+									h3 = false;
+									h4 = false;
+									h5 = false;
+									h6 = false;
+									h7 = false;
+									h8 = false;
+					
+					
+									bombs = true;
+								}
+						} while (bombs == false);
+	
+					bombs = false;
+	
+
+		
+		
+//					for (int i = 0; i < 8; i++)
+//						{
+//					
+//							System.out.println(playerLinup.get(i).getFirstName() + " " + playerLinup.get(i).getLastName());
+//					
+//						}
+	
+				}
+
+
+			
+			
+			
+			
+			
+			
+			//RANDOMIZE LEGEND SRLs
+			//RANDOMIZE LEGEND SRLs
+			//RANDOMIZE LEGEND SRLs
+
+
+
+
+//randomize Legend Starter, Relievers, and Lineup
+			public static void randomizeLegendSRL()
+				{
+
+					pickLegendRandoStarter();
+					pickLegendRandoReliever();
+					createLegendLineup();
+
+				}
+
+
+//pick Legend random Starter
+			public static void pickLegendRandoStarter()
+				{
+
+					int startRandoN = (int) (Math.random() * 5);
+					boolean gas = false;
+					int xxx = 0;
+
+
+					for (BAllStarPlayer s: BPlayerInfo.team)
+						{
+							if( s.getType2().equals("Starter"))
+								{
+									legendStarterZ.add(s);
+								}
+						}
+
+
+					do
+						{
+							if (xxx == startRandoN && gas == false)
+								{
+
+									legendStarter.add(legendStarterZ.get(startRandoN));
+
+									gas = true;
+								}
+							if (xxx >= 5)
+								{
+									xxx = -1;
+								}
+							
+							xxx++;
+
+						} while (gas == false);
+
+					xxx = 0;
+					gas = false;
+
+
+					//System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
+				}
+	
+
+//pick Legend random Reliever
+			public static void pickLegendRandoReliever()
+				{
+
+					for (BAllStarPlayer r: BPlayerInfo.team)
+						{
+							if( r.getType2().equals("Reliever"))
+								{
+									legendRelieverZ.add(r);
+								}
+						}
+
+				}
+
+
+//randomize Legend lineup
+			public static void createLegendLineup()
+				{
+
+					boolean bombs = false;
+					boolean h1 = false;
+					boolean h2 = false;
+					boolean h3 = false;
+					boolean h4 = false;
+					boolean h5 = false;
+					boolean h6 = false;
+					boolean h7 = false;
+					boolean h8 = false;
+
+
+
+					for (BAllStarPlayer h: BPlayerInfo.team)
+						{
+							if( h.getType().equals("Hitter"))
+								{
+									legendHitterZ.add(h);
+								}
+						}			
+
+
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+
+
+							if (h1 == false && startRandoN == 0)
+								{
+
+									legendLinup.add(legendHitterZ.get(0));
+
+									h1 = true;
+								}
+							if (h2 == false && startRandoN == 1)
+								{
+
+									legendLinup.add(legendHitterZ.get(1));
+									
+									h2 = true;
+								}
+							if (h3 == false && startRandoN == 2)
+								{
+
+									legendLinup.add(legendHitterZ.get(2));
+			
+									h3 = true;
+								}
+							if (h4 == false && startRandoN == 3)
+								{
+
+									legendLinup.add(legendHitterZ.get(3));
+			
+									h4 = true;
+								}
+							if (h5 == false && startRandoN == 4)
+								{
+
+									legendLinup.add(legendHitterZ.get(4));
+			
+									h5 = true;
+								}
+							if (h6 == false && startRandoN == 5)
+								{
+			
+									legendLinup.add(legendHitterZ.get(5));
+
+									h6 = true;
+								}
+							if (h7 == false && startRandoN == 6)
+								{
+
+									legendLinup.add(legendHitterZ.get(6));
+
+									h7 = true;
+								}
+							if (h8 == false && startRandoN == 7)
+								{
+
+									legendLinup.add(legendHitterZ.get(7));
+
+									h8 = true;
+								}
+
+							if (h1 == true && h2 == true && h3 == true && h4 == true && h5 == true 
+									&& h6 == true && h7 == true && h8 == true)
+								{
+
+									h1 = false;
+									h2 = false;
+									h3 = false;
+									h4 = false;
+									h5 = false;
+									h6 = false;
+									h7 = false;
+									h8 = false;
+
+
+									bombs = true;
+								}
+						} while (bombs == false);
+
+					bombs = false;
+
+
+
+
+//						for (int i = 0; i < 8; i++)
+//							{
+//
+//								System.out.println(playerLinup.get(i).getFirstName() + " " + playerLinup.get(i).getLastName());
+//
+//							}
+
+				}
+
+				
+			
 						
 		}
 		

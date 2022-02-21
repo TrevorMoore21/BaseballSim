@@ -12,6 +12,7 @@ public class ABaseballDriver
 				ATxtReader.readSimTxt();
 				BPlayerInfo.introFillPlayerTeam();
 				BTeams.fillAllTeams();
+				BTeams.randomizeAllSRL();
 
 
 				CGreetSimPlayer.simIntro();
@@ -19,7 +20,7 @@ public class ABaseballDriver
 				
 				
 				
-				BTeams.createPlayerLineup();
+				BTeams.randomizeAllSRL();
 				
 				
 				
