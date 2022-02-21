@@ -28,7 +28,7 @@ public class DPlayGame
 				else if(menuNum.equals("2"))
 					{
 						
-						ESimulation.simIntro();
+						ESimulationStart.simIntro();
 					}
 				else if(menuNum.equals("3"))
 					{

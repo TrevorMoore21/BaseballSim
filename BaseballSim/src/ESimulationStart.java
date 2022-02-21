@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 
-public class ESimulation
+public class ESimulationStart
 	{
 
 		static String playerTeam;
@@ -135,31 +135,33 @@ public class ESimulation
 							{
 								if (menuNum2 == 1)
 									{
-										regRubberGame();
+										HERERERERERERERERERERERERERERE
+										
+										FSimulationR.regRubberGame();
 									}
 								if (menuNum2 == 2)
 									{
-										regYardGame();
+										//FSimulationR.regYardGame();
 									}
 								if (menuNum2 == 3)
 									{
-										regBiscuitGame();
+										//FSimulationR.regBiscuitGame();
 									}
 								if (menuNum2 == 4)
 									{
-										regPinkGame();
+										//FSimulationR.regPinkGame();
 									}
 								if (menuNum2 == 5)
 									{
-										regFartGame();
+										//FSimulationR.regFartGame();
 									}
 								if (menuNum2 == 6)
 									{
-										regChichGame();
+										//FSimulationR.regChichGame();
 									}
 								if (menuNum2 == 7)
 									{
-										regLegendGame();
+										//FSimulationR.regLegendGame();
 									}
 							}	
 						
@@ -170,31 +172,31 @@ public class ESimulation
 								
 								if (menuNum2 == 1)
 									{
-										quickRubberGame();
+										//FSimulationQ.quickRubberGame();
 									}
 								if (menuNum2 == 2)
 									{
-										quickYardGame();
+										//FSimulationQ.quickYardGame();
 									}
 								if (menuNum2 == 3)
 									{
-										quickBiscuitGame();
+										//FSimulationQ.quickBiscuitGame();
 									}
 								if (menuNum2 == 4)
 									{
-										quickPinkGame();
+										//FSimulationQ.quickPinkGame();
 									}
 								if (menuNum2 == 5)
 									{
-										quickFartGame();
+										//FSimulationQ.quickFartGame();
 									}
 								if (menuNum2 == 6)
 									{
-										quickChichGame();
+										//FSimulationQ.quickChichGame();
 									}
 								if (menuNum2 == 7)
 									{
-										quickLegendGame();
+									//	FSimulationQ.quickLegendGame();
 									}
 							}	
 						
