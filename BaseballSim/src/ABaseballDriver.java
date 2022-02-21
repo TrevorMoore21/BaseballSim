@@ -10,23 +10,21 @@ public class ABaseballDriver
 			{
 			
 				ATxtReader.readSimTxt();
-				BPlayerInfo.introFillTeam();
+				BPlayerInfo.introFillPlayerTeam();
 				BTeams.fillAllTeams();
 
-				
-				
-				
+
 				CGreetSimPlayer.simIntro();
 				
-				FSimulationR.pickPlayerRandoStarter();
 				
-				//BPlayerInfo.displayPlayerStats();
+				
+				
+				BTeams.createPlayerLineup();
+				
+				
 				
 				CGreetSimPlayer.displayRule();
 				CGreetSimPlayer.playOrNaw();
-				
-				
-				
 			}
 		
 	}

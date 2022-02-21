@@ -7,71 +7,6 @@ public class FSimulationR
 		static double battingAvA;
 		static double rando;
 		
-		static ArrayList<BAllStarPlayer> playerStarterZ = new ArrayList<BAllStarPlayer>();
-		static ArrayList<BAllStarPlayer> playerStarter = new ArrayList<BAllStarPlayer>();
-		
-		
-		
-		
-		
-		
-
-//pick Player's random Pitcher
-		public static void pickPlayerRandoStarter()
-			{
-				
-				int startRandoN = (int) (Math.random() * 5);
-				boolean gas = false;
-				int xxx = 0;
-				
-				
-				for (BAllStarPlayer s: BPlayerInfo.team)
-					{
-						if( s.getType2().equals("Starter"))
-							{
-								playerStarterZ.add(s);
-							}
-					}
-		
-				
-				do
-					{
-						if (xxx == startRandoN && gas == false)
-							{
-								
-								playerStarter.add(playerStarterZ.get(startRandoN));
-								
-								gas = true;
-							}
-						if (xxx >= 5)
-							{
-								xxx = -1;
-							}
-						
-						xxx++;
-						
-					} while (gas == false);
-				
-				xxx = 0;
-				gas = false;
-				
-				
-				//System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
-			}
-		
-		
-		
-		
-		
-//randomize Player's lineup
-		public static void createPlayerLineup()
-		{
-			
-			
-			
-		}
-		
-		
 		
 		
 		
@@ -79,8 +14,7 @@ public class FSimulationR
 		public static void regRubberGame()
 			{
 			
-				pickPlayerRandoStarter();
-				createPlayerLineup();
+				
 				
 				
 				

@@ -3,10 +3,6 @@ import java.util.ArrayList;
 public class BTeams
 	{
 
-		
-
-		
-
 				static ArrayList<BAllStarPlayer> RubberDucks = new ArrayList<BAllStarPlayer>();
 				static ArrayList<BAllStarPlayer> YardGoats = new ArrayList<BAllStarPlayer>();
 				static ArrayList<BAllStarPlayer> Biscuits = new ArrayList<BAllStarPlayer>();
@@ -16,6 +12,67 @@ public class BTeams
 				static ArrayList<BAllStarPlayer> Legends = new ArrayList<BAllStarPlayer>();
 				
 				
+				
+				static ArrayList<BAllStarPlayer> playerStarterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> playerStarter = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> playerRelieverZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> playerReliever = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> playerHitterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> playerLinup = new ArrayList<BAllStarPlayer>();
+				
+				static ArrayList<BAllStarPlayer> rubberStarterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> rubberStarter = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> rubberRelieverZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> rubberReliever = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> rubberHitterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> rubberLinup = new ArrayList<BAllStarPlayer>();
+
+				static ArrayList<BAllStarPlayer> yardStarterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> yardStarter = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> yardRelieverZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> yardReliever = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> yardHitterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> yardLinup = new ArrayList<BAllStarPlayer>();
+				
+				static ArrayList<BAllStarPlayer> biscuitStarterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> biscuitStarter = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> biscuitRelieverZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> biscuitReliever = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> biscuitHitterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> biscuitLinup = new ArrayList<BAllStarPlayer>();
+				
+				static ArrayList<BAllStarPlayer> pinkertonStarterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> pinkertonStarter = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> pinkertonRelieverZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> pinkertonReliever = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> pinkertonHitterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> pinkertonLinup = new ArrayList<BAllStarPlayer>();
+				
+				static ArrayList<BAllStarPlayer> elfartStarterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> elfartStarter = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> elfartRelieverZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> elfartReliever = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> elfartHitterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> elfartLinup = new ArrayList<BAllStarPlayer>();
+				
+				static ArrayList<BAllStarPlayer> chicharronStarterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> chicharronStarter = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> chicharronRelieverZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> chicharronReliever = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> chicharronHitterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> chicharronLinup = new ArrayList<BAllStarPlayer>();
+				
+				static ArrayList<BAllStarPlayer> legendStarterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> legendStarter = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> legendRelieverZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> legendReliever = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> legendHitterZ = new ArrayList<BAllStarPlayer>();
+				static ArrayList<BAllStarPlayer> legendLinup = new ArrayList<BAllStarPlayer>();
+				
+				
+				
+				
+//fill ALL TEAMS				
 				public static void fillAllTeams()
 				{
 					fillRubberDucks();
@@ -26,6 +83,33 @@ public class BTeams
 					fillChicharrones();
 					fillLegends();
 				}
+				
+//randomize ALL SRLs			
+				public static void randomizeAllSRL()
+				{
+					
+					randomizePlayerSRL();
+					randomizeRubberSRL();
+					randomizeYardSRL();
+					randomizeBiscuitSRL();
+					randomizePinkertonSRL();
+					randomizeElFartSRL();
+					randomizeChicharronSRL();
+					randomizeLegendSRL();
+					
+				}
+				
+				
+				
+				
+				
+									//FILL TEAMS
+									//FILL TEAMS
+									//FILL TEAMS
+				
+				
+				
+				
 				
 				
 				public static void fillRubberDucks()
@@ -148,6 +232,425 @@ public class BTeams
 											}
 							}
 					}
+				
+				
+				
+				
+				
+				
+				
+									//RANDOMIZE PLAYER SRLs
+									//RANDOMIZE PLAYER SRLs
+									//RANDOMIZE PLAYER SRLs
+				
+				
+				
+
+//randomize Player's Starter, Relievers, and Lineup
+						public static void randomizePlayerSRL()
+						{
+							
+							pickPlayerRandoStarter();
+							pickPlayerRandoReliever();
+							createPlayerLineup();
+							
+						}
+						
+
+//pick Player's random Starter
+						public static void pickPlayerRandoStarter()
+							{
+								
+								int startRandoN = (int) (Math.random() * 5);
+								boolean gas = false;
+								int xxx = 0;
+								
+								
+								for (BAllStarPlayer s: BPlayerInfo.team)
+									{
+										if( s.getType2().equals("Starter"))
+											{
+												playerStarterZ.add(s);
+											}
+									}
+						
+								
+								do
+									{
+										if (xxx == startRandoN && gas == false)
+											{
+												
+												playerStarter.add(playerStarterZ.get(startRandoN));
+												
+												gas = true;
+											}
+										if (xxx >= 5)
+											{
+												xxx = -1;
+											}
+										
+										xxx++;
+										
+									} while (gas == false);
+								
+								xxx = 0;
+								gas = false;
+								
+								
+								//System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
+							}
+						
+						
+//pick Player's random Reliever
+								public static void pickPlayerRandoReliever()
+									{
+							
+										for (BAllStarPlayer r: BPlayerInfo.team)
+											{
+												if( r.getType2().equals("Reliever"))
+													{
+														playerRelieverZ.add(r);
+													}
+											}
+						
+									}
+	
+						
+//randomize Player's lineup
+						public static void createPlayerLineup()
+						{
+							
+							boolean bombs = false;
+							boolean h1 = false;
+							boolean h2 = false;
+							boolean h3 = false;
+							boolean h4 = false;
+							boolean h5 = false;
+							boolean h6 = false;
+							boolean h7 = false;
+							boolean h8 = false;
+							
+						
+							
+							for (BAllStarPlayer h: BPlayerInfo.team)
+								{
+									if( h.getType().equals("Hitter"))
+										{
+											playerHitterZ.add(h);
+										}
+								}			
+							
+						
+							do
+								{
+									//random num from 0 to 8
+									int startRandoN = (int) (Math.random() * 9);
+									
+									
+									if (h1 == false && startRandoN == 0)
+										{
+											
+											playerLinup.add(playerHitterZ.get(0));
+											
+											h1 = true;
+										}
+									if (h2 == false && startRandoN == 1)
+										{
+											
+											playerLinup.add(playerHitterZ.get(1));
+											
+											h2 = true;
+										}
+									if (h3 == false && startRandoN == 2)
+										{
+											
+											playerLinup.add(playerHitterZ.get(2));
+											
+											h3 = true;
+										}
+									if (h4 == false && startRandoN == 3)
+										{
+											
+											playerLinup.add(playerHitterZ.get(3));
+											
+											h4 = true;
+										}
+									if (h5 == false && startRandoN == 4)
+										{
+											
+											playerLinup.add(playerHitterZ.get(4));
+											
+											h5 = true;
+										}
+									if (h6 == false && startRandoN == 5)
+										{
+											
+											playerLinup.add(playerHitterZ.get(5));
+											
+											h6 = true;
+										}
+									if (h7 == false && startRandoN == 6)
+										{
+											
+											playerLinup.add(playerHitterZ.get(6));
+											
+											h7 = true;
+										}
+									if (h8 == false && startRandoN == 7)
+										{
+											
+											playerLinup.add(playerHitterZ.get(7));
+											
+											h8 = true;
+										}
+									
+									if (h1 == true && h2 == true && h3 == true && h4 == true && h5 == true 
+											&& h6 == true && h7 == true && h8 == true)
+										{
+											
+											h1 = false;
+											h2 = false;
+											h3 = false;
+											h4 = false;
+											h5 = false;
+											h6 = false;
+											h7 = false;
+											h8 = false;
+											
+											
+											bombs = true;
+										}
+								} while (bombs == false);
+							
+								bombs = false;
+							
+				
+								
+								
+//							for (int i = 0; i < 8; i++)
+//								{
+//									
+//									System.out.println(playerLinup.get(i).getFirstName() + " " + playerLinup.get(i).getLastName());
+//									
+//								}
+							
+						}
+
+						
+						
+						
+						
+						
+						
+						
+						//RANDOMIZE RUBBER SRLs
+						//RANDOMIZE RUBBER SRLs
+						//RANDOMIZE RUBBER SRLs
+	
+	
+	
+
+//randomize Player's Starter, Relievers, and Lineup
+			public static void randomizeRubberSRL()
+			{
+				
+				pickRubberRandoStarter();
+				pickRubberRandoReliever();
+				createRubberLineup();
+				
 			}
+			
+
+//pick Player's random Starter
+			public static void pickRubberRandoStarter()
+				{
+					
+					int startRandoN = (int) (Math.random() * 5);
+					boolean gas = false;
+					int xxx = 0;
+					
+					
+					for (BAllStarPlayer s: BPlayerInfo.team)
+						{
+							if( s.getType2().equals("Starter"))
+								{
+									rubberStarterZ.add(s);
+								}
+						}
+			
+					
+					do
+						{
+							if (xxx == startRandoN && gas == false)
+								{
+									
+									rubberStarter.add(rubberStarterZ.get(startRandoN));
+									
+									gas = true;
+								}
+							if (xxx >= 5)
+								{
+									xxx = -1;
+								}
+							
+							xxx++;
+							
+						} while (gas == false);
+					
+					xxx = 0;
+					gas = false;
+					
+					
+					//System.out.println(playerStarter.get(0).getFirstName() + " " + playerStarter.get(0).getLastName());
+				}
+			
+			
+//pick Player's random Reliever
+					public static void pickRubberRandoReliever()
+						{
+				
+							for (BAllStarPlayer r: BPlayerInfo.team)
+								{
+									if( r.getType2().equals("Reliever"))
+										{
+											rubberRelieverZ.add(r);
+										}
+								}
+			
+						}
+
+			
+//randomize Player's lineup
+			public static void createRubberLineup()
+			{
+				
+				boolean bombs = false;
+				boolean h1 = false;
+				boolean h2 = false;
+				boolean h3 = false;
+				boolean h4 = false;
+				boolean h5 = false;
+				boolean h6 = false;
+				boolean h7 = false;
+				boolean h8 = false;
+				
+			
+				
+				for (BAllStarPlayer h: BPlayerInfo.team)
+					{
+						if( h.getType().equals("Hitter"))
+							{
+								rubberHitterZ.add(h);
+							}
+					}			
+				
+			
+				do
+					{
+						//random num from 0 to 8
+						int startRandoN = (int) (Math.random() * 9);
+						
+						
+						if (h1 == false && startRandoN == 0)
+							{
+								
+								rubberLinup.add(rubberHitterZ.get(0));
+								
+								h1 = true;
+							}
+						if (h2 == false && startRandoN == 1)
+							{
+								
+								rubberLinup.add(rubberHitterZ.get(1));
+								
+								h2 = true;
+							}
+						if (h3 == false && startRandoN == 2)
+							{
+								
+								rubberLinup.add(rubberHitterZ.get(2));
+								
+								h3 = true;
+							}
+						if (h4 == false && startRandoN == 3)
+							{
+								
+								rubberLinup.add(rubberHitterZ.get(3));
+								
+								h4 = true;
+							}
+						if (h5 == false && startRandoN == 4)
+							{
+								
+								rubberLinup.add(rubberHitterZ.get(4));
+								
+								h5 = true;
+							}
+						if (h6 == false && startRandoN == 5)
+							{
+								
+								rubberLinup.add(rubberHitterZ.get(5));
+								
+								h6 = true;
+							}
+						if (h7 == false && startRandoN == 6)
+							{
+								
+								rubberLinup.add(rubberHitterZ.get(6));
+								
+								h7 = true;
+							}
+						if (h8 == false && startRandoN == 7)
+							{
+								
+								rubberLinup.add(rubberHitterZ.get(7));
+								
+								h8 = true;
+							}
+						
+						if (h1 == true && h2 == true && h3 == true && h4 == true && h5 == true 
+								&& h6 == true && h7 == true && h8 == true)
+							{
+								
+								h1 = false;
+								h2 = false;
+								h3 = false;
+								h4 = false;
+								h5 = false;
+								h6 = false;
+								h7 = false;
+								h8 = false;
+								
+								
+								bombs = true;
+							}
+					} while (bombs == false);
+				
+					bombs = false;
+				
+	
+					
+					
+//				for (int i = 0; i < 8; i++)
+//					{
+//						
+//						System.out.println(playerLinup.get(i).getFirstName() + " " + playerLinup.get(i).getLastName());
+//						
+//					}
+				
+			}
+				
+				
+				
+				
+						
+						
+						
+						
+						
+						
+						
+						
+		}
 		
 	

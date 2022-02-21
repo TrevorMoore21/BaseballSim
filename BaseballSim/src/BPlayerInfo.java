@@ -15,7 +15,7 @@ public class BPlayerInfo
 		
 		
 //starts game with giving player all of the coal players to make a team
-		public static void introFillTeam()
+		public static void introFillPlayerTeam()
 		{
 			for (int i = 0; i <= 19; i++) 
 				{
