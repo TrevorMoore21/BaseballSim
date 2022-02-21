@@ -52,19 +52,3 @@ public class BPlayerInfo
 			
 			}
 	}
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

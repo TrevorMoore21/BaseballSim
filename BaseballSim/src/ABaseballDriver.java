@@ -18,7 +18,7 @@ public class ABaseballDriver
 				
 				CGreetSimPlayer.simIntro();
 				
-				
+				FSimulationR.pickPlayerRandoStarter();
 				
 				//BPlayerInfo.displayPlayerStats();
 				
