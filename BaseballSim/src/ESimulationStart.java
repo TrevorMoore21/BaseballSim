@@ -38,6 +38,8 @@ public class ESimulationStart
 					System.out.println("\nSorry, Voodoo Jobu didn't catch that, try again");
 					simIntro();
 				}
+			
+
 		}
 		
 		
@@ -125,6 +127,9 @@ public class ESimulationStart
 //by inning or full game
 		public static void quickPlayOption()
 			{
+				System.out.println();
+				System.out.println();
+				System.out.println();
 				System.out.println(BPlayerInfo.playerName + ", how would you like to view this simulation?"
 						+ "\n\t1) Regular   (innging by inning) "
 						+ "\n\t2) Quickplay (see simulation summary)");
@@ -135,7 +140,7 @@ public class ESimulationStart
 							{
 								if (menuNum2 == 1)
 									{
-										HERERERERERERERERERERERERERERE
+										
 										
 										FSimulationR.regRubberGame();
 									}
