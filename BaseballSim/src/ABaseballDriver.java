@@ -19,7 +19,7 @@ public class ABaseballDriver
 				
 				
 				FSimulationR.regRubberGame();
-				
+				//FSimulationR.qRubberGame();
 				
 				
 				
