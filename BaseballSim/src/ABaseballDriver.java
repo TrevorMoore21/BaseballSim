@@ -18,9 +18,9 @@ public class ABaseballDriver
 				CGreetSimPlayer.simIntro();
 				
 				
+				FSimulationR.regRubberInningT1();
 				
 				
-				BTeams.randomizeAllSRL();
 				
 				
 				

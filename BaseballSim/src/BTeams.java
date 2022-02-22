@@ -305,6 +305,16 @@ public class BTeams
 //pick Player's random Reliever
 								public static void pickPlayerRandoReliever()
 									{
+										
+										boolean grouch = false;
+										boolean r1 = false;
+										boolean r2 = false;
+										boolean r3 = false;
+										boolean r4 = false;
+										boolean r5 = false;
+										boolean r6 = false;
+										boolean r7 = false;
+										
 							
 										for (BAllStarPlayer r: BPlayerInfo.team)
 											{
@@ -314,6 +324,84 @@ public class BTeams
 													}
 											}
 						
+										
+										
+										do
+											{
+												//random num from 0 to 8
+												int startRandoN = (int) (Math.random() * 9);
+												
+												
+												if (r1 == false && startRandoN == 0)
+													{
+														
+														playerReliever.add(playerRelieverZ.get(0));
+														
+														r1 = true;
+													}
+												if (r2 == false && startRandoN == 1)
+													{
+														
+														playerReliever.add(playerRelieverZ.get(1));
+														
+														r2 = true;
+													}
+												if (r3 == false && startRandoN == 2)
+													{
+														
+														playerReliever.add(playerRelieverZ.get(2));
+														
+														r3 = true;
+													}
+												if (r4 == false && startRandoN == 3)
+													{
+														
+														playerReliever.add(playerRelieverZ.get(3));
+														
+														r4 = true;
+													}
+												if (r5 == false && startRandoN == 4)
+													{
+														
+														playerReliever.add(playerRelieverZ.get(4));
+														
+														r5 = true;
+													}
+												if (r6 == false && startRandoN == 5)
+													{
+														
+														playerReliever.add(playerRelieverZ.get(5));
+														
+														r6 = true;
+													}
+												if (r7 == false && startRandoN == 6)
+													{
+														
+														playerReliever.add(playerRelieverZ.get(6));
+														
+														r7 = true;
+													}
+												
+												
+												if (r1 == true && r2 == true && r3 == true && r4 == true && r5 == true 
+														&& r6 == true && r7 == true)
+													{
+														
+														r1 = false;
+														r2 = false;
+														r3 = false;
+														r4 = false;
+														r5 = false;
+														r6 = false;
+														r7 = false;
+														
+														
+														grouch = true;
+													}
+											} while (grouch == false);
+										
+										grouch = false;
+																			
 									}
 	
 						
@@ -509,6 +597,16 @@ public class BTeams
 //pick Rubber random Reliever
 					public static void pickRubberRandoReliever()
 						{
+
+							boolean grouch = false;
+							boolean r1 = false;
+							boolean r2 = false;
+							boolean r3 = false;
+							boolean r4 = false;
+							boolean r5 = false;
+							boolean r6 = false;
+							boolean r7 = false;
+							
 				
 							for (BAllStarPlayer r: BPlayerInfo.team)
 								{
@@ -517,6 +615,84 @@ public class BTeams
 											rubberRelieverZ.add(r);
 										}
 								}
+			
+							
+							
+							do
+								{
+									//random num from 0 to 8
+									int startRandoN = (int) (Math.random() * 9);
+									
+									
+									if (r1 == false && startRandoN == 0)
+										{
+											
+											rubberReliever.add(rubberRelieverZ.get(0));
+											
+											r1 = true;
+										}
+									if (r2 == false && startRandoN == 1)
+										{
+											
+											rubberReliever.add(rubberRelieverZ.get(1));
+											
+											r2 = true;
+										}
+									if (r3 == false && startRandoN == 2)
+										{
+											
+											rubberReliever.add(rubberRelieverZ.get(2));
+											
+											r3 = true;
+										}
+									if (r4 == false && startRandoN == 3)
+										{
+											
+											rubberReliever.add(rubberRelieverZ.get(3));
+											
+											r4 = true;
+										}
+									if (r5 == false && startRandoN == 4)
+										{
+											
+											rubberReliever.add(rubberRelieverZ.get(4));
+											
+											r5 = true;
+										}
+									if (r6 == false && startRandoN == 5)
+										{
+											
+											rubberReliever.add(rubberRelieverZ.get(5));
+											
+											r6 = true;
+										}
+									if (r7 == false && startRandoN == 6)
+										{
+											
+											rubberReliever.add(rubberRelieverZ.get(6));
+											
+											r7 = true;
+										}
+									
+									
+									if (r1 == true && r2 == true && r3 == true && r4 == true && r5 == true 
+											&& r6 == true && r7 == true)
+										{
+											
+											r1 = false;
+											r2 = false;
+											r3 = false;
+											r4 = false;
+											r5 = false;
+											r6 = false;
+											r7 = false;
+											
+											
+											grouch = true;
+										}
+								} while (grouch == false);
+							
+							grouch = false;
 			
 						}
 
@@ -713,7 +889,17 @@ public class BTeams
 //pick Yard random Reliever
 			public static void pickYardRandoReliever()
 				{
-	
+
+					boolean grouch = false;
+					boolean r1 = false;
+					boolean r2 = false;
+					boolean r3 = false;
+					boolean r4 = false;
+					boolean r5 = false;
+					boolean r6 = false;
+					boolean r7 = false;
+					
+		
 					for (BAllStarPlayer r: BPlayerInfo.team)
 						{
 							if( r.getType2().equals("Reliever"))
@@ -721,6 +907,84 @@ public class BTeams
 									yardRelieverZ.add(r);
 								}
 						}
+	
+					
+					
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+							
+							
+							if (r1 == false && startRandoN == 0)
+								{
+									
+									yardReliever.add(yardRelieverZ.get(0));
+									
+									r1 = true;
+								}
+							if (r2 == false && startRandoN == 1)
+								{
+									
+									yardReliever.add(yardRelieverZ.get(1));
+									
+									r2 = true;
+								}
+							if (r3 == false && startRandoN == 2)
+								{
+									
+									yardReliever.add(yardRelieverZ.get(2));
+									
+									r3 = true;
+								}
+							if (r4 == false && startRandoN == 3)
+								{
+									
+									yardReliever.add(yardRelieverZ.get(3));
+									
+									r4 = true;
+								}
+							if (r5 == false && startRandoN == 4)
+								{
+									
+									yardReliever.add(yardRelieverZ.get(4));
+									
+									r5 = true;
+								}
+							if (r6 == false && startRandoN == 5)
+								{
+									
+									yardReliever.add(yardRelieverZ.get(5));
+									
+									r6 = true;
+								}
+							if (r7 == false && startRandoN == 6)
+								{
+									
+									yardReliever.add(yardRelieverZ.get(6));
+									
+									r7 = true;
+								}
+							
+							
+							if (r1 == true && r2 == true && r3 == true && r4 == true && r5 == true 
+									&& r6 == true && r7 == true)
+								{
+									
+									r1 = false;
+									r2 = false;
+									r3 = false;
+									r4 = false;
+									r5 = false;
+									r6 = false;
+									r7 = false;
+									
+									
+									grouch = true;
+								}
+						} while (grouch == false);
+					
+					grouch = false;
 
 				}
 
@@ -917,7 +1181,17 @@ public class BTeams
 //pick Biscuit random Reliever
 			public static void pickBiscuitRandoReliever()
 				{
-	
+
+					boolean grouch = false;
+					boolean r1 = false;
+					boolean r2 = false;
+					boolean r3 = false;
+					boolean r4 = false;
+					boolean r5 = false;
+					boolean r6 = false;
+					boolean r7 = false;
+					
+		
 					for (BAllStarPlayer r: BPlayerInfo.team)
 						{
 							if( r.getType2().equals("Reliever"))
@@ -925,6 +1199,84 @@ public class BTeams
 									biscuitRelieverZ.add(r);
 								}
 						}
+	
+					
+					
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+							
+							
+							if (r1 == false && startRandoN == 0)
+								{
+									
+									biscuitReliever.add(biscuitRelieverZ.get(0));
+									
+									r1 = true;
+								}
+							if (r2 == false && startRandoN == 1)
+								{
+									
+									biscuitReliever.add(biscuitRelieverZ.get(1));
+									
+									r2 = true;
+								}
+							if (r3 == false && startRandoN == 2)
+								{
+									
+									biscuitReliever.add(biscuitRelieverZ.get(2));
+									
+									r3 = true;
+								}
+							if (r4 == false && startRandoN == 3)
+								{
+									
+									biscuitReliever.add(biscuitRelieverZ.get(3));
+									
+									r4 = true;
+								}
+							if (r5 == false && startRandoN == 4)
+								{
+									
+									biscuitReliever.add(biscuitRelieverZ.get(4));
+									
+									r5 = true;
+								}
+							if (r6 == false && startRandoN == 5)
+								{
+									
+									biscuitReliever.add(biscuitRelieverZ.get(5));
+									
+									r6 = true;
+								}
+							if (r7 == false && startRandoN == 6)
+								{
+									
+									biscuitReliever.add(biscuitRelieverZ.get(6));
+									
+									r7 = true;
+								}
+							
+							
+							if (r1 == true && r2 == true && r3 == true && r4 == true && r5 == true 
+									&& r6 == true && r7 == true)
+								{
+									
+									r1 = false;
+									r2 = false;
+									r3 = false;
+									r4 = false;
+									r5 = false;
+									r6 = false;
+									r7 = false;
+									
+									
+									grouch = true;
+								}
+						} while (grouch == false);
+					
+					grouch = false;
 
 				}
 
@@ -1121,7 +1473,17 @@ public class BTeams
 //pick Pinkerton random Reliever
 			public static void pickPinkertonRandoReliever()
 				{
-	
+
+					boolean grouch = false;
+					boolean r1 = false;
+					boolean r2 = false;
+					boolean r3 = false;
+					boolean r4 = false;
+					boolean r5 = false;
+					boolean r6 = false;
+					boolean r7 = false;
+					
+		
 					for (BAllStarPlayer r: BPlayerInfo.team)
 						{
 							if( r.getType2().equals("Reliever"))
@@ -1129,6 +1491,84 @@ public class BTeams
 									pinkertonRelieverZ.add(r);
 								}
 						}
+	
+					
+					
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+							
+							
+							if (r1 == false && startRandoN == 0)
+								{
+									
+									pinkertonReliever.add(pinkertonRelieverZ.get(0));
+									
+									r1 = true;
+								}
+							if (r2 == false && startRandoN == 1)
+								{
+									
+									pinkertonReliever.add(pinkertonRelieverZ.get(1));
+									
+									r2 = true;
+								}
+							if (r3 == false && startRandoN == 2)
+								{
+									
+									pinkertonReliever.add(pinkertonRelieverZ.get(2));
+									
+									r3 = true;
+								}
+							if (r4 == false && startRandoN == 3)
+								{
+									
+									pinkertonReliever.add(pinkertonRelieverZ.get(3));
+									
+									r4 = true;
+								}
+							if (r5 == false && startRandoN == 4)
+								{
+									
+									pinkertonReliever.add(pinkertonRelieverZ.get(4));
+									
+									r5 = true;
+								}
+							if (r6 == false && startRandoN == 5)
+								{
+									
+									pinkertonReliever.add(pinkertonRelieverZ.get(5));
+									
+									r6 = true;
+								}
+							if (r7 == false && startRandoN == 6)
+								{
+									
+									pinkertonReliever.add(pinkertonRelieverZ.get(6));
+									
+									r7 = true;
+								}
+							
+							
+							if (r1 == true && r2 == true && r3 == true && r4 == true && r5 == true 
+									&& r6 == true && r7 == true)
+								{
+									
+									r1 = false;
+									r2 = false;
+									r3 = false;
+									r4 = false;
+									r5 = false;
+									r6 = false;
+									r7 = false;
+									
+									
+									grouch = true;
+								}
+						} while (grouch == false);
+					
+					grouch = false;
 
 				}
 
@@ -1325,6 +1765,16 @@ public class BTeams
 			public static void pickElFartRandoReliever()
 				{
 	
+					boolean grouch = false;
+					boolean r1 = false;
+					boolean r2 = false;
+					boolean r3 = false;
+					boolean r4 = false;
+					boolean r5 = false;
+					boolean r6 = false;
+					boolean r7 = false;
+					
+		
 					for (BAllStarPlayer r: BPlayerInfo.team)
 						{
 							if( r.getType2().equals("Reliever"))
@@ -1332,6 +1782,84 @@ public class BTeams
 									elfartRelieverZ.add(r);
 								}
 						}
+	
+					
+					
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+							
+							
+							if (r1 == false && startRandoN == 0)
+								{
+									
+									elfartReliever.add(elfartRelieverZ.get(0));
+									
+									r1 = true;
+								}
+							if (r2 == false && startRandoN == 1)
+								{
+									
+									elfartReliever.add(elfartRelieverZ.get(1));
+									
+									r2 = true;
+								}
+							if (r3 == false && startRandoN == 2)
+								{
+									
+									elfartReliever.add(elfartRelieverZ.get(2));
+									
+									r3 = true;
+								}
+							if (r4 == false && startRandoN == 3)
+								{
+									
+									elfartReliever.add(elfartRelieverZ.get(3));
+									
+									r4 = true;
+								}
+							if (r5 == false && startRandoN == 4)
+								{
+									
+									elfartReliever.add(elfartRelieverZ.get(4));
+									
+									r5 = true;
+								}
+							if (r6 == false && startRandoN == 5)
+								{
+									
+									elfartReliever.add(elfartRelieverZ.get(5));
+									
+									r6 = true;
+								}
+							if (r7 == false && startRandoN == 6)
+								{
+									
+									elfartReliever.add(elfartRelieverZ.get(6));
+									
+									r7 = true;
+								}
+							
+							
+							if (r1 == true && r2 == true && r3 == true && r4 == true && r5 == true 
+									&& r6 == true && r7 == true)
+								{
+									
+									r1 = false;
+									r2 = false;
+									r3 = false;
+									r4 = false;
+									r5 = false;
+									r6 = false;
+									r7 = false;
+									
+									
+									grouch = true;
+								}
+						} while (grouch == false);
+					
+					grouch = false;
 
 				}
 
@@ -1529,6 +2057,17 @@ public class BTeams
 			public static void pickChicharronRandoReliever()
 				{
 	
+
+					boolean grouch = false;
+					boolean r1 = false;
+					boolean r2 = false;
+					boolean r3 = false;
+					boolean r4 = false;
+					boolean r5 = false;
+					boolean r6 = false;
+					boolean r7 = false;
+					
+		
 					for (BAllStarPlayer r: BPlayerInfo.team)
 						{
 							if( r.getType2().equals("Reliever"))
@@ -1536,6 +2075,84 @@ public class BTeams
 									chicharronRelieverZ.add(r);
 								}
 						}
+	
+					
+					
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+							
+							
+							if (r1 == false && startRandoN == 0)
+								{
+									
+									chicharronReliever.add(chicharronRelieverZ.get(0));
+									
+									r1 = true;
+								}
+							if (r2 == false && startRandoN == 1)
+								{
+									
+									chicharronReliever.add(chicharronRelieverZ.get(1));
+									
+									r2 = true;
+								}
+							if (r3 == false && startRandoN == 2)
+								{
+									
+									chicharronReliever.add(chicharronRelieverZ.get(2));
+									
+									r3 = true;
+								}
+							if (r4 == false && startRandoN == 3)
+								{
+									
+									chicharronReliever.add(chicharronRelieverZ.get(3));
+									
+									r4 = true;
+								}
+							if (r5 == false && startRandoN == 4)
+								{
+									
+									chicharronReliever.add(chicharronRelieverZ.get(4));
+									
+									r5 = true;
+								}
+							if (r6 == false && startRandoN == 5)
+								{
+									
+									chicharronReliever.add(chicharronRelieverZ.get(5));
+									
+									r6 = true;
+								}
+							if (r7 == false && startRandoN == 6)
+								{
+									
+									chicharronReliever.add(chicharronRelieverZ.get(6));
+									
+									r7 = true;
+								}
+							
+							
+							if (r1 == true && r2 == true && r3 == true && r4 == true && r5 == true 
+									&& r6 == true && r7 == true)
+								{
+									
+									r1 = false;
+									r2 = false;
+									r3 = false;
+									r4 = false;
+									r5 = false;
+									r6 = false;
+									r7 = false;
+									
+									
+									grouch = true;
+								}
+						} while (grouch == false);
+					
+					grouch = false;
 
 				}
 
@@ -1733,6 +2350,17 @@ public class BTeams
 			public static void pickLegendRandoReliever()
 				{
 
+
+					boolean grouch = false;
+					boolean r1 = false;
+					boolean r2 = false;
+					boolean r3 = false;
+					boolean r4 = false;
+					boolean r5 = false;
+					boolean r6 = false;
+					boolean r7 = false;
+					
+		
 					for (BAllStarPlayer r: BPlayerInfo.team)
 						{
 							if( r.getType2().equals("Reliever"))
@@ -1740,6 +2368,84 @@ public class BTeams
 									legendRelieverZ.add(r);
 								}
 						}
+	
+					
+					
+					do
+						{
+							//random num from 0 to 8
+							int startRandoN = (int) (Math.random() * 9);
+							
+							
+							if (r1 == false && startRandoN == 0)
+								{
+									
+									legendReliever.add(legendRelieverZ.get(0));
+									
+									r1 = true;
+								}
+							if (r2 == false && startRandoN == 1)
+								{
+									
+									legendReliever.add(legendRelieverZ.get(1));
+									
+									r2 = true;
+								}
+							if (r3 == false && startRandoN == 2)
+								{
+									
+									legendReliever.add(legendRelieverZ.get(2));
+									
+									r3 = true;
+								}
+							if (r4 == false && startRandoN == 3)
+								{
+									
+									legendReliever.add(legendRelieverZ.get(3));
+									
+									r4 = true;
+								}
+							if (r5 == false && startRandoN == 4)
+								{
+									
+									legendReliever.add(legendRelieverZ.get(4));
+									
+									r5 = true;
+								}
+							if (r6 == false && startRandoN == 5)
+								{
+									
+									legendReliever.add(legendRelieverZ.get(5));
+									
+									r6 = true;
+								}
+							if (r7 == false && startRandoN == 6)
+								{
+									
+									legendReliever.add(legendRelieverZ.get(6));
+									
+									r7 = true;
+								}
+							
+							
+							if (r1 == true && r2 == true && r3 == true && r4 == true && r5 == true 
+									&& r6 == true && r7 == true)
+								{
+									
+									r1 = false;
+									r2 = false;
+									r3 = false;
+									r4 = false;
+									r5 = false;
+									r6 = false;
+									r7 = false;
+									
+									
+									grouch = true;
+								}
+						} while (grouch == false);
+					
+					grouch = false;
 
 				}
 
