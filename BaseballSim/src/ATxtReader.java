@@ -7,7 +7,7 @@ public class ATxtReader
 
 		static BAllStarPlayer[] player = new BAllStarPlayer[100];
 		
-		public static void readSimTxt() throws FileNotFoundException
+		public static void readSimTxt() throws FileNotFoundException 
 		{
 		Scanner file = new Scanner(new File("BaseballSim.txt" ));
 		int numberOfLines = file.nextInt();

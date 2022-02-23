@@ -18,8 +18,8 @@ public class ABaseballDriver
 				CGreetSimPlayer.simIntro();
 				
 				
-				FSimulationR.regRubberGame();
-				//FSimulationR.qRubberGame();
+				FRSimRubber.regRubberGame();
+				FRSimRubber.qRubberGame();
 				
 				
 				

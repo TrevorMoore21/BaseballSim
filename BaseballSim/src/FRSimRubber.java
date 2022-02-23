@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class FSimulationR
+public class FRSimRubber
 	{
 		static double battingAv;
 		static double battingAvA;
@@ -109,10 +109,12 @@ public class FSimulationR
 				
 				int peperoniPipi = (int) (Math.random() * 335) + 265;
 				int charlieBrown = (int) (Math.random() * 216) + 104;
+				int finalSum = 0;
 				
 				if(PrunZ1 > OrunZ1)
 					{
 						BPlayerInfo.playerMoney += peperoniPipi;
+						finalSum = (moneyTracker + peperoniPipi);
 						System.out.println("YOU WIN " + BPlayerInfo.playerName +", BONUS PRIZE of $" + peperoniPipi);
 					}
 				else if(OrunZ1 > PrunZ1)
@@ -121,26 +123,31 @@ public class FSimulationR
 						
 						
 						BPlayerInfo.playerMoney -= charlieBrown;
+						finalSum = ((moneyTracker - charlieBrown)*-1);
 						System.out.println("You have to pay $" + charlieBrown + " to the Rubberducks :(");
+						finalSum *= -1;
 					}
 				
 				
-				if (moneyTracker >= 0)
+				if (finalSum >= 0)
 					{
-						int finalSum = moneyTracker + peperoniPipi;
+						
 						System.out.println("Overall, you recieved a profit of $" + finalSum + " from this game");
 						System.out.println(BPlayerInfo.playerName + "'s current balance: $" + BPlayerInfo.playerMoney);
 					}
-				else if (moneyTracker < 0)
+				else if (finalSum < 0)
 					{
-						int finalSum = ((moneyTracker - charlieBrown)*-1);
+						
 						System.out.println("Overall, you recieved a loss of $" + finalSum + " from this game");
 						System.out.println(BPlayerInfo.playerName + "'s current balance: $" + BPlayerInfo.playerMoney);
 					}
 				
+				finalSum = 0;
 				moneyTracker = 0;
 				PrunZ1 = 0;
 				OrunZ1 = 0;
+				inningN = 1;
+				gameW = true;
 				
 			}
 		
@@ -186,13 +193,17 @@ public class FSimulationR
 				moneyFinal = (moneyT - moneyL);
 				
 					if (moneyFinal >= 0)
-						{
-							System.out.println("Game profit summary: you made $" + moneyFinal + " in this game");
+						{			
+							System.out.println("Game summary: " 
+									+ "\n\t\t\tprofit-->  +$" + moneyFinal 
+									+ "\n\t\t\tscore-->  " + Pruns + " to " + Oruns);
 						}
 					else if (moneyFinal < 0)
 						{
 							moneyFinal *= -1;
-							System.out.println("Game loss summary: you lost $" + moneyFinal + " in this game");
+							System.out.println("Game summary: " 
+									+ "\n\t\t\tloss-->  +$" + moneyFinal 
+									+ "\n\t\t\tscore-->  " + Pruns + " to " + Oruns);
 						}
 				
 				
@@ -709,7 +720,7 @@ public class FSimulationR
 			
 			stillPlaying = true;
 			
-			System.out.println(Oruns);
+			
 			
 			if(h >= 20)
 				{
@@ -737,14 +748,13 @@ public class FSimulationR
 				}
 			
 			
-			System.out.println(Oruns);
-			
 			minusMoneyBB = bb * 12;
 			minusMoneyHBP = hbp * 14;
 			minusMoneyH = h * 37;
 			minusMoneyHR = hr * 175;
 			Oruns += hr;
 			
+			OrunZ1 += Oruns;
 			
 			moneyL = (minusMoneyBB + minusMoneyHBP + minusMoneyH + minusMoneyHR);
 			BPlayerInfo.playerMoney -= moneyL;
@@ -760,15 +770,19 @@ public class FSimulationR
 			
 			if (moneyFinal >= 0)
 				{
-					System.out.println("Inning " + inningN + " summary: you made $" + moneyFinal);
+					System.out.println("Inning " + inningN + " summary: "
+										+ "\n\t\t\tprofit-->  +$" + moneyFinal 
+										+ "\n\t\t\tscore-->  " + PrunZ1 + " to " + OrunZ1);
 				}
 			else if (moneyFinal < 0)
 				{
 					moneyFinal *= -1;
-					System.out.println("Inning " + inningN + " summary: you lost $" + moneyFinal);
+					System.out.println("Inning " + inningN + " summary: "
+							+ "\n\t\t\tloss-->  -$" + moneyFinal 
+							+ "\n\t\t\tscore-->  " + PrunZ1 + " to " + OrunZ1);
 				}
 			
-			OrunZ1 += Oruns;
+			
 			
 			inningN++;
 		}

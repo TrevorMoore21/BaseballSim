@@ -142,7 +142,7 @@ public class ESimulationStart
 									{
 										
 										
-										FSimulationR.regRubberGame();
+										FRSimRubber.regRubberGame();
 									}
 								if (menuNum2 == 2)
 									{
