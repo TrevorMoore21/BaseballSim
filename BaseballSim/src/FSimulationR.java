@@ -25,24 +25,28 @@ public class FSimulationR
 		static int minusMoneyH;
 		static int minusMoneyHR;
 		static int moneyL;
+		
 		static int moneyFinal;
+		static int moneyTracker;
 		
 		static int Pruns = 0;
 		static int Oruns = 0;
+		static int PrunZ1 = 0;
+		static int OrunZ1 = 0;
 		static boolean gameW = true;
 		
 		
 		//change for variables when on defense
 		
-		static int aBB;
-		static int aHBP;
-		static int aH;
-		static int aHR;
+		static int BB1;
+		static int HBP1;
+		static int H1;
+		static int HR1;
 		
-		static int qBB;
-		static int qHBP;
-		static int qH;
-		static int qHR;
+		static int BB2;
+		static int HBP2;
+		static int H2;
+		static int HR2;
 		
 		static String nippy;
 		static Scanner nippyNext = new Scanner(System.in);
@@ -66,16 +70,30 @@ public class FSimulationR
 							{
 								gameW = false;
 								
-								if (Pruns == Oruns)
+								if (PrunZ1 == OrunZ1)
 									{
 										gameW = true;
 									}
 								
 							}
 						
+						
+						plusMoneyBB = 0;
+						plusMoneyHBP = 0;
+						plusMoneyH = 0;
+						plusMoneyHR = 0;
+						
+						minusMoneyBB = 0;
+						minusMoneyHBP = 0;
+						minusMoneyH = 0;
+						minusMoneyHR = 0;
+						
 						moneyT = 0;
 						moneyL = 0;
 						moneyFinal = 0;
+						
+						Pruns = 0;
+						Oruns = 0;
 						
 						
 						nippy = nippyNext.nextLine();
@@ -85,23 +103,44 @@ public class FSimulationR
 						
 					} while (gameW == true);
 				
-				if(Pruns > Oruns)
+				
+				System.out.println("Final Score: " +  PrunZ1 + " to " +  OrunZ1);
+				
+				
+				int peperoniPipi = (int) (Math.random() * 335) + 265;
+				int charlieBrown = (int) (Math.random() * 216) + 104;
+				
+				if(PrunZ1 > OrunZ1)
 					{
-						System.out.println("YOU WIN " + BPlayerInfo.playerName);
-						
-						int peperoniPipi = (int) (Math.random() * 935) + 565;
 						BPlayerInfo.playerMoney += peperoniPipi;
-						System.out.println("BONUS PRIZE of $" + peperoniPipi);
+						System.out.println("YOU WIN " + BPlayerInfo.playerName +", BONUS PRIZE of $" + peperoniPipi);
 					}
-				else if(Oruns > Pruns)
+				else if(OrunZ1 > PrunZ1)
 					{
-						System.out.println("you lose " + BPlayerInfo.playerName + ", Rubberducks win");
+						System.out.println("*&@^@#$($&@#$(@#$*& " + "you lose " + BPlayerInfo.playerName + ", Rubberducks win");
 						
-						int charlieBrown = (int) (Math.random() * 311) + 339;
-						BPlayerInfo.playerMoney += charlieBrown;
-						System.out.println("*&@^@#$($&@#$(@#$*& " + "You lost $" + charlieBrown);
+						
+						BPlayerInfo.playerMoney -= charlieBrown;
+						System.out.println("You have to pay $" + charlieBrown + " to the Rubberducks :(");
 					}
 				
+				
+				if (moneyTracker >= 0)
+					{
+						int finalSum = moneyTracker + peperoniPipi;
+						System.out.println("Overall, you recieved a profit of $" + finalSum + " from this game");
+						System.out.println(BPlayerInfo.playerName + "'s current balance: $" + BPlayerInfo.playerMoney);
+					}
+				else if (moneyTracker < 0)
+					{
+						int finalSum = ((moneyTracker - charlieBrown)*-1);
+						System.out.println("Overall, you recieved a loss of $" + finalSum + " from this game");
+						System.out.println(BPlayerInfo.playerName + "'s current balance: $" + BPlayerInfo.playerMoney);
+					}
+				
+				moneyTracker = 0;
+				PrunZ1 = 0;
+				OrunZ1 = 0;
 				
 			}
 		
@@ -118,7 +157,7 @@ public class FSimulationR
 							{
 								gameW = false;
 								
-								if (Pruns == Oruns)
+								if (PrunZ1 == OrunZ1)
 									{
 										gameW = true;
 									}
@@ -128,8 +167,8 @@ public class FSimulationR
 				
 		//money from hitting		
 				System.out.println("In " + inningN + " innings, you made $" + moneyT + " offensively after you had "
-						+ qBB + " walks, " + qHBP + " hit by pitches, " 
-						+ qH + " hits, " + qHR + " home runs, and scored " + Pruns + " runs.");
+						+ BB1 + " walks, " + HBP1 + " hit by pitches, " 
+						+ H1 + " hits, " + HR1 + " home runs, and scored " + Pruns + " runs.");
 				
 				System.out.println();
 				
@@ -137,22 +176,23 @@ public class FSimulationR
 				
 		//money from pitching		
 				System.out.println("In " + inningN + " innings, you lost $" + moneyL + " defensively after you gave up "
-						+ qBB + " walks, " + qHBP + " hit by pitches, " 
-						+ qH + " hits, " + qHR + " home runs, and " + Oruns + " runs.");
+						+ BB2 + " walks, " + HBP2 + " hit by pitches, " 
+						+ H2 + " hits, " + HR2 + " home runs, and " + Oruns + " runs.");
 				
 				
 				
 				
 				
-				moneyFinal += moneyT - moneyL;
+				moneyFinal = (moneyT - moneyL);
 				
 					if (moneyFinal >= 0)
 						{
-							System.out.println("Overall, you made $" + moneyFinal);
+							System.out.println("Game profit summary: you made $" + moneyFinal + " in this game");
 						}
 					else if (moneyFinal < 0)
 						{
-							System.out.println("Overall, you lost $" + moneyFinal);
+							moneyFinal *= -1;
+							System.out.println("Game loss summary: you lost $" + moneyFinal + " in this game");
 						}
 				
 				
@@ -172,10 +212,23 @@ public class FSimulationR
 						
 						
 						int charlieBrown = (int) (Math.random() * 311) + 339;
-						BPlayerInfo.playerMoney += charlieBrown;
-						System.out.println("*&@^@#$($&@#$(@#$*& " + "You lost $" + charlieBrown + " for losing :(");
+						BPlayerInfo.playerMoney -= charlieBrown;
+						System.out.println("*&@^@#$($&@#$(@#$*& " + "You have to pay $" + charlieBrown + " to the Rubberducks :(");
 					}
 				
+				BB1 = 0;
+				HBP1 = 0;
+				H1 = 0;
+				HR1 = 0;
+				
+				BB2 = 0;
+				HBP2 = 0;
+				H2 = 0;
+				HR2 = 0;
+				
+				moneyT = 0;
+				moneyL = 0;
+				moneyFinal = 0;
 				
 			}
 		
@@ -195,9 +248,6 @@ public class FSimulationR
 		public static void regRubberInningT1()
 			{
 				
-				moneyT = 0;
-				moneyL = 0;
-				moneyFinal = 0;
 				
 			//default pitching length
 				int pInnings = (int) (Math.random() * 4) + 1;
@@ -220,13 +270,7 @@ public class FSimulationR
 					{
 						int Pinnings = (int) (Math.random() * 9) + 8;
 					}
-				
-				//else
-				//	{
-				//		int Pinnings = (int) (Math.random() * 9) + 8;
-				//	}
-				
-				
+
 				
 				int outs = 0;
 				boolean stillPlaying = true;
@@ -315,8 +359,6 @@ public class FSimulationR
 								
 								if(relieverO < 6)
 									{
-										
-										//here
 										
 										battingAv = (double) ((BBSHitters) BTeams.playerLinup.get(playerNum1)).getHits() / ((BBSHitters) BTeams.playerLinup.get(playerNum1)).getAtBats(); 
 										
@@ -413,50 +455,46 @@ public class FSimulationR
 				
 				if(h >= 20)
 					{
-						Pruns += 8;
+						Pruns = 8;
 					}
 				else if(h >= 15 && h < 20)
 					{
-						Pruns += 6;
+						Pruns = 6;
 					}
 				else if(h >= 10 && h < 15)
 					{ 
-						Pruns += 4;
+						Pruns = 4;
 					}
 				else if(h >= 7 && h < 10)
 					{
-						Pruns += 3;
+						Pruns = 3;
 					}
 				else if(h >= 5 && h < 7)
 					{
-						Pruns += 2;
+						Pruns = 2;
 					}
 				else if(h >= 3 && h < 5)
 					{
-						Pruns += 1;
+						Pruns = 1;
 					}
 				
 				
-				plusMoneyBB += bb * 12;
-				plusMoneyHBP += hbp * 14;
-				plusMoneyH += h * 37;
-				plusMoneyHR += hr * 175;
+				plusMoneyBB = bb * 12;
+				plusMoneyHBP = hbp * 14;
+				plusMoneyH = h * 37;
+				plusMoneyHR = hr * 175;
 				Pruns += hr;
 				
-				System.out.println(moneyT);
 				
 				moneyT = (plusMoneyBB + plusMoneyHBP + plusMoneyH + plusMoneyHR);
 				BPlayerInfo.playerMoney += moneyT;
 				
-				
-				System.out.println(moneyT);
-				
-				
+				System.out.println();
 				System.out.println("In the top of inning " + inningN + ", you made $" + moneyT + " this inning after you had "
 						+ bb + " walks, " + hbp + " hit by pitches, " 
 						+ h + " hits, " + hr + " home runs, and scored " + Pruns + " runs.");
 				
-				
+				PrunZ1 += Pruns;
 				
 			}
 		
@@ -467,9 +505,6 @@ public class FSimulationR
 		
 		public static void regRubberInningB1()
 		{
-			
-			
-			
 			
 			
 			//default pitching length
@@ -493,12 +528,7 @@ public class FSimulationR
 				{
 					int Pinnings = (int) (Math.random() * 9) + 8;
 				}
-			//else
-			//	{
-			//		int Pinnings = (int) (Math.random() * 9) + 8;
-			//	}
-			
-			
+	
 			
 			int outs = 0;
 			boolean stillPlaying = true;
@@ -587,8 +617,6 @@ public class FSimulationR
 							
 							if(relieverO < 6)
 								{
-									
-									//here
 									
 									battingAv = (double) ((BBSHitters) BTeams.rubberLinup.get(playerNum2)).getHits() / ((BBSHitters) BTeams.rubberLinup.get(playerNum2)).getAtBats(); 
 									
@@ -681,38 +709,40 @@ public class FSimulationR
 			
 			stillPlaying = true;
 			
-			
+			System.out.println(Oruns);
 			
 			if(h >= 20)
 				{
-					Oruns += 8;
+					Oruns = 8;
 				}
 			else if(h >= 15 && h < 20)
 				{
-					Oruns += 6;
+					Oruns = 6;
 				}
 			else if(h >= 10 && h < 15)
 				{ 
-					Oruns += 4;
+					Oruns = 4;
 				}
 			else if(h >= 7 && h < 10)
 				{
-					Oruns += 3;
+					Oruns = 3;
 				}
 			else if(h >= 5 && h < 7)
 				{
-					Oruns += 2;
+					Oruns = 2;
 				}
 			else if(h >= 3 && h < 5)
 				{
-					Oruns += 1;
+					Oruns = 1;
 				}
 			
 			
-			minusMoneyBB += bb * 12;
-			minusMoneyHBP += hbp * 14;
-			minusMoneyH += h * 37;
-			minusMoneyHR += hr * 175;
+			System.out.println(Oruns);
+			
+			minusMoneyBB = bb * 12;
+			minusMoneyHBP = hbp * 14;
+			minusMoneyH = h * 37;
+			minusMoneyHR = hr * 175;
 			Oruns += hr;
 			
 			
@@ -721,33 +751,26 @@ public class FSimulationR
 			
 			
 			
-			
-			
 			System.out.println("In the bottom of inning " + inningN + ", you lost $" + moneyL + " this inning after you gave up "
 					+ bb + " walks, " + hbp + " hit by pitches, " 
 					+ h + " hits, " + hr + " home runs, and " + Oruns + " runs.");
 			
-			moneyFinal += (moneyT - moneyL);
+			moneyFinal = (moneyT - moneyL);
+			moneyTracker += moneyFinal;
 			
 			if (moneyFinal >= 0)
 				{
-					System.out.println("Overall in inning " + inningN + ", you made $" + moneyFinal);
+					System.out.println("Inning " + inningN + " summary: you made $" + moneyFinal);
 				}
 			else if (moneyFinal < 0)
 				{
-					System.out.println("Overall in inning " + inningN + ", you lost $" + moneyFinal);
+					moneyFinal *= -1;
+					System.out.println("Inning " + inningN + " summary: you lost $" + moneyFinal);
 				}
 			
-			
-			moneyT = 0;
-			moneyL = 0;
-			moneyFinal = 0;
-			
+			OrunZ1 += Oruns;
 			
 			inningN++;
-			
-				
-			
 		}
 		
 		
@@ -759,10 +782,6 @@ public class FSimulationR
 		
 		public static void qRubberInningT1()
 			{
-				
-				moneyT = 0;
-				moneyL = 0;
-				moneyFinal = 0;
 				
 			//default pitching length
 				int pInnings = (int) (Math.random() * 4) + 1;
@@ -831,20 +850,20 @@ public class FSimulationR
 								//check for walks, hbp, hits and home runs	
 									if (r1 <= newWalks)
 										{
-											qBB++;
+											BB1++;
 										}
 									else if (r2 <= newHitByPitch)
 										{
-											qHBP++;
+											HBP1++;
 										}
 									else if (r3 <= newHits)
 										{
 											if(r3 <= newHR)
 												{
-													qHR++;
+													HR1++;
 												}
 											
-											qH++;
+											H1++;
 										}
 									else
 										{
@@ -904,20 +923,20 @@ public class FSimulationR
 									//check for walks, hbp, hits and home runs	
 										if (r1 <= newWalks)
 											{
-												qBB++;
+												BB1++;
 											}
 										else if (r2 <= newHitByPitch)
 											{
-												qHBP++;
+												HBP1++;
 											}
 										else if (r3 <= newHits)
 											{
 												if(r3 <= newHR)
 													{
-														qHR++;
+														HR1++;
 													}
 												
-												qH++;
+												H1++;
 											}
 										else
 											{
@@ -972,40 +991,40 @@ public class FSimulationR
 				
 				
 				
-				if(qH >= 20)
+				if(H1 >= 20)
 					{
 						Pruns += 8;
 					}
-				else if(qH >= 15 && qH < 20)
+				else if(H1 >= 15 && H1 < 20)
 					{
 						Pruns += 6;
 					}
-				else if(qH >= 10 && qH < 15)
+				else if(H1 >= 10 && H1 < 15)
 					{ 
 						Pruns += 4;
 					}
-				else if(qH >= 7 && qH < 10)
+				else if(H1 >= 7 && H1 < 10)
 					{
 						Pruns += 3;
 					}
-				else if(qH >= 5 && qH < 7)
+				else if(H1 >= 5 && H1 < 7)
 					{
 						Pruns += 2;
 					}
-				else if(qH >= 3 && qH < 5)
+				else if(H1 >= 3 && H1 < 5)
 					{
 						Pruns += 1;
 					}
 				
 				
-				plusMoneyBB += qBB * 12;
-				plusMoneyHBP += qHBP * 14;
-				plusMoneyH += qH * 37;
-				plusMoneyHR += qHR * 175;
-				Pruns += qHR;
+				plusMoneyBB = BB1 * 12;
+				plusMoneyHBP = HBP1 * 14;
+				plusMoneyH = H1 * 37;
+				plusMoneyHR = HR1 * 175;
+				Pruns += HR1;
 				
 				
-				moneyT += plusMoneyBB + plusMoneyHBP + plusMoneyH + plusMoneyHR;
+				moneyT = (plusMoneyBB + plusMoneyHBP + plusMoneyH + plusMoneyHR);
 	
 				
 			}
@@ -1086,20 +1105,20 @@ public class FSimulationR
 								//check for walks, hbp, hits and home runs	
 									if (r1 <= newWalks)
 										{
-											qBB++;
+											BB2++;
 										}
 									else if (r2 <= newHitByPitch)
 										{
-											qHBP++;
+											HBP2++;
 										}
 									else if (r3 <= newHits)
 										{
 											if(r3 <= newHR)
 												{
-													qHR++;
+													HR2++;
 												}
 											
-											qH++;
+											H2++;
 										}
 									else
 										{
@@ -1159,20 +1178,20 @@ public class FSimulationR
 									//check for walks, hbp, hits and home runs	
 										if (r1 <= newWalks)
 											{
-												qBB++;
+												BB2++;
 											}
 										else if (r2 <= newHitByPitch)
 											{
-												qHBP++;
+												HBP2++;
 											}
 										else if (r3 <= newHits)
 											{
 												if(r3 <= newHR)
 													{
-														qHR++;
+														HR2++;
 													}
 												
-												qH++;
+												H2++;
 											}
 										else
 											{
@@ -1227,48 +1246,44 @@ public class FSimulationR
 				
 				
 				
-				if(qH >= 20)
+				if(H2 >= 20)
 					{
 						Oruns += 8;
 					}
-				else if(qH >= 15 && qH < 20)
+				else if(H2 >= 15 && H2 < 20)
 					{
 						Oruns += 6;
 					}
-				else if(qH >= 10 && qH < 15)
+				else if(H2 >= 10 && H2 < 15)
 					{ 
 						Oruns += 4;
 					}
-				else if(qH >= 7 && qH < 10)
+				else if(H2 >= 7 && H2 < 10)
 					{
 						Oruns += 3;
 					}
-				else if(qH >= 5 && qH < 7)
+				else if(H2 >= 5 && H2 < 7)
 					{
 						Oruns += 2;
 					}
-				else if(qH >= 3 && qH < 5)
+				else if(H2 >= 3 && H2 < 5)
 					{
 						Oruns += 1;
 					}
 				
 				
-				minusMoneyBB += qBB * 12;
-				minusMoneyHBP += qHBP * 14;
-				minusMoneyH += qH * 37;
-				minusMoneyHR += qHR * 175;
-				Oruns += qHR;
+				minusMoneyBB = BB2 * 12;
+				minusMoneyHBP = HBP2 * 14;
+				minusMoneyH = H2 * 37;
+				minusMoneyHR = HR2 * 175;
+				Oruns += HR2;
 				
 				
-				moneyL += minusMoneyBB + minusMoneyHBP + minusMoneyH + minusMoneyHR;
+				moneyL = (minusMoneyBB + minusMoneyHBP + minusMoneyH + minusMoneyHR);
 				BPlayerInfo.playerMoney -= moneyL;
 				
 		
-				
 				inningN++;
-				
-					
-				
 			}
 		
 		
