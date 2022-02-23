@@ -119,7 +119,7 @@ public class FRSimRubber
 					}
 				else if(OrunZ1 > PrunZ1)
 					{
-						System.out.println("*&@^@#$($&@#$(@#$*& " + "you lose " + BPlayerInfo.playerName + ", Rubberducks win");
+						System.out.println("*&@^@#$(* " + "you lose " + BPlayerInfo.playerName + ", Rubberducks win");
 						
 						
 						BPlayerInfo.playerMoney -= charlieBrown;
@@ -164,7 +164,7 @@ public class FRSimRubber
 							{
 								gameW = false;
 								
-								if (PrunZ1 == OrunZ1)
+								if (Pruns == Oruns)
 									{
 										gameW = true;
 									}
@@ -172,17 +172,18 @@ public class FRSimRubber
 					} while (gameW == true);
 				
 				
-		//money from hitting		
+		//money from hitting	
+				
+				System.out.println();
 				System.out.println("In " + inningN + " innings, you made $" + moneyT + " offensively after you had "
 						+ BB1 + " walks, " + HBP1 + " hit by pitches, " 
 						+ H1 + " hits, " + HR1 + " home runs, and scored " + Pruns + " runs.");
 				
-				System.out.println();
 				
 				
 				
 		//money from pitching		
-				System.out.println("In " + inningN + " innings, you lost $" + moneyL + " defensively after you gave up "
+				System.out.println("\t       you also lost $" + moneyL + " defensively after you gave up "
 						+ BB2 + " walks, " + HBP2 + " hit by pitches, " 
 						+ H2 + " hits, " + HR2 + " home runs, and " + Oruns + " runs.");
 				
@@ -192,28 +193,17 @@ public class FRSimRubber
 				
 				moneyFinal = (moneyT - moneyL);
 				
-					if (moneyFinal >= 0)
-						{			
-							System.out.println("Game summary: " 
-									+ "\n\t\t\tprofit-->  +$" + moneyFinal 
-									+ "\n\t\t\tscore-->  " + Pruns + " to " + Oruns);
-						}
-					else if (moneyFinal < 0)
-						{
-							moneyFinal *= -1;
-							System.out.println("Game summary: " 
-									+ "\n\t\t\tloss-->  +$" + moneyFinal 
-									+ "\n\t\t\tscore-->  " + Pruns + " to " + Oruns);
-						}
-				
+					
+				System.out.println();
 				
 				if(Pruns > Oruns)
 					{
 						System.out.println("YOU WIN " + BPlayerInfo.playerName);
 						
 						
-						int peperoniPipi = (int) (Math.random() * 935) + 565;
+						int peperoniPipi = (int) (Math.random() * 335) + 265;
 						BPlayerInfo.playerMoney += peperoniPipi;
+						moneyFinal += peperoniPipi;
 						System.out.println("You also get a BONUS PRIZE of $" + peperoniPipi + " for winning");
 					}
 				else if(Oruns > Pruns)
@@ -221,11 +211,27 @@ public class FRSimRubber
 						System.out.println("You lose " + BPlayerInfo.playerName + ", Rubberducks win");
 						
 						
-						
-						int charlieBrown = (int) (Math.random() * 311) + 339;
+						int charlieBrown = (int) (Math.random() * 216) + 104;
+						moneyFinal -= charlieBrown;
 						BPlayerInfo.playerMoney -= charlieBrown;
-						System.out.println("*&@^@#$($&@#$(@#$*& " + "You have to pay $" + charlieBrown + " to the Rubberducks :(");
+						System.out.println("*&@^@#$(* " + "You have to pay $" + charlieBrown + " to the Rubberducks :(");
 					}
+				
+				
+				if (moneyFinal >= 0)
+					{			
+						System.out.println("Game summary: " 
+								+ "\n\t\t\tprofit-->  +$" + moneyFinal 
+								+ "\n\t\t\tscore-->  " + Pruns + " to " + Oruns);
+					}
+				else if (moneyFinal < 0)
+					{
+						moneyFinal *= -1;
+						System.out.println("Game summary: " 
+								+ "\n\t\t\tloss-->  -$" + moneyFinal 
+								+ "\n\t\t\tscore-->  " + Pruns + " to " + Oruns);
+					}
+				
 				
 				BB1 = 0;
 				HBP1 = 0;
@@ -240,6 +246,9 @@ public class FRSimRubber
 				moneyT = 0;
 				moneyL = 0;
 				moneyFinal = 0;
+				
+				inningN = 1;
+				gameW = true;
 				
 			}
 		
@@ -829,6 +838,11 @@ public class FRSimRubber
 				int outs = 0;
 				boolean stillPlaying = true;
 				
+				int bb = 0;
+				int hbp = 0;
+				int h = 0;
+				int hr = 0;
+				
 				
 				do 
 					{
@@ -864,19 +878,22 @@ public class FRSimRubber
 								//check for walks, hbp, hits and home runs	
 									if (r1 <= newWalks)
 										{
+											bb++;
 											BB1++;
 										}
 									else if (r2 <= newHitByPitch)
 										{
+											hbp++;
 											HBP1++;
 										}
 									else if (r3 <= newHits)
 										{
 											if(r3 <= newHR)
 												{
+													hr++;
 													HR1++;
 												}
-											
+											h++;
 											H1++;
 										}
 									else
@@ -937,19 +954,22 @@ public class FRSimRubber
 									//check for walks, hbp, hits and home runs	
 										if (r1 <= newWalks)
 											{
+												bb++;
 												BB1++;
 											}
 										else if (r2 <= newHitByPitch)
 											{
+												hbp++;
 												HBP1++;
 											}
 										else if (r3 <= newHits)
 											{
 												if(r3 <= newHR)
 													{
+														hr++;
 														HR1++;
 													}
-												
+												h++;
 												H1++;
 											}
 										else
@@ -1005,27 +1025,27 @@ public class FRSimRubber
 				
 				
 				
-				if(H1 >= 20)
+				if(h >= 20)
 					{
 						Pruns += 8;
 					}
-				else if(H1 >= 15 && H1 < 20)
+				else if(h >= 15 && h < 20)
 					{
 						Pruns += 6;
 					}
-				else if(H1 >= 10 && H1 < 15)
+				else if(h >= 10 && h < 15)
 					{ 
 						Pruns += 4;
 					}
-				else if(H1 >= 7 && H1 < 10)
+				else if(h >= 7 && h < 10)
 					{
 						Pruns += 3;
 					}
-				else if(H1 >= 5 && H1 < 7)
+				else if(h >= 5 && h < 7)
 					{
 						Pruns += 2;
 					}
-				else if(H1 >= 3 && H1 < 5)
+				else if(h >= 3 && h < 5)
 					{
 						Pruns += 1;
 					}
@@ -1039,8 +1059,6 @@ public class FRSimRubber
 				
 				
 				moneyT = (plusMoneyBB + plusMoneyHBP + plusMoneyH + plusMoneyHR);
-	
-				
 			}
 		
 		
@@ -1083,7 +1101,10 @@ public class FRSimRubber
 				int outs = 0;
 				boolean stillPlaying = true;
 				
-				
+				int bb = 0;
+				int hbp = 0;
+				int h = 0;
+				int hr = 0;
 				
 				do 
 					{
@@ -1119,19 +1140,22 @@ public class FRSimRubber
 								//check for walks, hbp, hits and home runs	
 									if (r1 <= newWalks)
 										{
+											bb++;
 											BB2++;
 										}
 									else if (r2 <= newHitByPitch)
 										{
+											hbp++;
 											HBP2++;
 										}
 									else if (r3 <= newHits)
 										{
 											if(r3 <= newHR)
 												{
+													hr++;
 													HR2++;
 												}
-											
+											h++;
 											H2++;
 										}
 									else
@@ -1192,19 +1216,22 @@ public class FRSimRubber
 									//check for walks, hbp, hits and home runs	
 										if (r1 <= newWalks)
 											{
+												bb++;
 												BB2++;
 											}
 										else if (r2 <= newHitByPitch)
 											{
+												hbp++;
 												HBP2++;
 											}
 										else if (r3 <= newHits)
 											{
 												if(r3 <= newHR)
 													{
+														hr++;
 														HR2++;
 													}
-												
+												h++;
 												H2++;
 											}
 										else
@@ -1260,27 +1287,27 @@ public class FRSimRubber
 				
 				
 				
-				if(H2 >= 20)
+				if(h >= 20)
 					{
 						Oruns += 8;
 					}
-				else if(H2 >= 15 && H2 < 20)
+				else if(h >= 15 && h < 20)
 					{
 						Oruns += 6;
 					}
-				else if(H2 >= 10 && H2 < 15)
+				else if(h >= 10 && h < 15)
 					{ 
 						Oruns += 4;
 					}
-				else if(H2 >= 7 && H2 < 10)
+				else if(h >= 7 && h < 10)
 					{
 						Oruns += 3;
 					}
-				else if(H2 >= 5 && H2 < 7)
+				else if(h >= 5 && h < 7)
 					{
 						Oruns += 2;
 					}
-				else if(H2 >= 3 && H2 < 5)
+				else if(h >= 3 && h < 5)
 					{
 						Oruns += 1;
 					}

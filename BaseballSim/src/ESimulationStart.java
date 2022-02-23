@@ -130,8 +130,9 @@ public class ESimulationStart
 				System.out.println();
 				System.out.println();
 				System.out.println();
+				System.out.println();
 				System.out.println(BPlayerInfo.playerName + ", how would you like to view this simulation?"
-						+ "\n\t1) Regular   (innging by inning) "
+						+ "\n\n\t1) Regular   (innging by inning) "
 						+ "\n\t2) Quickplay (see simulation summary)");
 						input3 = simMenuInput3.nextLine();
 						System.out.println();
