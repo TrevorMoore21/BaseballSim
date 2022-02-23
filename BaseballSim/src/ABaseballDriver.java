@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 public class ABaseballDriver
 	{
 		
-		public static void main(String[] args) throws FileNotFoundException
+		public static void main(String[] args) 
 			{
 			
 				ATxtReader.readSimTxt();
@@ -17,12 +17,7 @@ public class ABaseballDriver
 
 				CGreetSimPlayer.simIntro();
 				
-				
-				FRSimRubber.regRubberGame();
-				FRSimRubber.qRubberGame();
-				
-				
-				
+	
 				
 				CGreetSimPlayer.displayRule();
 				CGreetSimPlayer.playOrNaw();

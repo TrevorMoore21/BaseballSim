@@ -143,6 +143,8 @@ public class ESimulationStart
 										
 										
 										FRSimRubber.regRubberGame();
+										
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 2)
 									{
@@ -177,7 +179,8 @@ public class ESimulationStart
 								
 								if (menuNum2 == 1)
 									{
-										//FSimulationQ.quickRubberGame();
+										FRSimRubber.qRubberGame();
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 2)
 									{
