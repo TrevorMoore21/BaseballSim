@@ -143,13 +143,15 @@ public class ESimulationStart
 									{
 										
 										
-										FRSimRubber.regRubberGame();
+										FSimRubber.regRubberGame();
 										
 										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 2)
 									{
-										//FSimulationR.regYardGame();
+										FSimYard.regYardGame();
+										
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 3)
 									{
@@ -180,12 +182,15 @@ public class ESimulationStart
 								
 								if (menuNum2 == 1)
 									{
-										FRSimRubber.qRubberGame();
+										FSimRubber.qRubberGame();
 										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 2)
 									{
-										//FSimulationQ.quickYardGame();
+										
+										FSimYard.qYardGame();
+										
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 3)
 									{

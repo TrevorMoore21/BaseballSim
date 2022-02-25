@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class FRSimRubber
+public class FSimRubber
 	{
 		static double battingAv;
 		static double battingAvA;
@@ -316,7 +316,8 @@ public class FRSimRubber
 												- (double) ((BBSPitchers) BTeams.rubberStarter.get(0)).getWalks() - (double) ((BBSPitchers) BTeams.rubberStarter.get(0)).getHitByPitch());
 						
 									
-						
+									
+									
 									Random generator = new Random();
 									rando = ((generator.nextDouble()* .010) + 0.015);
 						
@@ -359,7 +360,9 @@ public class FRSimRubber
 								//makes sure batters change down the lineup
 									playerNum1++;
 									
-										if (playerNum1 >= 7)
+									
+									
+										if (playerNum1 >= 8)
 											{
 												
 												playerNum1 = 0;
@@ -432,7 +435,7 @@ public class FRSimRubber
 										playerNum1++;
 										
 								//lineup number
-										if (playerNum1 >= 7)
+										if (playerNum1 >= 8)
 											{
 												
 												playerNum1 = 0;
@@ -468,6 +471,10 @@ public class FRSimRubber
 						
 						
 					} while (stillPlaying == true);
+				
+				
+				
+				
 				
 				stillPlaying = true;
 				
@@ -574,7 +581,8 @@ public class FRSimRubber
 											- (double) ((BBSPitchers) BTeams.playerStarter.get(0)).getWalks() - (double) ((BBSPitchers) BTeams.playerStarter.get(0)).getHitByPitch());
 					
 								
-					
+								
+								
 								Random generator = new Random();
 								rando = ((generator.nextDouble()* .010) + 0.015);
 					
@@ -617,7 +625,7 @@ public class FRSimRubber
 							//makes sure batters change down the lineup
 								playerNum2++;
 								
-									if (playerNum2 >= 7)
+									if (playerNum2 >= 8)
 										{
 											
 											playerNum2 = 0;
@@ -643,6 +651,8 @@ public class FRSimRubber
 								
 									battingAvA = ((double) ((BBSPitchers) BTeams.playerReliever.get(relieverNum2)).getHitsAllowed()) / ((double) ((BBSPitchers) BTeams.playerReliever.get(relieverNum2)).getBattersFaced() 
 												- (double) ((BBSPitchers) BTeams.playerReliever.get(relieverNum2)).getWalks() - (double) ((BBSPitchers) BTeams.playerReliever.get(relieverNum2)).getHitByPitch());
+									
+									
 									
 									
 									
@@ -690,7 +700,7 @@ public class FRSimRubber
 									playerNum2++;
 									
 							//lineup number
-									if (playerNum2 >= 7)
+									if (playerNum2 >= 8)
 										{
 											
 											playerNum2 = 0;
@@ -906,7 +916,7 @@ public class FRSimRubber
 								//makes sure batters change down the lineup
 									playerNum1++;
 									
-										if (playerNum1 >= 7)
+										if (playerNum1 >= 8)
 											{
 												
 												playerNum1 = 0;
@@ -984,7 +994,7 @@ public class FRSimRubber
 										playerNum1++;
 										
 								//lineup number
-										if (playerNum1 >= 7)
+										if (playerNum1 >= 8)
 											{
 												
 												playerNum1 = 0;
@@ -1168,7 +1178,7 @@ public class FRSimRubber
 								//makes sure batters change down the lineup
 									playerNum2++;
 									
-										if (playerNum2 >= 7)
+										if (playerNum2 >= 8)
 											{
 												
 												playerNum2 = 0;
@@ -1246,7 +1256,7 @@ public class FRSimRubber
 										playerNum2++;
 										
 								//lineup number
-										if (playerNum2 >= 7)
+										if (playerNum2 >= 8)
 											{
 												
 												playerNum2 = 0;
