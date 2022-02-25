@@ -141,37 +141,38 @@ public class ESimulationStart
 							{
 								if (menuNum2 == 1)
 									{
-										
-										
 										FSimRubber.regRubberGame();
-										
 										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 2)
 									{
 										FSimYard.regYardGame();
-										
 										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 3)
 									{
-										//FSimulationR.regBiscuitGame();
+										FSimBiscuit.regBiscuitGame();
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 4)
 									{
-										//FSimulationR.regPinkGame();
+										FSimPinkerton.regPinkertonGame();
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 5)
 									{
-										//FSimulationR.regFartGame();
+										FSimElFart.regFartGame();
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 6)
 									{
-										//FSimulationR.regChichGame();
+										FSimChicharron.regChicharronGame();
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 7)
 									{
-										//FSimulationR.regLegendGame();
+										FSimLegend.regLegendGame();
+										DPlayGame.simMenu();
 									}
 							}	
 						
@@ -189,28 +190,32 @@ public class ESimulationStart
 									{
 										
 										FSimYard.qYardGame();
-										
 										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 3)
 									{
-										//FSimulationQ.quickBiscuitGame();
+										FSimBiscuit.qBiscuitGame();
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 4)
 									{
-										//FSimulationQ.quickPinkGame();
+										FSimPinkerton.qPinkertonGame();
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 5)
 									{
-										//FSimulationQ.quickFartGame();
+										FSimElFart.qFartGame();
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 6)
 									{
-										//FSimulationQ.quickChichGame();
+										FSimChicharron.qChicharronGame();
+										DPlayGame.simMenu();
 									}
 								if (menuNum2 == 7)
 									{
-									//	FSimulationQ.quickLegendGame();
+										FSimLegend.qLegendGame();
+										DPlayGame.simMenu();
 									}
 							}	
 						

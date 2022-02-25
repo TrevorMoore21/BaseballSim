@@ -1,11 +1,6 @@
 
 public class BDisplayTeams
 	{
-
-		
-		
-		
-		
 		
 				
 									//PLAYER TEAM

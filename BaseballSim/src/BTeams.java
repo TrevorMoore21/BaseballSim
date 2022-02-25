@@ -559,7 +559,7 @@ public class BTeams
 					int xxx = 0;
 					
 					
-					for (BAllStarPlayer s: BPlayerInfo.team)
+					for (BAllStarPlayer s: RubberDucks)
 						{
 							if( s.getType2().equals("Starter"))
 								{
@@ -608,7 +608,7 @@ public class BTeams
 							boolean r7 = false;
 							
 				
-							for (BAllStarPlayer r: BPlayerInfo.team)
+							for (BAllStarPlayer r: RubberDucks)
 								{
 									if( r.getType2().equals("Reliever"))
 										{
@@ -713,7 +713,7 @@ public class BTeams
 				
 			
 				
-				for (BAllStarPlayer h: BPlayerInfo.team)
+				for (BAllStarPlayer h: RubberDucks)
 					{
 						if( h.getType().equals("Hitter"))
 							{
@@ -851,7 +851,7 @@ public class BTeams
 					int xxx = 0;
 		
 		
-					for (BAllStarPlayer s: BPlayerInfo.team)
+					for (BAllStarPlayer s: YardGoats)
 						{
 							if( s.getType2().equals("Starter"))
 								{
@@ -900,7 +900,7 @@ public class BTeams
 					boolean r7 = false;
 					
 		
-					for (BAllStarPlayer r: BPlayerInfo.team)
+					for (BAllStarPlayer r: YardGoats)
 						{
 							if( r.getType2().equals("Reliever"))
 								{
@@ -1005,7 +1005,7 @@ public class BTeams
 	
 
 	
-					for (BAllStarPlayer h: BPlayerInfo.team)
+					for (BAllStarPlayer h: YardGoats)
 						{
 							if( h.getType().equals("Hitter"))
 								{
@@ -1143,7 +1143,7 @@ public class BTeams
 					int xxx = 0;
 		
 		
-					for (BAllStarPlayer s: BPlayerInfo.team)
+					for (BAllStarPlayer s: Biscuits)
 						{
 							if( s.getType2().equals("Starter"))
 								{
@@ -1192,7 +1192,7 @@ public class BTeams
 					boolean r7 = false;
 					
 		
-					for (BAllStarPlayer r: BPlayerInfo.team)
+					for (BAllStarPlayer r: Biscuits)
 						{
 							if( r.getType2().equals("Reliever"))
 								{
@@ -1297,7 +1297,7 @@ public class BTeams
 	
 
 	
-					for (BAllStarPlayer h: BPlayerInfo.team)
+					for (BAllStarPlayer h: Biscuits)
 						{
 							if( h.getType().equals("Hitter"))
 								{
@@ -1435,7 +1435,7 @@ public class BTeams
 					int xxx = 0;
 		
 		
-					for (BAllStarPlayer s: BPlayerInfo.team)
+					for (BAllStarPlayer s: Pinkertons)
 						{
 							if( s.getType2().equals("Starter"))
 								{
@@ -1484,7 +1484,7 @@ public class BTeams
 					boolean r7 = false;
 					
 		
-					for (BAllStarPlayer r: BPlayerInfo.team)
+					for (BAllStarPlayer r: Pinkertons)
 						{
 							if( r.getType2().equals("Reliever"))
 								{
@@ -1589,7 +1589,7 @@ public class BTeams
 	
 
 	
-					for (BAllStarPlayer h: BPlayerInfo.team)
+					for (BAllStarPlayer h: Pinkertons)
 						{
 							if( h.getType().equals("Hitter"))
 								{
@@ -1726,7 +1726,7 @@ public class BTeams
 					int xxx = 0;
 		
 		
-					for (BAllStarPlayer s: BPlayerInfo.team)
+					for (BAllStarPlayer s: ElFarts)
 						{
 							if( s.getType2().equals("Starter"))
 								{
@@ -1775,7 +1775,7 @@ public class BTeams
 					boolean r7 = false;
 					
 		
-					for (BAllStarPlayer r: BPlayerInfo.team)
+					for (BAllStarPlayer r: ElFarts)
 						{
 							if( r.getType2().equals("Reliever"))
 								{
@@ -1880,7 +1880,7 @@ public class BTeams
 	
 
 	
-					for (BAllStarPlayer h: BPlayerInfo.team)
+					for (BAllStarPlayer h: ElFarts)
 						{
 							if( h.getType().equals("Hitter"))
 								{
@@ -2018,7 +2018,7 @@ public class BTeams
 					int xxx = 0;
 		
 		
-					for (BAllStarPlayer s: BPlayerInfo.team)
+					for (BAllStarPlayer s: Chicharrones)
 						{
 							if( s.getType2().equals("Starter"))
 								{
@@ -2068,7 +2068,7 @@ public class BTeams
 					boolean r7 = false;
 					
 		
-					for (BAllStarPlayer r: BPlayerInfo.team)
+					for (BAllStarPlayer r: Chicharrones)
 						{
 							if( r.getType2().equals("Reliever"))
 								{
@@ -2173,7 +2173,7 @@ public class BTeams
 	
 
 	
-					for (BAllStarPlayer h: BPlayerInfo.team)
+					for (BAllStarPlayer h: Chicharrones)
 						{
 							if( h.getType().equals("Hitter"))
 								{
@@ -2311,7 +2311,7 @@ public class BTeams
 					int xxx = 0;
 
 
-					for (BAllStarPlayer s: BPlayerInfo.team)
+					for (BAllStarPlayer s: Legends)
 						{
 							if( s.getType2().equals("Starter"))
 								{
@@ -2361,7 +2361,7 @@ public class BTeams
 					boolean r7 = false;
 					
 		
-					for (BAllStarPlayer r: BPlayerInfo.team)
+					for (BAllStarPlayer r: Legends)
 						{
 							if( r.getType2().equals("Reliever"))
 								{
@@ -2466,7 +2466,7 @@ public class BTeams
 
 
 
-					for (BAllStarPlayer h: BPlayerInfo.team)
+					for (BAllStarPlayer h: Legends)
 						{
 							if( h.getType().equals("Hitter"))
 								{

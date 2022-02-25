@@ -15,6 +15,9 @@ public class ABaseballDriver
 				BTeams.randomizeAllSRL();
 
 
+				
+				
+				
 				CGreetSimPlayer.simIntro();
 				
 				
