@@ -924,7 +924,7 @@ public class EBaseballTrivia
 								
 								
 								System.out.println();
-								System.out.println("What female pitcher struct out both Lou Gehrig and Babe Ruth?");
+								System.out.println("What female pitcher struck out both Lou Gehrig and Babe Ruth?");
 								System.out.println();
 								hardTA = hardTriviaR.nextLine();
 								
